@@ -3,39 +3,40 @@ package org.example;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
+import de.gurkenlabs.litiengine.physics.Collision;
+
+import java.awt.geom.Rectangle2D;
+import java.util.Collection;
 
 
-@CombatInfo(hitpoints = 50)
-@MovementInfo(velocity = 40)
+@CombatInfo(hitpoints = 100)
+@MovementInfo(velocity = 30)
+@CollisionInfo(collision = true,collisionBoxWidth = 20,collisionBoxHeight = 20)
 
 
 public class Slime extends Creature implements IUpdateable {
     //public String drops;
     private int angle;
     private long lastAngleChange;
-    private int ANGLE_CHANGE_INTERVAL = 2000;
+    private int ANGLE_CHANGE_INTERVAL = 1000;
 
-    private static Slime instance;
 
-    public static Slime instance() {
-        if (instance == null) {
-            instance = new Slime();
-        }
-        return instance;
 
-    }
 
     public Slime(){
         super("Slime");
         this.setTeam(2);
+        this.addTag("enemy");
 
 
 
     }
     @Override
     public void update() {
+
         if(this.getHitPoints().getRelativeCurrentValue()<= 0) {
             this.die();
+            Game.world().environment().remove(this);
         }
         if(this.isDead()){
             return;
@@ -47,7 +48,10 @@ public class Slime extends Creature implements IUpdateable {
             this.lastAngleChange = currentTick;
         }
         Game.physics().move(this,angle, this.getTickVelocity());
-    }
+
+
+        }
+
 
 
 

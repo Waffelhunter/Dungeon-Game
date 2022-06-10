@@ -10,7 +10,7 @@ import java.util.Collection;
 
 
 @CollisionInfo(collisionBoxWidth = 4, collisionBoxHeight = 4, collision = false)
-@EntityInfo(width = 10, height = 10)
+@EntityInfo(width = 7, height = 7)
 @CombatInfo(hitpoints = 1)
 
 public class ShatterShards extends Creature implements IUpdateable {
@@ -21,7 +21,7 @@ public class ShatterShards extends Creature implements IUpdateable {
 
 
     public ShatterShards(Point2D spawn, int Xvel, int Yvel) {
-        super("Feuerball");
+        super("Splitball");
         this.Xvel = Xvel;
         this.Yvel = Yvel;
 

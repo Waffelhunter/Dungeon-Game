@@ -43,6 +43,7 @@ public void init(){
 
 
 
+
         Game.audio().playSound(Resources.sounds().get("mixkit-shot-light-explosion-1682"),this);
 
         this.setCollisionBoxHeight(20);

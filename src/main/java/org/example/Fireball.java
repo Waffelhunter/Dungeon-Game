@@ -93,35 +93,43 @@ public class Fireball extends Creature implements IUpdateable {
         } else {
 
 
-
             Collection<Prop> propses = Game.world().environment().getProps("target");
             for (Prop p : propses) {
 
-                if (p.getCollisionBox().intersects(fireball.getCollisionBox())&&!p.isDead()) {
+                if (p.getCollisionBox().intersects(fireball.getCollisionBox()) && !p.isDead()) {
                     if (p.hasTag("explosive")) {
 
 
                         p.die();
 
 
-                    }
-                    else{
-                    p.hit(50);
+                    } else {
+                        p.hit(50);
 
-                    if(p.getState()== PropState.DESTROYED&&!p.hasTag("looted")) {
-                        life h = new life("life");
-                        Game.world().environment().add(h);
-                        h.setLocation(p.getX(), p.getY());
-                        p.addTag("looted");
-                        p.die();
-                    }
+                        if (p.getState() == PropState.DESTROYED && !p.hasTag("looted")) {
+                            life h = new life("life");
+                            Game.world().environment().add(h);
+                            h.setLocation(p.getX(), p.getY());
+                            p.addTag("looted");
+                            p.die();
+                        }
                     }
 
                 }
 
                 Game.world().environment().remove(fireball);
                 moves = 0;
-              SpellManager.state = 0;
+                SpellManager.state = 0;
+
+            }
+            Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
+            for (Creature c : Enemys) {
+                if (c.getCollisionBox().intersects(fireball.getCollisionBox())) {
+                    c.hit(50);
+                }
+                Game.world().environment().remove(fireball);
+                moves = 0;
+                SpellManager.state = 0;
 
             }
         }

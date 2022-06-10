@@ -1,5 +1,6 @@
 package org.example;
 
+import de.gurkenlabs.litiengine.Direction;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.IEntity;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
@@ -14,30 +15,31 @@ public class EnemyLogic {
     }
 
 
-//    public static void Logic() {
-//
-//        Game.world().onLoaded(e -> {
-//
-//                    Spawnpoint EnemySpawn = e.getSpawnpoint("EnemySpawn");
-//                    EnemySpawn.spawn(Slime.instance());
-                    //EntitySpawner test = new EntitySpawner((List<Spawnpoint>) EnemySpawn,5000,1) {
-//                @Override
-//                public IEntity createNew() {
-//                    return new Slime();
-//
-//                }
-//            };
+    public static void Logic() {
+
+        Game.world().onLoaded(e -> {
+
+            Spawnpoint EnemySpawn = e.getSpawnpoint("EnemySpawn");
 
 
-//            if (EnemySpawn != null) {
-//
-//                EnemySpawn.spawn(new Slime());
-//
-//                //Player.instance().setFacingDirection(Direction.UP);
-//                System.out.println("spawned");
 
-                }
-//        );
-//    }
-//}
+
+
+
+
+
+            if (EnemySpawn != null) {
+
+                EnemySpawn.spawn(new Slime());
+
+
+                System.out.println("spawned");
+
+            }
+
+        });
+    }
+}
+
+
 

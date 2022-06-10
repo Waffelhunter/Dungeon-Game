@@ -30,7 +30,7 @@ public class Colission {
         Collection<Prop> propses = Game.world().environment().getProps("target");
         for (Prop p : propses) {
 
-            if (p.getCollisionBox().intersects(Spell.getCollisionBox())&&!p.isDead()) {
+            if (p.getCollisionBox().intersects(Spell.getCollisionBox()) && !p.isDead()) {
                 return true;
 
             }
@@ -46,10 +46,17 @@ public class Colission {
             }
 
 
+        }
+        Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
+        for (Creature c : Enemys) {
+            if (c.getCollisionBox().intersects(Spell.getCollisionBox())) {
+                return true;
+
+            }
+            return false;
 
         }
-return false;
-
+        return false;
     }
 }
 

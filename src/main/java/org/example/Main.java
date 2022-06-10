@@ -15,12 +15,13 @@ Main {
 
         Game.init(args);
         PlayerLogic.Logic();
+        EnemyLogic.Logic();
 
         UserInput.Input();
         Colission colission = new Colission();
 
         //load the Liti Library
-        Resources.load("TestMap.litidata");
+        Resources.load("Test.litidata");
         //set the Scale of the Game: pixles * X
 
         Game.graphics().setBaseRenderScale(3);
@@ -42,7 +43,7 @@ Main {
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
         Game.world().loadEnvironment("Bibliothek");
-//        EnemyLogic.Logic();
+
 
 
 
