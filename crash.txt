@@ -1,33 +1,5 @@
-Sun Jun 05 18:08:10 CEST 2022 Main Update Loop threw an exception:
-java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
-	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
-	at org.example.InteractableObjects.Interact(InteractableObjects.java:48)
-	at org.example.UserInput.lambda$Input$2(UserInput.java:19)
-	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$3(Keyboard.java:249)
-	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
-	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$6(Keyboard.java:249)
-	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
-	at de.gurkenlabs.litiengine.input.Keyboard.executePressedKeys(Keyboard.java:245)
-	at de.gurkenlabs.litiengine.input.Keyboard.update(Keyboard.java:195)
-	at de.gurkenlabs.litiengine.GameLoop.updateInvariableEngineComponents(GameLoop.java:128)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:84)
+Fri Jun 10 20:23:41 CEST 2022 Main Update Loop threw an exception:
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.gui.screens.ScreenManager.current()" because the return value of "de.gurkenlabs.litiengine.Game.screens()" is null
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:127)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:93)
 	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-====Runtime Information====
-Operating System: Windows 10
-	Architecture: amd64
-	Version: 10.0
-Memory:
-	Max heap size: 4,0 GiB
-	Current heap size: 256,0 MiB
-	Heap used: 86,4 MiB
-	Free heap: 169,6 MiB
-Java Version: Java(TM) SE Runtime Environment 17.0.3.1+2-LTS-6 
-	Vendor: Oracle Corporation
-Uptime: PT5.577S
-Screens: 2
-	Screen 0: 1920x1080@60hz
-	Screen 1: 1920x1080@59hz
-
