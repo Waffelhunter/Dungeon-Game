@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="14" name="test">
+ <tileset firstgid="1" name="Boden" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../../../../../../SynologyDrive/Dokumente/Pixelart/Unbenanntes_Projekt (1).png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" source="../../../../../../Tiles_dungen.tsx"/>
+ <tileset firstgid="3" source="../../../../../../set2.tsx"/>
+ <tileset firstgid="4" name="grossevase" tilewidth="16" tileheight="24" tilecount="1" columns="1">
+  <image source="../../../../../../SynologyDrive/Dokumente/Pixelart/Unbenanntes_Projekt_2 (1).png" width="16" height="24"/>
+ </tileset>
+ <layer id="1" name="Kachelebene 1" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Objektebene 1" visible="1">
+  <object id="1" gid="3" x="390.333" y="240" width="10" height="15"/>
+  <object id="2" gid="3" x="402.333" y="234.667" width="10" height="15"/>
+  <object id="3" gid="3" x="403" y="246.667" width="10" height="15"/>
+  <object id="4" gid="3" x="393.667" y="248.667" width="10" height="15"/>
+  <object id="5" gid="3" x="385.667" y="248.667" width="10" height="15"/>
+  <object id="6" gid="3" x="393.667" y="255.333" width="10" height="15"/>
+  <object id="7" gid="3" x="403.667" y="256.667" width="10" height="15"/>
+  <object id="8" gid="3" x="455" y="251.333" width="10" height="15"/>
+  <object id="9" gid="3" x="437.667" y="258" width="10" height="15"/>
+  <object id="10" gid="3" x="451" y="258.667" width="10" height="15"/>
+  <object id="11" gid="4" x="360.667" y="305.333" width="16" height="24"/>
+  <object id="12" gid="4" x="371.333" y="312.667" width="16" height="24"/>
+  <object id="13" gid="4" x="359.333" y="317.333" width="16" height="24"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,466 @@
+Juni 04, 2022 1:20:20 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:20 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:20 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:20 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:20:21 PM de.gurkenlabs.litiengine.UpdateLoop update
+SCHWERWIEGEND: Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at org.example.ShatterShot.shatter(ShatterShot.java:63)
+	at org.example.ShatterShot.update(ShatterShot.java:108)
+	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
+	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 04, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:23:44 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:23:44 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:23:44 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:23:44 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:41:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:41:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:41:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:41:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:57:53 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:57:53 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:57:53 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 1:57:53 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:09:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:09:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:09:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:09:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:10:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:10:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:10:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:10:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:12:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:12:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:12:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:12:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:15:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:15:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:15:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:15:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:23 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:23 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:23 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:23 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 3:17:37 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:10:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:10:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:10:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:10:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:13:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:13:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:13:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:13:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:15:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:15:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:15:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:15:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:21:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:25:34 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:25:34 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:25:34 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:25:34 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:50 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:50 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:50 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:27:50 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:39:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:39:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:39:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:39:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:49:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:49:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:49:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:49:09 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:56:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:56:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:56:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:56:01 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:58:36 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:58:36 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:58:36 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:58:36 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 04, 2022 11:58:36 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
+	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
+	at org.example.Main.main(Main.java:44)
+
+Juni 05, 2022 12:00:04 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 12:00:04 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 12:00:04 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 12:00:04 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 4:29:15 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 4:29:16 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 4:29:16 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 4:29:16 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 4:29:48 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
+	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
+	at org.example.InteractableObjects.Interact(InteractableObjects.java:48)
+	at org.example.UserInput.lambda$Input$2(UserInput.java:19)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$3(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$6(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.executePressedKeys(Keyboard.java:245)
+	at de.gurkenlabs.litiengine.input.Keyboard.update(Keyboard.java:195)
+	at de.gurkenlabs.litiengine.GameLoop.updateInvariableEngineComponents(GameLoop.java:128)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:84)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 05, 2022 6:01:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:01:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:01:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:01:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:01:38 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
+	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
+	at org.example.InteractableObjects.Interact(InteractableObjects.java:48)
+	at org.example.UserInput.lambda$Input$2(UserInput.java:19)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$3(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$6(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.executePressedKeys(Keyboard.java:245)
+	at de.gurkenlabs.litiengine.input.Keyboard.update(Keyboard.java:195)
+	at de.gurkenlabs.litiengine.GameLoop.updateInvariableEngineComponents(GameLoop.java:128)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:84)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 05, 2022 6:02:26 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:02:26 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:02:27 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:02:27 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:02:30 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
+	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
+	at org.example.InteractableObjects.Interact(InteractableObjects.java:48)
+	at org.example.UserInput.lambda$Input$2(UserInput.java:19)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$3(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$6(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.executePressedKeys(Keyboard.java:245)
+	at de.gurkenlabs.litiengine.input.Keyboard.update(Keyboard.java:195)
+	at de.gurkenlabs.litiengine.GameLoop.updateInvariableEngineComponents(GameLoop.java:128)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:84)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 05, 2022 6:03:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:38 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:38 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:38 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:38 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:03:41 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
+	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
+	at org.example.InteractableObjects.Interact(InteractableObjects.java:48)
+	at org.example.UserInput.lambda$Input$2(UserInput.java:19)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$3(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$6(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.executePressedKeys(Keyboard.java:245)
+	at de.gurkenlabs.litiengine.input.Keyboard.update(Keyboard.java:195)
+	at de.gurkenlabs.litiengine.GameLoop.updateInvariableEngineComponents(GameLoop.java:128)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:84)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 05, 2022 6:05:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:05:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:05:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:05:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:08:05 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:08:05 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:08:06 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:08:06 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 05, 2022 6:08:10 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.entities.Spawnpoint.spawn(de.gurkenlabs.litiengine.entities.IEntity)" because "EnemySpawn" is null
+	at org.example.EnemyLogic.lambda$Logic$0(EnemyLogic.java:22)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:386)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:425)
+	at org.example.InteractableObjects.Interact(InteractableObjects.java:48)
+	at org.example.UserInput.lambda$Input$2(UserInput.java:19)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$3(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.lambda$executePressedKeys$6(Keyboard.java:249)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4706)
+	at de.gurkenlabs.litiengine.input.Keyboard.executePressedKeys(Keyboard.java:245)
+	at de.gurkenlabs.litiengine.input.Keyboard.update(Keyboard.java:195)
+	at de.gurkenlabs.litiengine.GameLoop.updateInvariableEngineComponents(GameLoop.java:128)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:84)
+	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+Juni 10, 2022 11:23:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 10, 2022 11:23:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 10, 2022 11:23:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 10, 2022 11:23:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.

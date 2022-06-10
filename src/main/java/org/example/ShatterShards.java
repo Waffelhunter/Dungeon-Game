@@ -1,0 +1,89 @@
+package org.example;
+
+import de.gurkenlabs.litiengine.Game;
+import de.gurkenlabs.litiengine.IUpdateable;
+import de.gurkenlabs.litiengine.entities.*;
+
+import java.awt.geom.Point2D;
+import java.util.Collection;
+
+
+
+@CollisionInfo(collisionBoxWidth = 4, collisionBoxHeight = 4, collision = false)
+@EntityInfo(width = 10, height = 10)
+@CombatInfo(hitpoints = 1)
+
+public class ShatterShards extends Creature implements IUpdateable {
+    private final int Xvel;
+    private final int Yvel;
+
+    private int moves;
+
+
+    public ShatterShards(Point2D spawn, int Xvel, int Yvel) {
+        super("Feuerball");
+        this.Xvel = Xvel;
+        this.Yvel = Yvel;
+
+        this.moves = 0;
+        Game.world().environment().add(this);
+        this.setLocation(spawn);
+
+
+    }
+
+    public void respawn( Point2D spawn) {
+        this.moves = 0;
+        this.setLocation(spawn);
+        Game.world().environment().add(this);
+    }
+
+    @Override
+    public void update() {
+        if (!(Colission.GibColision(this))) {
+            if (moves < 30) {
+                this.setLocation(this.getX() + Xvel, this.getY() + Yvel);
+                moves++;
+            } else {
+                Game.world().environment().remove(this);
+                moves = 0;
+            }
+
+
+        } else {
+
+            //Dammage und zerstörung
+
+            Collection<Prop> propses = Game.world().environment().getProps("target");
+            for (Prop p : propses) {
+
+                if (p.getCollisionBox().intersects(this.getCollisionBox()) && !p.isDead()) {
+                    if (p.hasTag("explosive")) {
+
+
+                        p.die();
+
+
+                    } else {
+                        p.hit(20);
+                        //burn(p);
+                        if (p.getState() == PropState.DESTROYED && !p.hasTag("looted")) {
+                            life h = new life("life");
+                            Game.world().environment().add(h);
+                            h.setLocation(p.getX(), p.getY());
+                            p.addTag("looted");
+                            p.die();
+                        }
+                    }
+                }
+
+                Game.world().environment().remove(this);
+                moves = 0;
+
+            }
+            Game.world().environment().remove(this);
+            moves = 0;
+        }
+
+    }
+}
