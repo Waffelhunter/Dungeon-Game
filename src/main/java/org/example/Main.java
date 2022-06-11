@@ -40,6 +40,7 @@ Main {
         PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
         PropMapObjectLoader.registerCustomPropType(BreakableWall.class);
 
+
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
         Game.world().loadEnvironment("Bibliothek");
