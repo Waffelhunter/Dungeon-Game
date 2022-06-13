@@ -1,395 +1,248 @@
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:11:33 PM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-java.lang.ClassCastException: class java.util.Collections$UnmodifiableCollection cannot be cast to class java.awt.geom.Rectangle2D (java.util.Collections$UnmodifiableCollection is in module java.base of loader 'bootstrap'; java.awt.geom.Rectangle2D is in module java.desktop of loader 'bootstrap')
-	at org.example.Slime.update(Slime.java:51)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
-
-Juni 10, 2022 8:16:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:16:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 11, 2022 6:14:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:16:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 11, 2022 6:14:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:16:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 11, 2022 6:14:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:20:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 11, 2022 6:14:03 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:14:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:20:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:14:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:20:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:14:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 8:20:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:14:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 9:00:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:14:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:16:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 9:00:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:16:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 9:00:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:16:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 9:00:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:16:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 10:57:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:16:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:17:17 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 10:57:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:17:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 10:57:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:17:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 10, 2022 10:57:20 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:17:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:33:37 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:17:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:19:39 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:33:37 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:19:39 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:33:37 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:19:39 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:33:37 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:19:39 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:37:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:19:39 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:20:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:37:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:37:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:37:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:39:57 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:20:52 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:39:57 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:52 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:39:57 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:52 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:39:57 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:52 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:20:52 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:22:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:22:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:22:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:22:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:22:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:23:29 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:23:29 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:23:29 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:41:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:23:29 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:42:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:23:29 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:32:58 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:42:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:32:58 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:42:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:32:58 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:42:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:32:58 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:06 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:32:58 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:34:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:06 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:34:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:06 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:34:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:06 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:34:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:25 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:34:10 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:45:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:25 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:45:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:25 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:45:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:43:25 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:45:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:44:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:45:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:48:21 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:44:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:48:21 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:44:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:48:21 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:44:49 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:48:21 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:46:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:48:21 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:49:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:46:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:49:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:46:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:49:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:46:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:49:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:49:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:51:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:51:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:51:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:28 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:51:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:51 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:51:47 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:55:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:51 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:55:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:51 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:55:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:48:51 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:55:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:50:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:55:35 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 12:58:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:50:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:58:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:50:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:58:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:50:46 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:58:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:51:15 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 12:58:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:05:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:51:15 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:05:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:51:15 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:05:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:51:15 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:05:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:53:15 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:05:28 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:06:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:53:15 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:06:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:53:16 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:06:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juni 11, 2022 3:53:16 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juni 13, 2022 1:06:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:06:46 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:22:57 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:30:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:30:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:30:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:30:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:30:32 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:40:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:40:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:40:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:40:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 1:40:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:06:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:06:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:06:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:06:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:06:49 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:08:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:08:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:08:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:08:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 2:08:13 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.

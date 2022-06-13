@@ -33,7 +33,7 @@ public class EnemyLogic {
                 EnemySpawn.spawn(new Slime());
 
 
-                System.out.println("spawned");
+
 
             }
 

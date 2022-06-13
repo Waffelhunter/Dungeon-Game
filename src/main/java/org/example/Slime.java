@@ -23,10 +23,13 @@ public class Slime extends Creature implements IUpdateable {
 
 
 
+
+
     public Slime(){
         super("Slime");
-        this.setTeam(2);
+        this.setTeam(1);
         this.addTag("enemy");
+
 
 
 
@@ -38,6 +41,7 @@ public class Slime extends Creature implements IUpdateable {
             this.die();
             Game.world().environment().remove(this);
         }
+
         if(this.isDead()){
             return;
         }
@@ -47,7 +51,9 @@ public class Slime extends Creature implements IUpdateable {
             this.angle = Game.random().nextInt(360);
             this.lastAngleChange = currentTick;
         }
-        Game.physics().move(this,angle, this.getTickVelocity());
+
+        //Game.physics().move(this,angle, this.getTickVelocity());
+        Game.physics().move(this,Player.instance().getCenter(),this.getTickVelocity());
 
 
         }

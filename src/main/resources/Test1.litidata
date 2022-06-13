@@ -5,7 +5,10 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -42,7 +45,10 @@
 0,0,0,0,0,0,0,0,0,125,189,0,189,189,170,170,
 0,0,0,0,0,0,0,0,0,125,189,189,189,170,188,189
 </chunk>
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -79,7 +85,10 @@
 170,170,189,189,189,189,123,0,0,0,0,0,0,0,0,0,
 189,189,189,189,189,189,123,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -116,7 +125,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -153,7 +165,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                 
+                                                                                                                
+    
+    
+    
     
     
     
@@ -260,7 +275,10 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -297,7 +315,10 @@
 0,0,0,0,0,0,189,0,189,167,167,167,167,167,167,167,
 0,0,0,0,0,0,0,189,189,189,167,189,167,167,167,167
 </chunk>
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -334,7 +355,10 @@
 167,167,167,167,167,167,167,167,167,189,0,0,0,0,0,0,
 167,189,167,167,189,167,167,167,167,189,0,0,0,0,0,0
 </chunk>
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -371,7 +395,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                  
+                                                                                                                 
+     
+     
+     
      
      
      
@@ -408,7 +435,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                 
+                                                                                                                
+    
+    
+    
     
     
     
@@ -1032,7 +1062,10 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                            
+                                           
+     
+     
+     
      
      
      
@@ -1055,7 +1088,10 @@
 0,0,0,0,0,0,0,0,0,0,0,126,170,170,170,170,
 0,0,0,0,0,0,0,0,0,0,0,123,170,170,170,170
 </chunk>
-                            
+                                           
+     
+     
+     
      
      
      
@@ -1078,7 +1114,10 @@
 170,170,170,125,0,0,0,0,0,0,0,0,0,0,0,0,
 172,170,170,125,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                            
+                                           
+     
+     
+     
      
      
      
@@ -1101,7 +1140,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                            
+                                           
+     
+     
+     
      
      
      
@@ -1124,7 +1166,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                           
+                                          
+    
+    
+    
     
     
     
@@ -1211,23 +1256,6 @@
       <property name="spritesheetName" value="Ladder"/>
      </properties>
     </object>
-    <object id="6" name="Bibliothek" type="PROP" x="-93" y="-151.5" width="26" height="27.5">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" value="8.8"/>
-      <property name="collisionboxWidth" value="30.0"/>
-      <property name="indestructible" type="bool" value="false"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="spritesheetName" value="Ladder"/>
-      <property name="tags" value="door"/>
-     </properties>
-    </object>
     <object id="7" type="COLLISIONBOX" x="-161.07999" y="-170.23001" width="30.83" height="265.07">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
@@ -1237,7 +1265,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="8" type="COLLISIONBOX" x="95" y="-166" width="26.83" height="265.07">
+    <object id="8" type="COLLISIONBOX" x="95" y="-166" width="26.83" height="265.4">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="STATIC"/>
@@ -1261,132 +1289,6 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="13" type="PROP" x="-86.5" y="12.169983" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="14" type="PROP" x="-129.5" y="-60" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="15" type="PROP" x="49.5" y="11.5" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="16" type="PROP" x="6" y="12" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="17" type="PROP" x="-85.5" y="-60" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="18" type="PROP" x="49" y="-59.5" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="19" type="PROP" x="-129.32999" y="11.830017" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="renderType" value="GROUND"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
     <object id="20" type="PROP" x="-38.5" y="-124.5" width="44" height="52">
      <properties>
       <property name="addShadow" type="bool" value="false"/>
@@ -1404,31 +1306,14 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="24" type="PROP" x="4.5" y="-59" width="44" height="52">
+    <object id="25" type="PROP" x="6" y="-124.5" width="44" height="52">
      <properties>
       <property name="addShadow" type="bool" value="false"/>
       <property name="collision" type="bool" value="true"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
-      <property name="collisionboxWidth" value="44.0"/>
-      <property name="indestructible" type="bool" value="true"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="scaling" type="bool" value="true"/>
-      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
-      <property name="tags" value="target"/>
-     </properties>
-    </object>
-    <object id="25" type="PROP" x="5.5" y="-124.5" width="44" height="52">
-     <properties>
-      <property name="addShadow" type="bool" value="false"/>
-      <property name="collision" type="bool" value="true"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="10.4"/>
+      <property name="collisionboxHeight" value="10.4"/>
       <property name="collisionboxWidth" value="44.0"/>
       <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
@@ -1471,6 +1356,393 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="spawnDirection" value="DOWN"/>
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="32" name="slimeroom" type="PROP" x="-0.33999634" y="-159.34" width="32" height="32">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="12.8"/>
+      <property name="collisionboxWidth" value="12.8"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="redEyeBreak"/>
+      <property name="tags" value="breakablewall"/>
+     </properties>
+    </object>
+    <object id="33" type="PROP" x="21" y="-138.67001" width="14" height="20">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" type="float" value="8.0"/>
+      <property name="collisionboxWidth" type="float" value="5.6000000000000005"/>
+      <property name="flipHorizontally" type="bool" value="false"/>
+      <property name="flipVertically" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="false"/>
+      <property name="spritesheetName" value="ExplosiveBarrel"/>
+      <property name="tags" value="target,explosive"/>
+     </properties>
+    </object>
+    <object id="34" type="PROP" x="51.01001" y="6.01001" width="44" height="52">
+     <properties>
+      <property name="addShadow" type="bool" value="false"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="10.4"/>
+      <property name="collisionboxWidth" value="44.0"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="35" type="PROP" x="-127.67001" y="-27.339996" width="44" height="52">
+     <properties>
+      <property name="addShadow" type="bool" value="false"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="10.4"/>
+      <property name="collisionboxWidth" value="44.0"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="36" type="PROP" x="7.330017" y="5.669983" width="44" height="52">
+     <properties>
+      <property name="addShadow" type="bool" value="false"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="10.4"/>
+      <property name="collisionboxWidth" value="44.0"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="37" type="PROP" x="-83.67001" y="-26.670013" width="44" height="52">
+     <properties>
+      <property name="addShadow" type="bool" value="false"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="10.4"/>
+      <property name="collisionboxWidth" value="44.0"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="38" type="PROP" x="50.669983" y="-56" width="44" height="52">
+     <properties>
+      <property name="addShadow" type="bool" value="false"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="10.4"/>
+      <property name="collisionboxWidth" value="44.0"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="39" type="PROP" x="6.669983" y="-56" width="44" height="52">
+     <properties>
+      <property name="addShadow" type="bool" value="false"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="10.4"/>
+      <property name="collisionboxWidth" value="44.0"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="Bookshelf_mixedColour"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="40" type="PROP" x="-116.5" y="59" width="20" height="15">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="6.2"/>
+      <property name="collisionboxWidth" value="20.0"/>
+      <property name="flipHorizontally" type="bool" value="false"/>
+      <property name="flipVertically" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="Chest"/>
+      <property name="tags" value="interactable"/>
+     </properties>
+    </object>
+   </objectgroup>
+  </map>
+  <map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="32" tileheight="32" infinite="1" nextlayerid="4" nextobjectid="1" name="slimeroom">
+   <properties>
+    <property name="GRAVITY" type="int" value="0"/>
+   </properties>
+   <tileset firstgid="1" name="2.0" tilewidth="32" tileheight="32" tilecount="242" columns="22">
+    <image source="2.0.png" width="704" height="352"/>
+   </tileset>
+   <layer id="1" name="Kachelebene 1" width="32" height="32">
+    <data encoding="csv">
+                  
+     
+     
+     <chunk x="-16" y="-16" width="16" height="16">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,101,102,102,102,102,102,102,
+0,0,0,0,0,0,0,0,0,123,80,80,80,121,80,80
+</chunk>
+                  
+     
+     
+     <chunk x="0" y="-16" width="16" height="16">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+102,103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+80,125,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+                  
+     
+     
+     <chunk x="-16" y="0" width="16" height="16">
+0,0,0,0,0,0,0,0,0,123,80,80,80,79,80,80,
+0,0,0,0,0,0,0,0,0,123,189,189,189,189,189,189,
+0,0,0,0,0,0,0,101,102,123,189,189,189,189,189,189,
+0,0,0,0,0,0,0,123,83,75,189,189,189,189,189,189,
+0,0,0,0,0,0,0,123,80,82,189,189,189,189,189,189,
+0,0,0,0,0,0,0,123,189,189,189,189,189,189,189,189,
+0,0,0,0,0,0,0,123,189,189,189,189,189,189,189,189,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+                  
+     
+     
+     <chunk x="0" y="0" width="16" height="16">
+80,125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+189,125,102,102,103,0,0,0,0,0,0,0,0,0,0,0,
+189,80,80,80,125,0,0,0,0,0,0,0,0,0,0,0,
+189,80,80,80,125,0,0,0,0,0,0,0,0,0,0,0,
+189,189,189,189,125,0,0,0,0,0,0,0,0,0,0,0,
+189,189,189,189,125,0,0,0,0,0,0,0,0,0,0,0,
+189,189,189,189,125,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+                 
+    
+    
+    </data>
+   </layer>
+   <layer id="3" name="Kachelebene 2" width="32" height="32">
+    <data encoding="csv">
+                  
+     
+     
+     <chunk x="-16" y="0" width="16" height="16">
+0,0,0,0,0,0,0,0,0,0,0,0,40,0,40,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,102,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,63,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,137,138,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,159,160,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+                  
+     
+     
+     <chunk x="0" y="0" width="16" height="16">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,144,193,0,0,0,0,0,0,0,0,0,0,0,0,
+0,192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+                 
+    
+    
+    </data>
+   </layer>
+   <objectgroup id="0" name="default" visible="1">
+    <object id="1" name="summon" type="SPAWNPOINT" x="-96.07999" y="32.950012" width="31" height="30">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="2" type="COLLISIONBOX" x="-256" y="221" width="391" height="31">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="3" type="COLLISIONBOX" x="-196" y="-41" width="245" height="75">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="4" type="COLLISIONBOX" x="127" y="57" width="17" height="166">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="5" type="COLLISIONBOX" x="-263" y="28" width="72" height="130">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="6" type="COLLISIONBOX" x="32" y="-37" width="106" height="161">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="7" type="COLLISIONBOX" x="-267.66998" y="114.33002" width="12.67" height="130">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="tags" value="target"/>
+     </properties>
+    </object>
+    <object id="8" name="EnemySpawn" type="SPAWNPOINT" x="35" y="146.33002" width="54" height="39.34">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="9" name="Bibliothek" type="PROP" x="-96" y="1.5" width="32" height="32">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="7.8"/>
+      <property name="collisionboxWidth" value="12.8"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="door"/>
+      <property name="tags" value="door"/>
      </properties>
     </object>
    </objectgroup>
@@ -1553,7 +1825,7 @@
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAF6ElEQVR4XtVXeVBTRxxeKwESO7ZaFYvF6QxWbUnQaWsRkVOs01bbKodTUXGmtjOdjjoiTm2rtbYClorX1CkjHoABRA6HAA3hUqyKQsh7L+EIwYaXAw1EQ4IkKIfpLvjSZDkE6x/tN/NNNvt2f9+3u7/9vQSA/zMWNoFXeFIQypWB9fObwQz8+XPFZWuQ67e0182Dd95uSL6/XJ3SGaA9g2gM0GR2B+szu0P0uZaVRtSOVXnV4PP/FWJobl2KIUDLfxCszTMFteR3BcovmUJbck2BTYWWD28LutbczTetaOPrljRl6n3lpzsDNN/Q3sS8m+A1PNaE8BHlxk02+KnSjYF0Uc/KjkJziOaiwU8quLdJIuqOVhYbtlDi3gOdssdJj+oHjvZT/YceVnRt0xUYwlVpuvdu/qrzUawRu3PwuOPCHjWPzHgQohf2rjJe6gpqEVhCdVl63zq4QnGu0b8x3xSkyDMFKip6vmirfXTAIO77ySQbSOqrf3y0XzpwZKC274C5uCtacRiawGM/Fbtorji7e4WxqCdUX2gJvYuEz2gWlZ9W80SImfqlYmQEEZnIMwW3lJu3aqssO7U1fXuNNb37TNKBpF5JX3x3gTm6fbeaO/6c2A0T6HxXsK744SpjnimgmRE9RXOLE0jOuRQVt+SY3OPCIerltESZGx+ZSFF7lyQrFwoK7m0U57RFlVeYv1bV9f3cXdd/0Fzbt88Y08qtw3VGxZF2H4WgO4QutKzsgKsWJcpmnEfCYzFFzRMik0mN7pk57WtvFBk2E1WWHW2S/rieaw936Q7dWSJPt74/BdcaBh4BIk7oBw3oT6l4IlzoaWR2C1FgiJJe7Ylpq7R8pT2p96lfSoE/cL1hSOrwSUvr9NejbWVWzqfXFSXKPNJwsdE5xWbkwv1lRJk5WltgWFf/ceOcK7jeMCS1+zTnPQjuQJNRsMMyz/SLmg2iRGrOBAz8w+Py17NhrZDDJFaspaZW43rDcNbgr8++79eADCBhxFTlGgEeeCI8r3v3WkaHb90m6TQJrjcMqUZ/lHg19gbwgGOS4Jw76wasLFdgte9H8X5QvqXgUuBzXNMG+EJx+93gR8PrJkaTRjMwnQOsf811FLBn3ExgneU56R7ef5L2kvhSL5XjujbE0jxJlmF5W4qKd2MsA3NnTzKPZWA0xpMc0QrS6Squa8NOWCySaa/a3xRv5P9CzUxF4kca5qXjgZ6VyMBagjVyRYwlnbO+JJ2bE0h2PjNhpNU/O9n5yEAkwRJ73gazcH0QKWHVwUF/Dp84fm7PccnB+xgi8XiSnb2BZNXAorwR1x80gAbhE5/GzSdcilDG2xMfM0Q2H8XfQ7iUhZOsWw7iPBLERMHOIZfjN+Hp80IrIyr2ANZt04fanJfAI3zs4foFFUzsSJLl+GLypsAOZgfiCfbgFRwvOVNB76nZQ9eSITLxyXesSvtxWZr1158YECCt/Vbg5GBiO+VSFUWwSH5rmAIXeR5ECc3s8FaCdR0lo4MB9IAxcLxxcSke4FnI1BGGKAmRThy8EWgX3hSDV20GwglWLXwo5NNhjRl0WPNEcmEknlV+cCNDFSHOUEWK7Qsasws/Eq5l75Cg1GYAVah4iiM81uBdiSadlC+T4kHHyyciwgTpNFGGKrw2UeoOv79oO4IhupY6HMM6eAvWww70EBng0+FydBypytUFCRQnFRdhmK35rATrK7KJUOwcOFfoKMw845ShY7AZQECOBjOUci1LoKZL4WtYmd76KTwO9uXBI6HYmYwQs61Z6kgh7Iflmn0BjikZJmRHOCb3SbtwL+lC+pCgwsEAwpIa4LGIBCL406wUmYkhnSXoauKMo9hX4OctmFDVuJA9Y0mXyyhOCDxiFHMVCYTfk+wi1Ma1R8RSYnLlFopVPXS27GuMgf2ki2SrxLkpAu7aatKpOoSYXIXaqMiEwXK7mABli6AIDyWaFUxi4sHve2DdKVwgB+72OmMignKqQqtgiNwjwp2aj49FgH9Wp+F9/2n8DV4+9KyAS0IzAAAAAElFTkSuQmCC</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="Slime-walk-up">
-   <image>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</image>
+   <image>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</image>
   </sprite>
   <sprite width="7" height="7" imageformat="PNG" name="Splitball-idle-down">
    <image>iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAyklEQVR4XmNYJVMvtEKkKWKlaMv/dYr1/9fINP5fI9Qatkq8WZFhuUi9CUhip1v+/z3+uf93e+f9Xy3Z/G+FcOt1hpViTf+3Oxb9PxiX8v/BMq//r7Y6AxUU/l8p3PqfYS3QqEMJ6f/vzvf4/+Xy+v9/3n76/2JjwP91yrX/GVZJNAONLPi/Pzzz/8ut9v/vL3MFmpLxf4MGUBJsp0jL/63WJUDji/9vty/6v9mk/P8qucZ9DJulGrhgCtbIN/xfKdb8H8RfJVMoBAANxG8M05LFdgAAAABJRU5ErkJggg==</image>

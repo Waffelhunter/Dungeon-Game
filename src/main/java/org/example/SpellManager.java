@@ -4,7 +4,9 @@ import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.Creature;
 
 public class SpellManager {
-   public static int spellType = 1;
+    //defines the current spell type
+    public static int spellType = 1;
+    //indicates if a spell is currently used
     public static int state = 0;
 
     public static Boolean ShattersExist = false;
@@ -16,7 +18,7 @@ public class SpellManager {
     public static int PoisonShotCooldown;
     public static boolean PoisonShotUnlocked;
     public static int ShatterShotCooldown;
-    public static boolean ShatterShotUnlocked;
+    public static boolean ShatterShotUnlocked = true;
 
 public static void setSpellType(int spell){
     switch(spell) {
@@ -32,6 +34,8 @@ public static void setSpellType(int spell){
         case 3:
             break;
         case 4:
+            break;
+        default:
             break;
     }
 

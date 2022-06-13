@@ -12,17 +12,15 @@ public class InteractableObjects extends Entity {
     public static String currentMap = "Bibliothek";
     static CollisionBox collider = new CollisionBox(20, 20);
 
-    public InteractableObjects() {
 
-    }
 
     public static void Interact() {
         Collection<Prop> Storage = Game.world().environment().getProps("interactable");
         Collection<Prop> Gateway = Game.world().environment().getProps("door");
         Collection<Prop> Spellcrates = Game.world().environment().getProps("spells");
         for (Prop p : Storage) {
-            collider.setLocation(p.getCenter());
 
+            collider.setLocation(p.getCenter());
             collider.setCollision(false);
             collider.setName("collider");
 
@@ -43,24 +41,24 @@ public class InteractableObjects extends Entity {
             //Door interaction
             for (Prop pr : Gateway) {
                 pr.setCollision(false);
-                if (pr.getCollisionBox().intersects(Player.instance().getBoundingBox())) {
+                if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())) {
 
-                    Game.world().unloadEnvironment();
                     Game.world().loadEnvironment(pr.getName());
                     currentMap = pr.getName();
+                    Game.world().camera().setFocus(Game.world().environment().getCenter());
 
-                    Game.world().camera().setFocus(Game.world().loadEnvironment(pr.getName()).getCenter());
 
-                    PlayerLogic.Logic();
+
 
                 }
             }
         }
         for (Prop s : Spellcrates) {
-            collider.setLocation(s.getCenter());
 
+            collider.setLocation(s.getCenter());
             collider.setCollision(false);
             collider.setName("collider");
+
             if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())) {
                 Spellscroll spell = new Spellscroll(s.getName());
                 Game.world().environment().add(spell);

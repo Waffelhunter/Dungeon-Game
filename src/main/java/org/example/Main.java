@@ -17,11 +17,12 @@ Main {
         PlayerLogic.Logic();
         EnemyLogic.Logic();
 
+
         UserInput.Input();
         Colission colission = new Colission();
 
         //load the Liti Library
-        Resources.load("Test.litidata");
+        Resources.load("Test1.litidata");
         //set the Scale of the Game: pixles * X
 
         Game.graphics().setBaseRenderScale(3);

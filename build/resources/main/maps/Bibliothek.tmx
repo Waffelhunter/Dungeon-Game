@@ -415,44 +415,6 @@
     <property name="spawnPivot" value="DIMENSION_CENTER"/>
    </properties>
   </object>
-  <object id="101" type="PROP" x="340" y="199" width="14" height="20">
-   <properties>
-    <property name="addShadow" type="bool" value="true"/>
-    <property name="collision" type="bool" value="true"/>
-    <property name="collisionAlign" value="CENTER"/>
-    <property name="collisionType" value="DYNAMIC"/>
-    <property name="collisionValign" value="DOWN"/>
-    <property name="collisionboxHeight" type="float" value="8.0"/>
-    <property name="collisionboxWidth" type="float" value="5.6000000000000005"/>
-    <property name="flipHorizontally" type="bool" value="false"/>
-    <property name="flipVertically" type="bool" value="false"/>
-    <property name="indestructible" type="bool" value="false"/>
-    <property name="material" value="UNDEFINED"/>
-    <property name="rotationSprite" value="NONE"/>
-    <property name="scaling" type="bool" value="false"/>
-    <property name="spritesheetName" value="ExplosiveBarrel"/>
-    <property name="tags" value="target,explosive"/>
-   </properties>
-  </object>
-  <object id="102" type="PROP" x="357" y="213" width="14" height="20">
-   <properties>
-    <property name="addShadow" type="bool" value="true"/>
-    <property name="collision" type="bool" value="true"/>
-    <property name="collisionAlign" value="CENTER"/>
-    <property name="collisionType" value="DYNAMIC"/>
-    <property name="collisionValign" value="DOWN"/>
-    <property name="collisionboxHeight" type="float" value="8.0"/>
-    <property name="collisionboxWidth" type="float" value="5.6000000000000005"/>
-    <property name="flipHorizontally" type="bool" value="false"/>
-    <property name="flipVertically" type="bool" value="false"/>
-    <property name="indestructible" type="bool" value="false"/>
-    <property name="material" value="UNDEFINED"/>
-    <property name="rotationSprite" value="NONE"/>
-    <property name="scaling" type="bool" value="false"/>
-    <property name="spritesheetName" value="ExplosiveBarrel"/>
-    <property name="tags" value="target,explosive"/>
-   </properties>
-  </object>
   <object id="103" type="PROP" x="300" y="254" width="14" height="20">
    <properties>
     <property name="addShadow" type="bool" value="true"/>
@@ -499,6 +461,31 @@
     <property name="rotationSprite" value="NONE"/>
     <property name="spritesheetName" value="redEyeBreak"/>
     <property name="tags" value="breakablewall"/>
+   </properties>
+  </object>
+  <object id="106" name="EnemySpawn" type="SPAWNPOINT" x="197.14" y="283.73" width="54" height="39.34">
+   <properties>
+    <property name="collisionAlign" value="CENTER"/>
+    <property name="collisionType" value="DYNAMIC"/>
+    <property name="collisionValign" value="DOWN"/>
+    <property name="spawnDirection" value="DOWN"/>
+    <property name="spawnPivot" value="DIMENSION_CENTER"/>
+   </properties>
+  </object>
+  <object id="107" name="Blitz" type="PROP" x="351" y="236" width="20" height="15">
+   <properties>
+    <property name="addShadow" type="bool" value="true"/>
+    <property name="collision" type="bool" value="true"/>
+    <property name="collisionAlign" value="CENTER"/>
+    <property name="collisionType" value="DYNAMIC"/>
+    <property name="collisionValign" value="DOWN"/>
+    <property name="collisionboxHeight" type="float" value="6.0"/>
+    <property name="collisionboxWidth" type="float" value="8.0"/>
+    <property name="indestructible" type="bool" value="false"/>
+    <property name="material" value="UNDEFINED"/>
+    <property name="rotationSprite" value="NONE"/>
+    <property name="spritesheetName" value="Spellcrate_Blitz"/>
+    <property name="tags" value="spells"/>
    </properties>
   </object>
  </objectgroup>

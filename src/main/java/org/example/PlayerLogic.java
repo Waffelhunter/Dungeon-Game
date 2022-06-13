@@ -19,8 +19,8 @@ public final class PlayerLogic {
             if (summon != null){
 
                 summon.spawn(Player.instance());
-                //Player.instance().setFacingDirection(Direction.UP);
-                System.out.println("spawned");
+
+
 
             }
         });
