@@ -11,7 +11,7 @@ import de.gurkenlabs.litiengine.physics.MovementController;
 @CollisionInfo(collisionBoxWidth = 21,collisionBoxHeight =5,collision = true)
 @MovementInfo(velocity = 80)
 @EntityInfo(width = 32,height =32 )
-@CombatInfo(hitpoints = 10)
+@CombatInfo(hitpoints = 20)
 
 
 public class Player extends Creature implements IUpdateable {
@@ -24,6 +24,7 @@ public class Player extends Creature implements IUpdateable {
     public static Player instance() {
         if (instance == null) {
             instance = new Player();
+            instance.hit(10);
         }
         return instance;
 
