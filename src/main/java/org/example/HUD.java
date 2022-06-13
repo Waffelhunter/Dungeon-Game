@@ -31,7 +31,7 @@ public class HUD extends GuiComponent {
         super.render(g);
         g.setColor(Color.RED);
 
-        if (Game.world().environment() == null || Player.instance().isDead()) {
+        if (Game.world().environment() == null ) {
             return;
 
         }

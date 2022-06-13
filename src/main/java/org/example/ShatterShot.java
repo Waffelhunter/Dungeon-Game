@@ -38,7 +38,7 @@ public class ShatterShot extends Creature implements IUpdateable {
     }
 
     private ShatterShot() {
-        super("Feuerball");
+        super("Blitzshot");
 
         moves = 0;
     }
