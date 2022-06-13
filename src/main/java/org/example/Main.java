@@ -1,29 +1,24 @@
 package org.example;
 
 import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.entities.Spawnpoint;
-import de.gurkenlabs.litiengine.environment.GameWorld;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Resources;
 
-import java.awt.geom.Point2D;
+import org.example.UI.InGameScreen;
+import org.example.entities.BreakableWall;
+import org.example.entities.ExplosiveBarrel;
+import org.example.entities.Player;
+import org.example.logic.GameManager;
 
 public class
 Main {
     public static void main(String[] args) {
 
         Game.init(args);
-        PlayerLogic.Logic();
-        EnemyLogic.Logic();
+        GameManager.init();
 
-
-        UserInput.Input();
-        Colission colission = new Colission();
-
-        //load the Liti Library
-        Resources.load("Test1.litidata");
-        //set the Scale of the Game: pixles * X
+        Resources.load("resources/Test1.litidata");
 
         Game.graphics().setBaseRenderScale(3);
 
@@ -35,7 +30,7 @@ Main {
         c1.getViewport();
         Game.world().camera().setFocus(290,245);
 
-        Game.audio().setListenerLocationCallback((e)-> Player.instance().getCenter());
+        Game.audio().setListenerLocationCallback(e -> Player.instance().getCenter());
         Game.audio().setMaxDistance(1000);
 
         PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
