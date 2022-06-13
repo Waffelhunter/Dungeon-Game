@@ -44,6 +44,7 @@ public class InteractableObjects extends Entity {
                 if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())) {
 
                     Game.world().loadEnvironment(pr.getName());
+
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
 

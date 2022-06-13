@@ -16,9 +16,9 @@ public class life extends Prop implements IUpdateable {
 
     @Override
     public void update() {
-        if(this.getBoundingBox().intersects(Player.instance().getCollisionBox()) && Player.instance().getHitPoints().getRelativeCurrentValue()<Player.instance().getHitPoints().getMax()){
+        if(this.getBoundingBox().intersects(Player.instance().getCollisionBox()) && Player.instance().getHitPoints().get()<Player.instance().getHitPoints().getMax()-10){
             Game.world().environment().remove(this);
-            Player.instance().getHitPoints().setToMax();
+            Player.instance().hit(-5);
 
        }
 

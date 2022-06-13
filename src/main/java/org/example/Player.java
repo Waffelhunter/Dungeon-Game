@@ -18,6 +18,8 @@ public class Player extends Creature implements IUpdateable {
     private static Player instance;
     static CollisionBox c = new CollisionBox(10,10);
 
+    static int armor = 0;
+
 
 
 

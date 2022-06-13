@@ -28,6 +28,7 @@ public final class PlayerLogic {
     public static void respawn(){
         if(Player.instance().isDead()){
             Player.instance().resurrect();
+            Player.instance().hit(10-Player.armor);
             Player.instance().setLocation(Game.world().environment().getSpawnpoint("summon").getLocation());
 
         }
