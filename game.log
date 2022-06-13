@@ -320,3 +320,57 @@ Juni 13, 2022 9:05:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
 WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
 Juni 13, 2022 9:05:14 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:20:41 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:20:41 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:20:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:20:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:20:42 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:26:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "123" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:26:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "1234" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:26:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:26:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "hi" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:26:24 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "slimeroom" is greater than the supported version 1.2.x. Some features may not work.
+Juni 13, 2022 9:26:24 PM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.ExceptionInInitializerError
+	at org.example.InGameScreen.initializeComponents(InGameScreen.java:19)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.<init>(GuiComponent.java:182)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.<init>(GuiComponent.java:113)
+	at de.gurkenlabs.litiengine.gui.screens.Screen.<init>(Screen.java:14)
+	at de.gurkenlabs.litiengine.gui.screens.GameScreen.<init>(GameScreen.java:18)
+	at org.example.InGameScreen.<init>(InGameScreen.java:15)
+	at org.example.Main.main(Main.java:31)
+Caused by: de.gurkenlabs.litiengine.resources.ResourceLoadException: javax.imageio.IIOException: Can't get input stream from URL!
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
+	at org.example.HUD.<clinit>(HUD.java:18)
+	... 7 more
+Caused by: javax.imageio.IIOException: Can't get input stream from URL!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1409)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:48)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:12)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
+	... 11 more
+Caused by: java.io.FileNotFoundException: C:\LitiTest 18.05\src\main\resources\hud\Rüstung.png (Das System kann die angegebene Datei nicht finden)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
+	at java.base/java.net.URL.openStream(URL.java:1161)
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1407)
+	... 14 more
+

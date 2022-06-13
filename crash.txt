@@ -1,5 +1,49 @@
-Mon Jun 13 20:53:27 CEST 2022 Main Update Loop threw an exception:
-java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.gui.screens.ScreenManager.current()" because the return value of "de.gurkenlabs.litiengine.Game.screens()" is null
-	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:127)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:93)
-	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+Mon Jun 13 21:26:24 CEST 2022 main threw an exception:
+java.lang.ExceptionInInitializerError
+	at org.example.InGameScreen.initializeComponents(InGameScreen.java:19)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.<init>(GuiComponent.java:182)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.<init>(GuiComponent.java:113)
+	at de.gurkenlabs.litiengine.gui.screens.Screen.<init>(Screen.java:14)
+	at de.gurkenlabs.litiengine.gui.screens.GameScreen.<init>(GameScreen.java:18)
+	at org.example.InGameScreen.<init>(InGameScreen.java:15)
+	at org.example.Main.main(Main.java:31)
+Caused by: de.gurkenlabs.litiengine.resources.ResourceLoadException: javax.imageio.IIOException: Can't get input stream from URL!
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
+	at org.example.HUD.<clinit>(HUD.java:18)
+	... 7 more
+Caused by: javax.imageio.IIOException: Can't get input stream from URL!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1409)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:48)
+	at de.gurkenlabs.litiengine.resources.Images.load(Images.java:12)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
+	... 11 more
+Caused by: java.io.FileNotFoundException: C:\LitiTest 18.05\src\main\resources\hud\Rüstung.png (Das System kann die angegebene Datei nicht finden)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
+	at java.base/java.net.URL.openStream(URL.java:1161)
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1407)
+	... 14 more
+
+====Runtime Information====
+Operating System: Windows 10
+	Architecture: amd64
+	Version: 10.0
+Memory:
+	Max heap size: 4,0 GiB
+	Current heap size: 256,0 MiB
+	Heap used: 51,4 MiB
+	Free heap: 204,6 MiB
+Java Version: Java(TM) SE Runtime Environment 17.0.3.1+2-LTS-6 
+	Vendor: Oracle Corporation
+Uptime: PT1.651S
+Screens: 2
+	Screen 0: 1920x1080@60hz
+	Screen 1: 1920x1080@59hz
+
