@@ -13,8 +13,8 @@ import java.awt.image.BufferedImage;
 
 public class HUD extends GuiComponent {
 
-    private final BufferedImage HEART = Imaging.scale(Resources.images().get("life.png"),5.0);
-    private final BufferedImage HEARTEMPTY  = Imaging.scale(Resources.images().get("herzleer.png"),5.0);
+    private static final BufferedImage HEART = Imaging.scale(Resources.images().get("src/main/resources/hud/life.png"),0.5);
+    private static final BufferedImage HEARTEMPTY = Imaging.scale(Resources.images().get("src/main/resources/hud/herzleer.png"),0.5);
 
 
     private static final int PADDING = 10;
@@ -36,10 +36,10 @@ public void render(Graphics2D g) {
     this.renderHP(g);
 }
     private void renderHP(Graphics2D g){
-        double y = Game.window().getResolution().getHeight() - PADDING*2 - HEART.getHeight();
-        double x = Game.window().getResolution().getWidth() /2.0 - ((Player.instance().getHitPoints().getMax()*(HEART.getWidth()+PADDING)*0.5) - PADDING);
+        double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING*7 - HEART.getHeight();
+        double x = Game.window().getResolution().getWidth()/2 - ((Player.instance().getHitPoints().getMax()*(HEART.getWidth()+PADDING)*1.3) - PADDING);
         for(int i = 0; i < Player.instance().getHitPoints().getMax();i++){
-          BufferedImage img = i < Player.instance().getHitPoints().getRelativeCurrentValue() ? HEART : HEARTEMPTY;
+          BufferedImage img = i < Player.instance().getHitPoints().get() ? HEART : HEARTEMPTY;
             ImageRenderer.render(g,img, x + i * img.getWidth() + PADDING, y);
 
         }
