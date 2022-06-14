@@ -1,29 +1,30 @@
 package org.example;
+
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
-import de.gurkenlabs.litiengine.entities.behavior.State;
-import de.gurkenlabs.litiengine.input.KeyboardEntityController;
-import de.gurkenlabs.litiengine.physics.Collision;
-import de.gurkenlabs.litiengine.physics.IMovementController;
 
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
 import java.util.Collection;
 
 
-@CollisionInfo(collisionBoxWidth = 10,collisionBoxHeight =10,collision = true)
+@CollisionInfo(collisionBoxWidth = 10, collisionBoxHeight = 10, collision = true)
 @MovementInfo(velocity = 60)
-@EntityInfo(width = 35,height =41 )
+@EntityInfo(width = 35, height = 41)
 @CombatInfo(hitpoints = 1)
 public class Fireball extends Creature implements IUpdateable {
     private static Fireball instance;
 
 
     private static int moves = 0;
+    private int angle;
 
 
-
+    private Fireball() {
+        super("Feuerball");
+        this.setAngle(Player.instance().getAngle());
+        Game.physics().move(this, (int) this.getAngle(), 1000);
+        moves = 0;
+    }
 
     public static Fireball instance() {
         if (instance == null) {
@@ -32,24 +33,6 @@ public class Fireball extends Creature implements IUpdateable {
         }
         return instance;
     }
-
-    private Fireball() {
-        super("Feuerball");
-
-        moves = 0;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Override
     public void update() {
@@ -107,7 +90,22 @@ public class Fireball extends Creature implements IUpdateable {
                         p.hit(50);
 
                         if (p.getState() == PropState.DESTROYED && !p.hasTag("looted")) {
-                            life h = new life("life");
+                            int i = Game.random().nextInt(3);
+                            Prop h;
+                            switch (i) {
+                                case 0:
+                                    h = new life("life");
+                                    break;
+
+                                case 1:
+                                    h = new Armor();
+                                    break;
+
+                                default:
+                                    h = null;
+                                    break;
+                            }
+
                             Game.world().environment().add(h);
                             h.setLocation(p.getX(), p.getY());
                             p.addTag("looted");

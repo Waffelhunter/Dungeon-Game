@@ -1,7 +1,6 @@
 package org.example;
 
 import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.physics.Collision;
 
 public class ProjectileLogic {
     public static String fd;

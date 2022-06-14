@@ -5,7 +5,8 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -45,7 +46,8 @@
 0,0,0,0,0,0,0,0,0,125,189,0,189,189,170,170,
 0,0,0,0,0,0,0,0,0,125,189,189,189,170,188,189
 </chunk>
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -85,7 +87,8 @@
 170,170,189,189,189,189,123,0,0,0,0,0,0,0,0,0,
 189,189,189,189,189,189,123,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -125,7 +128,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -165,7 +169,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                
+                                                                                                                     
+    
     
     
     
@@ -275,7 +280,8 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -315,7 +321,8 @@
 0,0,0,0,0,0,189,0,189,167,167,167,167,167,167,167,
 0,0,0,0,0,0,0,189,189,189,167,189,167,167,167,167
 </chunk>
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -355,7 +362,8 @@
 167,167,167,167,167,167,167,167,167,189,0,0,0,0,0,0,
 167,189,167,167,189,167,167,167,167,189,0,0,0,0,0,0
 </chunk>
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -395,7 +403,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                 
+                                                                                                                      
+     
      
      
      
@@ -435,7 +444,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                
+                                                                                                                     
+    
     
     
     
@@ -1062,7 +1072,8 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                           
+                                                
+     
      
      
      
@@ -1088,7 +1099,8 @@
 0,0,0,0,0,0,0,0,0,0,0,126,170,170,170,170,
 0,0,0,0,0,0,0,0,0,0,0,123,170,170,170,170
 </chunk>
-                                           
+                                                
+     
      
      
      
@@ -1114,7 +1126,8 @@
 170,170,170,125,0,0,0,0,0,0,0,0,0,0,0,0,
 172,170,170,125,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                           
+                                                
+     
      
      
      
@@ -1140,7 +1153,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                           
+                                                
+     
      
      
      
@@ -1166,7 +1180,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                          
+                                               
+    
     
     
     
@@ -1542,7 +1557,8 @@
    </tileset>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                  
+                       
+     
      
      
      <chunk x="-16" y="-16" width="16" height="16">
@@ -1563,7 +1579,8 @@
 0,0,0,0,0,0,0,0,0,101,102,102,102,102,102,102,
 0,0,0,0,0,0,0,0,0,123,80,80,80,121,80,80
 </chunk>
-                  
+                       
+     
      
      
      <chunk x="0" y="-16" width="16" height="16">
@@ -1584,7 +1601,8 @@
 102,103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 80,125,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                  
+                       
+     
      
      
      <chunk x="-16" y="0" width="16" height="16">
@@ -1605,7 +1623,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                  
+                       
+     
      
      
      <chunk x="0" y="0" width="16" height="16">
@@ -1626,14 +1645,16 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                 
+                      
+    
     
     
     </data>
    </layer>
    <layer id="3" name="Kachelebene 2" width="32" height="32">
     <data encoding="csv">
-                  
+                       
+     
      
      
      <chunk x="-16" y="0" width="16" height="16">
@@ -1654,7 +1675,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                  
+                       
+     
      
      
      <chunk x="0" y="0" width="16" height="16">
@@ -1675,7 +1697,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                 
+                      
+    
     
     
     </data>
@@ -1806,6 +1829,9 @@
   <sprite width="10" height="17" imageformat="PNG" name="Feuerball-idle-up">
    <image>iVBORw0KGgoAAAANSUhEUgAAAB4AAAARCAYAAADKZhx3AAABWUlEQVR4XrWSvUoEMRDH04kIitzu2liplQ+gr+cph8V5V1hoJX5xNr6BhYKIL6GdYGtxjUU248wmmXyw0YC5Pwy7mfllZjKJEJ7agwqcDcCP+SrGcXBSQ3vXaDsc8KZFcRocVg5iuCdhKY67M0H5sA7yac3BNklhThe+Rce0Bvm8GhiB6rx2yQpyQhI4Q/Ci6YLqYwbq857B9qwGhUxpTvB4aCwUfJuAfN0H+WjGc4IgMYU5d8/kxE7lyy6Ce3p9o+8keDQFOQ2O9dPnkVxrCO1rUZyA8cZKO0In2ZWBLw1IPtNlDkffvzguzJDuqIPtP0M++0+Oi/OJTneWGBxWKujOqDtRxMUMKcXBcbPVl1e/chOgTTDdXOaYtyHgzMRszPr8b7KgVTw2Narm/tpXnCi1DhpOFcfCczzNe+xPKZnIU1ZhUnzqlL6Pmu1fExnlMJ1yC+cm7ON+AAFcWqtEABYpAAAAAElFTkSuQmCC</image>
   </sprite>
+  <sprite width="17" height="10" imageformat="PNG" name="Feuerball.xml">
+   <image>iVBORw0KGgoAAAANSUhEUgAAADMAAAAKCAYAAAAZ1GZPAAABVklEQVR4XsWUsU7DMBCGuyGERIWamIUJmPoA8HqkqGIo7cAAE4KCysIbMICEEC8BGxIrQxeG2Mf5bF8uoakaB4lf+odT7v+c8zXtdFaUzhLIjxLQ3tXnqyiWoYdFb2MGNSIARtsbIUSeKdC3qqhrYPLwWIZUa4Z9IfIoBX2nnC/RE19nyyGcj2SU8pEMEpztr9HEFmIDeBP58yaboeO0FtSGETYbzcBiTkE/Kfnah1/6oN/GYD5mrn7YKkALhvkThh2gKYMDWfLOEAwHgG3MXw/Qh2A+7x3kqVuC2Mz3sdrjfCRDmlgNGfIyWDiYoQOusGnqmvPH7u/1DnoI6bmDxUvEMqTgRO22ZfA/GW/M+saHpAfuWTVvxTf7nwwzTOYw2VkPtR/qi0Cn+JGdp2Au3McWLPNBpQ01ZMgN2+3EMBZKNhn8qE0IZ/VhOQjVEYyg6k/XahnjB8WxWquAGgWvAAAAAElFTkSuQmCC</image>
+  </sprite>
   <sprite width="13" height="20" imageformat="PNG" name="Hero-dead">
    <image>iVBORw0KGgoAAAANSUhEUgAAAE4AAAAUCAYAAAAjvwuMAAACxElEQVR4Xu2WTYvTQBjHK4giCh48ihfxrp9APXrxU3h2vXvyS+iHWLG7iG8Hj75cFi8uiCC7uN1uK9gmM5OkS5Nm/D9tppt9mqSd5yCC/cHQkvn/87xkZpJWa82aNTXYWN/PdHCE0c102J8Y9YRr/gt8mmAT8yyPdYYxgqedR2ovj3QyiVTMtRyfOH+dWWKzkZrgLp8vY609i4KjVZtgo+imjc0Ao0f68oBvlBv9gXsI3zhlfOqZ42Oi5KDrpGpIT5WK2Z56VbDHtY7MqM8+TcBqew/9GJot7kGcAzSkxz2EbxxCUo/IVCT/iieX4R5jFWxw/TgIbuWxSTKPJqD4rTwy/UcbD6crh4b7Pw6HB3livnGPJA5RzK9czxRfEyWH+c6CvkgOD+Al92SR2mlsQmz63IMVt43m0Q5YiIMz69d0Rdrdc2WPJI6kHpEJ196l4fCtT3J5rKK6JmB04TnU+vAK98ETVujbE2w77JQzXC+JI6lnqQlvpDfcM7u+kFRjcvb4+MaSgrplvQPnkjs+MMLn9Jvq6YobcS0hiSOpZ6kJY3PB1Cq2d/WoTI5oaoIdxY+53nGqEdgFFAPb9CPXOSRxKuporidVwfcK8dyUhoMX3ENkKnx9omPJGXOH6x2+TSDwlnyKj+B9lxPdw2q98DDL+MbxricNg691JjQ1wmfJbe4hkMzvE89qyRGSJhB0piGXLxMV7tvd0y+EKnzjeNeDRj2oM6VK3eN6hw3D69D9LPlmyVl7gWs5vk0gcN9LxXddm8/V4RNHVA8MP7iJfmkOxvNc78CLpTsbRXLJ4BrXVIGH1bFJcpVfXwZWUOWxUYdvHFE9MPScibYvXWtqmgMNP4InxoE84HN14L4XbRJv8utNYLWtvNIckjiSeuamVIef+FwT8OxYO7zMrzchaYQESRxJPd4mSWL/MuJ6xMY1a5r4A5GPPDVMQIJjAAAAAElFTkSuQmCC</image>
   </sprite>
@@ -1880,6 +1906,9 @@
   </sprite>
   <sprite width="13" height="12" imageformat="PNG" name="life.png">
    <image>iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAABD0lEQVR4XqWQy0rDUBRFMzSV+gGKEUvVNG8rTUAcNbaotb76pfoBDoqIAydOnHRU1IlDRSkIWZ7cNGiCRcENh3vZ2WufJJr2HyUDHwYBHNt89+lbcCp+zyn4Gj03A048dX4cuSow2bdB7pwFGbg3LaRTF1O2HMrDXWmN1+HA4XnLgFAmWoOdDeg60PdIuhbaS1tCHTEjASJTgkvQqsrMKSjZrom/Cu2GKnuPrem2tD1qZM1p+KeJ6rzF5td3jfwKkzDdMgMS/6G5wpWtF3/GY7PGa0veP1wuQVXGmwY37nwRyHXvLzIKDEa+zlOgq/NawsPyhrIuLZ1zU+fO1Rl6C78DuS7Migr/Gch168wGPgFTg8r5prLosgAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="13" height="11" imageformat="PNG" name="prop-Armor">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAAAj0lEQVR4XoWRzQkEIQyFncOW4A9iS57swS5EK/QgWI87T3CYidnZwAN9yWc0CnFGjPEjpRwQ9vf45QtjzGitjd77owBreNSfiVLKJRR474dSavMvkEJQCGGK+ls3ruh+CPsuruOStRbAQZkJpZQ2AHLO7V0Qb1fUWr9DOecHgKn9hZbW/9Ra+SGsQJITrfsCldbEro7chdMAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-Blitz">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADlklEQVR4Xu1WS0xTURB9FfFD1LiQWBEiJizUldoElSJ5mKiUCBKwGCUqbaHUFvlFQCXhkfCJxvIRUQqk/AXEqhB+JvLRRAMSKwgIRlzpyp0rXUjfeOe2r0AFlbZLTjLhvsftnZkzZ+48hlnFKlYGkeMLG5Z77zJEHMOsUUsknhzLrEXDtVzOeEREMF6R0m2bOdZ7k/A/3Ot4gNNAJ7IAZr1Suh3+ZqpgsX1dGL13B8e5IQh07uhovFENnztzFtgNmwnrHFAGi/kqCePJuFoShc2p8SrLF6gCAQ2fJ5s1MNOWDLNPs2FL79yCAKw2055mwX3gSgBYSzxkQB8JxkyWmmMQ6Bzt48Nk6lh4Luky0T2cfN86p0sh0D9QHEmzcbSJpiT40HKZMKGjAUy3amGWMFHQ1UmDSZf5z2WE755rl8s9GGeYsKqe8URnV2QB3piJnGSULvfdiO/eVMcTFuaDwAAmm+f1MUEYwn1qtQS14ByQBTTGmgFtRTy072aUxWxU2ilfyj49ySIBiMHGgHvAsSzVRX9xDJhrFdRRX2suTD7QwkyrDqYIIwIDuK+OYzc4nuE0UNGkFPQ+GCyN4UdrLsF4QwJMEi1MEbqxBIIYsTtwn1uzF/TQr4+0DJVF85h9T0MWjNWrIMXUAfu7v0Lh4xbanm+NKipc7CTGGQEuBdbWloPFp6Hvbtyievv1fIdrJhNhQUcFifvy1BIvm37cA47jqACf3TrFv7gTA6/unYURw3kYrbkI7+qU8L4xEaZbtNS5IsjN2ROI8OCaVOmXjvwwfrAsmgYwTAIYqYoDc52CH29IpHcDbT1SLrcOJEF8pUmB3x5xJy1I+9beX4vKUNJWCWMkCBVpPVPeiT1CCzt9Ey6AKPm4nw8GYEiR/jTkRvE6QwU0FcfDc30UvCyPhdHqC2A2xsPw/XM8uTnttyXOEpd1IKi/XHvkR2Wq1FKTEQKVKUHQcv0YdBfKYKgEgzgDrytiIS1sF3WsOiqG+qxQunY1AJEQQGVq8JxecxjKdUF/zAU0veIg/XtbcYAOruqMEB6fbSVwSYwiZZDVCU5CNbsTEkiGRQmH6HMTYaKWZNtdFA61maHUeX22NXu1xMcLf+944EohwpYSvg3yiVM0YTQvNENasH1yalh/f8eDnAa2FNYSJ5sm1JdSu6QRpvDCcrXuy0FE24oMJLzjURtCqwkfq7YvIJcp/xeWc7Dc+1Ws4r/wG+zFkyfcDW1sAAAAAElFTkSuQmCC</image>

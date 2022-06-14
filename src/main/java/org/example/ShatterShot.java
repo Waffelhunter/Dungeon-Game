@@ -16,9 +16,6 @@ public class ShatterShot extends Creature implements IUpdateable {
     private static ShatterShot instance;
 
     private static int moves = 0;
-
-    private Boolean fullyShattered;
-
     ShatterShards s1;
     ShatterShards s2;
     ShatterShards s3;
@@ -27,7 +24,14 @@ public class ShatterShot extends Creature implements IUpdateable {
     ShatterShards s6;
     ShatterShards s7;
     ShatterShards s8;
+    private Boolean fullyShattered;
 
+
+    private ShatterShot() {
+        super("Blitzshot");
+
+        moves = 0;
+    }
 
     public static ShatterShot instance() {
         if (instance == null) {
@@ -35,12 +39,6 @@ public class ShatterShot extends Creature implements IUpdateable {
             moves = 0;
         }
         return instance;
-    }
-
-    private ShatterShot() {
-        super("Blitzshot");
-
-        moves = 0;
     }
 
     public void shatter() {
@@ -71,11 +69,9 @@ public class ShatterShot extends Creature implements IUpdateable {
         fullyShattered = true;
 
 
-
-
-
     }
-    public void removeShot(){
+
+    public void removeShot() {
         Game.world().environment().remove(ShatterShot.instance());
         SpellManager.state = 0;
         moves = 0;
@@ -87,7 +83,7 @@ public class ShatterShot extends Creature implements IUpdateable {
 
         ShatterShot shatter = instance();
         if (!(Colission.GibColision(shatter))) {
-            if (moves < 30 ) {
+            if (moves < 30) {
                 switch (ProjectileLogic.fd) {
                     case "RIGHT":
 
@@ -117,8 +113,6 @@ public class ShatterShot extends Creature implements IUpdateable {
                 this.removeShot();
 
 
-
-
             }
 
 
@@ -136,7 +130,6 @@ public class ShatterShot extends Creature implements IUpdateable {
                         p.die();
 
 
-
                     } else {
                         p.hit(50);
                         //burn(p);
@@ -152,7 +145,6 @@ public class ShatterShot extends Creature implements IUpdateable {
                 }
                 shatter.shatter();
                 this.removeShot();
-
 
 
             }

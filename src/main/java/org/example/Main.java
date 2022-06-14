@@ -1,13 +1,9 @@
 package org.example;
 
 import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.entities.Spawnpoint;
-import de.gurkenlabs.litiengine.environment.GameWorld;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Resources;
-
-import java.awt.geom.Point2D;
 
 public class
 Main {
@@ -33,9 +29,9 @@ Main {
 
 
         c1.getViewport();
-        Game.world().camera().setFocus(290,245);
+        Game.world().camera().setFocus(290, 245);
 
-        Game.audio().setListenerLocationCallback((e)-> Player.instance().getCenter());
+        Game.audio().setListenerLocationCallback((e) -> Player.instance().getCenter());
         Game.audio().setMaxDistance(1000);
 
         PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
@@ -45,8 +41,6 @@ Main {
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
         Game.world().loadEnvironment("Bibliothek");
-
-
 
 
         Game.start();

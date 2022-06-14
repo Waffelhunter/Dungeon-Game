@@ -13,7 +13,6 @@ public class InteractableObjects extends Entity {
     static CollisionBox collider = new CollisionBox(20, 20);
 
 
-
     public static void Interact() {
         Collection<Prop> Storage = Game.world().environment().getProps("interactable");
         Collection<Prop> Gateway = Game.world().environment().getProps("door");
@@ -47,8 +46,6 @@ public class InteractableObjects extends Entity {
 
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
-
-
 
 
                 }

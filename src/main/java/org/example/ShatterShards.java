@@ -8,7 +8,6 @@ import java.awt.geom.Point2D;
 import java.util.Collection;
 
 
-
 @CollisionInfo(collisionBoxWidth = 4, collisionBoxHeight = 4, collision = false)
 @EntityInfo(width = 7, height = 7)
 @CombatInfo(hitpoints = 1)
@@ -32,7 +31,7 @@ public class ShatterShards extends Creature implements IUpdateable {
 
     }
 
-    public void respawn( Point2D spawn) {
+    public void respawn(Point2D spawn) {
         this.moves = 0;
         this.setLocation(spawn);
         Game.world().environment().add(this);

@@ -4,16 +4,10 @@ import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.Prop;
-import de.gurkenlabs.litiengine.physics.Collision;
 
 import java.util.Collection;
 
 public class Colission {
-
-
-    public void Collision() {
-
-    }
 
 
     public static Boolean GibColision(Creature Spell) {
@@ -49,14 +43,14 @@ public class Colission {
         }
         Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
         for (Creature c : Enemys) {
-            if (c.getCollisionBox().intersects(Spell.getCollisionBox())) {
-                return true;
-
-            }
-            return false;
+            return c.getCollisionBox().intersects(Spell.getCollisionBox());
 
         }
         return false;
+    }
+
+    public void Collision() {
+
     }
 }
 

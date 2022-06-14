@@ -5,22 +5,21 @@ import de.gurkenlabs.litiengine.gui.screens.GameScreen;
 
 import java.awt.*;
 
-public class  InGameScreen extends GameScreen {
-    private HUD hud;
-
-
+public class InGameScreen extends GameScreen {
     public static final String NAME = "INGAME-SCREEN";
+    private HUD hud;
 
     public InGameScreen() {
         super(NAME);
     }
-@Override
+
+    @Override
     protected void initializeComponents() {
-    this.hud = new HUD();
+        this.hud = new HUD();
+        this.getComponents().add(this.hud);
 
-    this.getComponents().add(this.hud);
+    }
 
-}
     @Override
     public void render(Graphics2D g) {
         super.render(g);
