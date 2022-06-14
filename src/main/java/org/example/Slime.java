@@ -20,6 +20,8 @@ public class Slime extends Creature implements IUpdateable {
     private long lastAngleChange;
     private int ANGLE_CHANGE_INTERVAL = 1000;
 
+    private int lastHit = 200;
+
 
 
 
@@ -45,17 +47,34 @@ public class Slime extends Creature implements IUpdateable {
         if(this.isDead()){
             return;
         }
-        final long currentTick = Game.loop().getTicks();
+        if(this.getCollisionBox().intersects(Player.instance().getBoundingBox())) {
+            if (lastHit > 100) {
+                Player.instance().hit(1);
+                lastHit = 0;
+            }
+        }
+        if(Player.instance().isDead()){
+            final long currentTick = Game.loop().getTicks();
 
-        if(angle == 0|| Game.time().since(lastAngleChange) > ANGLE_CHANGE_INTERVAL){
-            this.angle = Game.random().nextInt(360);
-            this.lastAngleChange = currentTick;
+            if(angle == 0|| Game.time().since(lastAngleChange) > ANGLE_CHANGE_INTERVAL){
+                this.angle = Game.random().nextInt(360);
+                this.lastAngleChange = currentTick;
+            }
+
+            Game.physics().move(this,angle, this.getTickVelocity());
+            return;
         }
 
-        //Game.physics().move(this,angle, this.getTickVelocity());
+
+
+
+
+
+
+
         Game.physics().move(this,Player.instance().getCenter(),this.getTickVelocity());
 
-
+        lastHit ++;
         }
 
 
