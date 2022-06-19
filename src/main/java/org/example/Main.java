@@ -6,6 +6,7 @@ import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Resources;
 
 import org.example.UI.InGameScreen;
+import org.example.UI.MenuScreen;
 import org.example.entities.BreakableWall;
 import org.example.entities.ExplosiveBarrel;
 import org.example.entities.Player;
@@ -24,6 +25,8 @@ Main {
 
         //create new Screen from class InGameScreen()
         Game.screens().add(new InGameScreen());
+        Game.screens().add(new MenuScreen());
+
         Camera c1 = new Camera();
 
 
@@ -39,7 +42,8 @@ Main {
 
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
-        Game.world().loadEnvironment("Bibliothek");
+
+        Game.screens().display("MENU");
 
 
 
