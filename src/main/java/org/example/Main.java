@@ -25,14 +25,16 @@ Main {
 
         //create new Screen from class InGameScreen()
         Game.screens().add(new InGameScreen());
+        Game.screens().add(new MenuScreen());
         Camera c1 = new Camera();
 
 
         c1.getViewport();
-        Game.world().camera().setFocus(290, 245);
+
 
         Game.audio().setListenerLocationCallback((e) -> Player.instance().getCenter());
         Game.audio().setMaxDistance(1000);
+
 
         PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
         PropMapObjectLoader.registerCustomPropType(BreakableWall.class);
@@ -40,9 +42,10 @@ Main {
 
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
-        Game.world().loadEnvironment("Bibliothek");
+        Game.world().loadEnvironment("TitleScreen");
 
-
+        Game.screens().display("MENU");
+        Game.world().camera().setFocus(Game.world().environment().getCenter());
         Game.start();
     }
 }
