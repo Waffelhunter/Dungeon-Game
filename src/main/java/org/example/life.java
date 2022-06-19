@@ -16,9 +16,10 @@ public class life extends Prop implements IUpdateable {
 
     @Override
     public void update() {
-        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox()) && Player.instance().getHitPoints().get() < Player.instance().getHitPoints().getMax() - 10) {
+        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox()) && Player.instance().getHitPoints().get() < Player.instance().getHitPoints().getMax() ) {
             Game.world().environment().remove(this);
-            //Player.instance().hit(-5);
+
+            Player.instance().hit(-5);
 
 
         }

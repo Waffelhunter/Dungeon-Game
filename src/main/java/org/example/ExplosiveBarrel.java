@@ -3,17 +3,19 @@ package org.example;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.AnimationInfo;
+import de.gurkenlabs.litiengine.entities.CombatEntityDeathListener;
+import de.gurkenlabs.litiengine.entities.IEntity;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.graphics.animation.Animation;
 import de.gurkenlabs.litiengine.resources.Resources;
 
 import java.util.Collection;
 
-@AnimationInfo(spritePrefix = {"prop-ExplosiveBarrel"})
+@AnimationInfo(spritePrefix = {"prop-ExplosiveBarrel"},deathAnimations = "ExplosiveBarrel_explode")
 
 public class ExplosiveBarrel extends Prop implements IUpdateable {
     private static final String explodeAnimationName = "ExplosiveBarrel_explode";
-    Animation explosion = new Animation(explodeAnimationName, false, false, 200);
+    Animation explosion = new Animation(explodeAnimationName, false, true, 200);
 
     public ExplosiveBarrel() {
         super("prop-ExplosiveBarrel");
@@ -25,14 +27,18 @@ public class ExplosiveBarrel extends Prop implements IUpdateable {
     public void init() {
         this.animations().add(new Animation(Resources.spritesheets().get(explodeAnimationName), false));
         animations().get(explodeAnimationName).setDurationForAllKeyFrames(20000);
+
     }
+
 
 
     @Override
     public void die() {
         //this.init();
-        animations().play(explodeAnimationName);
-        this.explosion.start();
+
+
+
+        this.explosion.setLooping(true);
 
 
         this.addTag("hit");
@@ -40,11 +46,13 @@ public class ExplosiveBarrel extends Prop implements IUpdateable {
 
 
         Game.audio().playSound(Resources.sounds().get("mixkit-shot-light-explosion-1682"), this);
+        this.animations().add(new Animation(Resources.spritesheets().get(explodeAnimationName), false));
 
         this.setCollisionBoxHeight(20);
         this.setCollisionBoxWidth(20);
         this.setCollision(false);
-
+animations().update();
+animations().play(explodeAnimationName);
 
         //Damages Player
         if (this.getCollisionBox().intersects(Player.instance().getBoundingBox())) {

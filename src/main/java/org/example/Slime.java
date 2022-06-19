@@ -23,7 +23,7 @@ public class Slime extends Creature implements IUpdateable {
 
 
     public Slime() {
-        super("Slime");
+        super("Bookmonster");
         this.setTeam(1);
         this.addTag("enemy");
 
@@ -41,7 +41,7 @@ public class Slime extends Creature implements IUpdateable {
         if (this.isDead()) {
             return;
         }
-        if (this.getCollisionBox().intersects(Player.instance().getBoundingBox())) {
+        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox())) {
             if (lastHit > 100) {
                 Player.instance().damage(1);
                 lastHit = 0;

@@ -17,6 +17,7 @@ public class SpellManager {
     public static int ShatterShotCooldown;
     public static boolean ShatterShotUnlocked = true;
 
+
     public static void setSpellType(int spell) {
         switch (spell) {
             case 1:
