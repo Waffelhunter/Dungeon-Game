@@ -3,13 +3,19 @@ package org.example.UI;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.graphics.Camera;
+import de.gurkenlabs.litiengine.graphics.ImageRenderer;
 import de.gurkenlabs.litiengine.gui.screens.Screen;
+import de.gurkenlabs.litiengine.resources.Resources;
+import de.gurkenlabs.litiengine.util.Imaging;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class MenuScreen extends Screen implements IUpdateable {
     private KeyboardMenu mainMenu;
     public long lastPlayed;
+
+    public static final BufferedImage Title = Imaging.scale(Resources.images().get("resources/Menu/Title.png"),6.0);
 
     public MenuScreen() {
         super("Menu");
@@ -25,9 +31,9 @@ public class MenuScreen extends Screen implements IUpdateable {
     protected void initializeComponents() {
         final double centerX = Game.window().getResolution().getWidth() / 2.0;
         final double centerY = Game.window().getResolution().getHeight() * 1 / 2;
-        final double buttonWidth = 450;
+        final double buttonWidth = 550;
 
-        this.mainMenu = new KeyboardMenu(centerX - buttonWidth / 2, centerY * 1.1, buttonWidth, centerY / 2, "Play", "Load", "Collectables ", "Exit");
+        this.mainMenu = new KeyboardMenu(centerX - buttonWidth / 2, centerY * 1.1, buttonWidth, centerY /1.7, "Play", "Load", "Collectables ", "Exit");
         this.getComponents().add(this.mainMenu);
 
         this.mainMenu.onConfirm(c -> {
@@ -62,6 +68,10 @@ public class MenuScreen extends Screen implements IUpdateable {
     public void render(final Graphics2D g) {
         Game.world().environment().render(g);
         super.render(g);
+        final double centerX = Game.window().getResolution().getWidth() / 2.0;
+        final double TitleX = centerX - Title.getWidth()/2;
+        final double TitleY = 200;
+        ImageRenderer.render(g, Title, TitleX, TitleY);
     }
 
     @Override
