@@ -1,4 +1,4 @@
-package org.example;
+package logic;
 
 import creatures.Slime;
 import de.gurkenlabs.litiengine.Game;
