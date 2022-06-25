@@ -1,5 +1,6 @@
 package org.example;
 
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 
 public class ProjectileLogic {

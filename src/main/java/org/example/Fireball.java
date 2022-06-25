@@ -1,8 +1,11 @@
 package org.example;
 
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
+import props.Armor;
+import props.life;
 
 import java.util.Collection;
 

@@ -1,13 +1,12 @@
-package org.example;
+package props;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.AnimationInfo;
-import de.gurkenlabs.litiengine.entities.CombatEntityDeathListener;
-import de.gurkenlabs.litiengine.entities.IEntity;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.graphics.animation.Animation;
 import de.gurkenlabs.litiengine.resources.Resources;
+import creatures.Player;
 
 import java.util.Collection;
 

@@ -1,5 +1,6 @@
 package org.example;
 
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.graphics.ImageRenderer;
 import de.gurkenlabs.litiengine.gui.GuiComponent;

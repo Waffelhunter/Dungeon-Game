@@ -1,8 +1,7 @@
-package org.example;
+package UI;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
-import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.graphics.ImageRenderer;
 import de.gurkenlabs.litiengine.gui.screens.Screen;
 import de.gurkenlabs.litiengine.resources.Resources;
@@ -17,7 +16,7 @@ public class MenuScreen extends Screen implements IUpdateable {
 
     public static final BufferedImage Title = Imaging.scale(Resources.images().get("resources/Menu/Title.png"),6.0);
 
-    protected MenuScreen() {
+    public MenuScreen() {
         super("Menu");
 
     }

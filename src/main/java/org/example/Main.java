@@ -1,9 +1,14 @@
 package org.example;
 
+import UI.MenuScreen;
+import UI.UserInput;
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Resources;
+import props.BreakableWall;
+import props.ExplosiveBarrel;
 
 public class
 Main {

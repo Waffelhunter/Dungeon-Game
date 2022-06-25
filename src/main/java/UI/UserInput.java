@@ -1,6 +1,10 @@
-package org.example;
+package UI;
 
 import de.gurkenlabs.litiengine.input.Input;
+import org.example.PlayerLogic;
+import org.example.ProjectileLogic;
+import org.example.SpellManager;
+import props.InteractableObjects;
 
 import java.awt.event.KeyEvent;
 

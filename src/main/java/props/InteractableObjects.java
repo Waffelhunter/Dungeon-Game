@@ -1,9 +1,10 @@
-package org.example;
+package props;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.Entity;
 import de.gurkenlabs.litiengine.entities.Prop;
+import creatures.Player;
 
 import java.util.Collection;
 

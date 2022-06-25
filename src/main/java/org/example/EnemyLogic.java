@@ -1,5 +1,6 @@
 package org.example;
 
+import creatures.Slime;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
 

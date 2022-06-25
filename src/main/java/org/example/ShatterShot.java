@@ -3,6 +3,7 @@ package org.example;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
+import props.life;
 
 import java.awt.geom.Point2D;
 import java.util.Collection;

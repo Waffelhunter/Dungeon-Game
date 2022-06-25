@@ -1,4 +1,4 @@
-package org.example;
+package props;
 
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.AnimationInfo;
