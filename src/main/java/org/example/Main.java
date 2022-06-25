@@ -11,7 +11,7 @@ Main {
 
         Game.init(args);
         PlayerLogic.Logic();
-        EnemyLogic.Logic();
+        //EnemyLogic.Logic();
 
 
         UserInput.Input();

@@ -26,7 +26,7 @@ public class InteractableObjects extends Entity {
             //colision Box collider is set to the current Prop p position
             //if collider intersects with the Players bounds, use hit() to change the state of the Prop to destroyed
 
-            if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())) {
+            if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())&&!p.isDead()) {
                 p.hit(100);
 
                 //spawn the Loot that's in the chest
