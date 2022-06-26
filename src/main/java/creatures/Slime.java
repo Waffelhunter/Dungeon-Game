@@ -1,5 +1,6 @@
-package org.example;
+package creatures;
 
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;

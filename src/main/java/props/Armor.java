@@ -1,9 +1,10 @@
-package org.example;
+package props;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.Prop;
+import creatures.Player;
 
 @CollisionInfo(collision = false)
 public class Armor extends Prop implements IUpdateable {

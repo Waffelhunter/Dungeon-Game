@@ -1,20 +1,27 @@
 package org.example;
 
+import UI.MenuScreen;
+import UI.UserInput;
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Resources;
+import logic.GameManager;
+import props.BreakableWall;
+import props.ExplosiveBarrel;
 
 public class
 Main {
     public static void main(String[] args) {
 
         Game.init(args);
-        PlayerLogic.Logic();
-        EnemyLogic.Logic();
+
+
 
 
         UserInput.Input();
+        GameManager.init();
         Colission colission = new Colission();
 
         //load the Liti Library

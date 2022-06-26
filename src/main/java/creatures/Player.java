@@ -1,9 +1,10 @@
-package org.example;
+package creatures;
 
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
 import de.gurkenlabs.litiengine.input.KeyboardEntityController;
 import de.gurkenlabs.litiengine.physics.IMovementController;
+import org.example.SpellManager;
 
 @CollisionInfo(collisionBoxWidth = 21, collisionBoxHeight = 5, collision = true)
 @MovementInfo(velocity = 80)
@@ -13,8 +14,8 @@ import de.gurkenlabs.litiengine.physics.IMovementController;
 
 public class Player extends Creature implements IUpdateable {
     static CollisionBox c = new CollisionBox(10, 10);
-    static int armor = 10;
-    static int maxArmor = 10;
+    public static int armor = 10;
+    public static int maxArmor = 10;
     private static Player instance;
 
 

@@ -1,4 +1,4 @@
-package org.example;
+package creatures;
 
 import de.gurkenlabs.litiengine.entities.Creature;
 
