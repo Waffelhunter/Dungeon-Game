@@ -1,4 +1,4 @@
-package org.example;
+package logic;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;

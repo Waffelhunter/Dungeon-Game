@@ -1,8 +1,8 @@
-package org.example;
+package UI;
 
 import de.gurkenlabs.litiengine.Align;
-import de.gurkenlabs.litiengine.gui.ImageComponent;
 import de.gurkenlabs.litiengine.util.Imaging;
+import logic.CollectablesManager;
 
 import java.awt.*;
 

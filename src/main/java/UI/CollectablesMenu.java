@@ -1,4 +1,4 @@
-package org.example;
+package UI;
 
 import de.gurkenlabs.litiengine.graphics.Spritesheet;
 import de.gurkenlabs.litiengine.gui.ImageComponent;

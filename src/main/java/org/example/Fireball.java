@@ -4,6 +4,7 @@ import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.*;
+import logic.Colission;
 import props.Armor;
 import props.life;
 

@@ -21,7 +21,7 @@ public class HUD extends GuiComponent {
     private static final int PADDING = 10;
 
 
-    protected HUD() {
+    public HUD() {
         super(0, 0, Game.window().getResolution().getWidth(), Game.window().getResolution().getHeight());
     }
 
@@ -51,7 +51,7 @@ public class HUD extends GuiComponent {
 
     private void renderArmor(Graphics2D g) {
         double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING * 7 - ARMOR.getHeight();
-        double x = Game.window().getResolution().getWidth() - ((Player.maxArmor * (ARMOR.getWidth() + PADDING) * 0.96) - PADDING);
+        double x = Game.window().getResolution().getWidth() - ((Player.maxArmor * (ARMOR.getWidth() + PADDING) * 0.92) - PADDING);
         for (int i = 0; i < Player.maxArmor; i++) {
             BufferedImage img = i < Player.armor ? ARMOR : ARMOREMPTY;
             ImageRenderer.render(g, img, x + i * img.getWidth() + PADDING, y);

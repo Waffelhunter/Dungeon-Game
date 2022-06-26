@@ -39,6 +39,8 @@ public class MenuScreen extends Screen implements IUpdateable {
             switch (c.intValue()) {
                 case 0:
                     this.startGame();
+                case 2:
+                    this.loadCollects();
                     break;
                 case 3:
                     this.exit();
@@ -94,12 +96,23 @@ public class MenuScreen extends Screen implements IUpdateable {
 
         });
     }
+    public void loadCollects(){
+        this.mainMenu.setEnabled(false);
+        Game.window().getRenderComponent().fadeOut(2500);
+        Game.loop().perform(3500, () -> {
+            Game.screens().display("collectables");
+                    Game.window().getRenderComponent().fadeIn(2500);
+        }
+        );
+    }
+
     @Override
     public void suspend() {
         super.suspend();
         Game.loop().detach(this);
         Game.audio().stopMusic();
     }
+
 
 }
 

@@ -1,5 +1,7 @@
 package org.example;
 
+import UI.ColectablesScreen;
+import UI.InGameScreen;
 import UI.MenuScreen;
 import UI.UserInput;
 import creatures.Player;
@@ -7,6 +9,8 @@ import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Resources;
+import logic.Colission;
+import logic.CollectablesManager;
 import logic.GameManager;
 import props.BreakableWall;
 import props.ExplosiveBarrel;
@@ -22,6 +26,7 @@ Main {
 
         UserInput.Input();
         GameManager.init();
+        CollectablesManager.init();
         Colission colission = new Colission();
 
         //load the Liti Library
@@ -33,6 +38,7 @@ Main {
         //create new Screen from class InGameScreen()
         Game.screens().add(new InGameScreen());
         Game.screens().add(new MenuScreen());
+        Game.screens().add(new ColectablesScreen());
         Camera c1 = new Camera();
 
 

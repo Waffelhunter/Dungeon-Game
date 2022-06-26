@@ -1,12 +1,8 @@
-package org.example;
+package logic;
 
 import de.gurkenlabs.litiengine.resources.Resources;
-import de.gurkenlabs.litiengine.util.Imaging;
-
-import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class CollectablesManager {
     public static BufferedImage[] img = new BufferedImage[50];

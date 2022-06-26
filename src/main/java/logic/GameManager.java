@@ -2,6 +2,7 @@ package logic;
 
 
 
+import creatures.Bookmonster;
 import creatures.Player;
 import creatures.Slime;
 import de.gurkenlabs.litiengine.Game;
@@ -27,7 +28,8 @@ public final class GameManager {
 
     private static void spawnEnemy(Environment e) {
         Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
-        enemySpawn.ifPresent(s -> s.spawn(new Slime()));
+       // enemySpawn.ifPresent(s -> s.spawn(new Slime()));
+        enemySpawn.ifPresent(s -> s.spawn(new Bookmonster()));
     }
 
     private static void spawnPlayer(Environment e) {

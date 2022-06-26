@@ -1,5 +1,8 @@
 package org.example;
 
+import java.awt.*;
+import java.util.List;
+
 public class SpellManager {
     //defines the current spell type
     public static int spellType = 1;
