@@ -40,7 +40,7 @@ public class MenuScreen extends Screen implements IUpdateable {
                 case 0:
                     this.startGame();
                 case 2:
-                    this.loadCollects();
+                    //this.loadCollects();
                     break;
                 case 3:
                     this.exit();
