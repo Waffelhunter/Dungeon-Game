@@ -5,7 +5,18 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -47,7 +58,18 @@
 0,0,0,0,0,0,0,0,0,125,189,0,189,189,170,170,
 0,0,0,0,0,0,0,0,0,125,189,189,189,170,188,189
 </chunk>
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -89,7 +111,18 @@
 170,170,189,189,189,189,123,0,0,0,0,0,0,0,0,0,
 189,189,189,189,189,189,123,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -131,7 +164,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -173,7 +217,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                          
+                                                                                                                                                                                 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -285,7 +340,18 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -327,7 +393,18 @@
 0,0,0,0,0,0,189,0,189,167,167,167,167,167,167,167,
 0,0,0,0,0,0,0,189,189,189,167,189,167,167,167,167
 </chunk>
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -369,7 +446,18 @@
 167,167,167,167,167,167,167,167,167,189,0,0,0,0,0,0,
 167,189,167,167,189,167,167,167,167,189,0,0,0,0,0,0
 </chunk>
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -411,7 +499,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                           
+                                                                                                                                                                                  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -453,7 +552,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                                                                                          
+                                                                                                                                                                                 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1136,7 +1246,18 @@
    <tileset firstgid="1" source="2.0.tsx"/>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                                                     
+                                                                                                            
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1164,7 +1285,18 @@
 0,0,0,0,0,0,0,0,0,0,0,126,170,170,170,170,
 0,0,0,0,0,0,0,0,0,0,0,123,170,170,170,170
 </chunk>
-                                                     
+                                                                                                            
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1192,7 +1324,18 @@
 170,170,170,125,0,0,0,0,0,0,0,0,0,0,0,0,
 172,170,170,125,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                     
+                                                                                                            
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1220,7 +1363,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                     
+                                                                                                            
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1248,7 +1402,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                                                    
+                                                                                                           
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1608,7 +1773,18 @@
    </tileset>
    <layer id="1" name="Kachelebene 1" width="32" height="32">
     <data encoding="csv">
-                            
+                                                                                   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1631,7 +1807,18 @@
 0,0,0,0,0,0,0,0,0,101,102,102,102,102,102,102,
 0,0,0,0,0,0,0,0,0,123,80,80,80,121,80,80
 </chunk>
-                            
+                                                                                   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1654,7 +1841,18 @@
 102,103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 80,125,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                            
+                                                                                   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1677,7 +1875,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                            
+                                                                                   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1700,7 +1909,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                           
+                                                                                  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1709,7 +1929,18 @@
    </layer>
    <layer id="3" name="Kachelebene 2" width="32" height="32">
     <data encoding="csv">
-                            
+                                                                                   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1732,7 +1963,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                            
+                                                                                   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
      
      
@@ -1755,7 +1997,18 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </chunk>
-                           
+                                                                                  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1945,6 +2198,9 @@
   <sprite width="138" height="45" imageformat="PNG" name="Title.png">
    <image>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</image>
   </sprite>
+  <sprite width="4" height="5" imageformat="PNG" name="fart-clouds">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAFCAYAAAAkG+5xAAAAgklEQVR4XmNgAAK7HoH/kfvk/4PY2PiEQMdG8f+zD+vA1aPz8QKQZTAMshSZDZNHdwyyGMgyGAZZisyGyaM7BkUM3QHaBcxY+ciOgInBDEO2NKdTBisf2REwMRTDYBgmBhNHZsMMQAbIFsIMBYnBxJHZ6HrhAGYJujixAGYJujgxAAAz0Ka5f79R8QAAAABJRU5ErkJggg==</image>
+  </sprite>
   <sprite width="13" height="12" imageformat="PNG" name="herzleer.png">
    <image>iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAVUlEQVR4XmNgoBD8R8LEiDP8r6+vB2M0BXDx5rpaFI1wCRjurioHK0AXb66tgWvEkMSHKdJEtEZkDURphGrA0AQCGIoJaQABrKEGFScISNYAAzg1AAB++b/fOTehjgAAAABJRU5ErkJggg==</image>
   </sprite>
@@ -2055,7 +2311,42 @@
    <image source="SynologyDrive/Dokumente/Pixelart/Unbenanntes_Projekt (2).png" width="10" height="15"/>
   </tileset>
  </tilesets>
- <emitters/>
+ <emitters>
+  <emitter emitterDuration="500" height="4.0" maxParticles="1" name="slimeWalkEmitter" particleType="SPRITE" spawnAmount="1" spawnRate="500" updateRate="30" width="4.0">
+   <alphaVariance>0.0</alphaVariance>
+   <animateSprite>false</animateSprite>
+   <loopSprite>true</loopSprite>
+   <collisionType>NONE</collisionType>
+   <requiredQuality>VERYLOW</requiredQuality>
+   <colorVariance>0.0</colorVariance>
+   <colors>
+    <color>#cc00a5bc</color>
+   </colors>
+   <deltaHeight maxValue="0.10000000149011612" minValue="-0.10000000149011612"/>
+   <deltaWidth maxValue="0.10000000149011612" minValue="-0.10000000149011612"/>
+   <velocityX maxValue="0.10000000149011612" minValue="-0.10000000149011612"/>
+   <velocityY maxValue="0.10000000149011612" minValue="-0.10000000149011612"/>
+   <fade>true</fade>
+   <fadeOnCollision>true</fadeOnCollision>
+   <outlineOnly>false</outlineOnly>
+   <antiAliasing>false</antiAliasing>
+   <accelerationX maxValue="0.009999999776482582" minValue="-0.009999999776482582"/>
+   <accelerationY maxValue="0.009999999776482582" minValue="-0.009999999776482582"/>
+   <angle maxValue="360.0" minValue="0.0"/>
+   <deltaAngle maxValue="1.0" minValue="-1.0"/>
+   <originAlign>center</originAlign>
+   <originValign>bottom</originValign>
+   <particleHeight maxValue="6.0" minValue="2.0"/>
+   <particleTTL maxValue="800.0" minValue="500.0"/>
+   <texts>
+    <text>LITI</text>
+   </texts>
+   <particleWidth maxValue="6.0" minValue="2.0"/>
+   <spritesheet>fart-clouds</spritesheet>
+   <offsetX maxValue="4.0" minValue="-4.0"/>
+   <offsetY maxValue="-3.0" minValue="-5.0"/>
+  </emitter>
+ </emitters>
  <blueprints/>
  <sounds>
   <sound name="mixkit-shot-light-explosion-1682">
