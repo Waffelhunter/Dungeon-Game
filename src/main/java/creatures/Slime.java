@@ -7,6 +7,7 @@ import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.CombatInfo;
 import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
+import de.gurkenlabs.litiengine.graphics.emitters.EntityEmitter;
 
 
 @CombatInfo(hitpoints = 100)
@@ -21,15 +22,27 @@ public class Slime extends Creature implements IUpdateable {
     private final int ANGLE_CHANGE_INTERVAL = 1000;
 
     private int lastHit = 200;
+    private static final int STEP_DELAY = 360;
+    private long lastWalkDust;
 
 
     public Slime() {
         super("Bookmonster");
         this.setTeam(1);
         this.addTag("enemy");
-
-
+        onMoved(
+                event -> {
+                    if (Game.time().since(this.lastWalkDust) < STEP_DELAY) {
+                        return;
+                    }
+                    this.lastWalkDust = Game.loop().getTicks();
+                    EntityEmitter walkDust = new EntityEmitter(this, "slimeWalkEmitter", false);
+                    Game.world().environment().add(walkDust);
+                });
     }
+
+
+
 
     @Override
     public void update() {
