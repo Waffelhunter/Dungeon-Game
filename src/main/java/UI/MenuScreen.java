@@ -6,6 +6,7 @@ import de.gurkenlabs.litiengine.graphics.ImageRenderer;
 import de.gurkenlabs.litiengine.gui.screens.Screen;
 import de.gurkenlabs.litiengine.resources.Resources;
 import de.gurkenlabs.litiengine.util.Imaging;
+import logic.GameManager;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -40,7 +41,7 @@ public class MenuScreen extends Screen implements IUpdateable {
                 case 0:
                     this.startGame();
                 case 2:
-                    //this.loadCollects();
+                    this.loadCollects();
                     break;
                 case 3:
                     this.exit();
@@ -60,7 +61,7 @@ public class MenuScreen extends Screen implements IUpdateable {
         Game.window().getRenderComponent().setBackground(Color.BLACK);
         Game.graphics().setBaseRenderScale(6f * Game.window().getResolutionScale());
         this.mainMenu.incFocus();
-        Game.world().loadEnvironment("TitleScreen");
+        Game.world().loadEnvironment("titlescreen");
 
         //Game.world().camera().setFocus(Game.world().environment().getCenter());
     }
@@ -83,12 +84,15 @@ public class MenuScreen extends Screen implements IUpdateable {
     }
     private void startGame() {
         this.mainMenu.setEnabled(false);
-        Game.window().getRenderComponent().fadeOut(2500);
+        Game.window().getRenderComponent().fadeOut(1500);
 
         Game.loop().perform(3500, () -> {
             Game.screens().display("INGAME-SCREEN");
-            Game.window().getRenderComponent().fadeIn(2500);
-            Game.world().loadEnvironment("Bibliothek");
+            Game.window().getRenderComponent().fadeIn(1500);
+            Game.world().loadEnvironment("atrium");
+            GameManager.spawnPlayer(Game.world().getEnvironment("atrium"), null );
+
+            //beim ersten mal kommt er nicht aus einer Tür
             Game.world().camera().setFocus(Game.world().environment().getCenter());
             Game.graphics().setBaseRenderScale(3);
 

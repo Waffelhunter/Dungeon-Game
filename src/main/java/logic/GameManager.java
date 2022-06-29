@@ -39,7 +39,7 @@ public final class GameManager {
     }
 
     private static void loaded(Environment e) {
-        spawnPlayer(e);
+        //spawnPlayer(e);
         spawnEnemy(e);
 
         Game.world().camera().setFocus(e.getCenter());
@@ -47,7 +47,7 @@ public final class GameManager {
     }
 
     private static void spawnEnemy(Environment e) {
-       //prüft, ob geladene mab schonmal besucht wurde
+       //prüft, ob geladene map schonmal besucht wurde
         for (int i =0; i<22; i++){
 
             if (maps[i] == e && (besucht[i]==false) ){
@@ -84,8 +84,39 @@ public final class GameManager {
 
     }
 
-    private static void spawnPlayer(Environment e) {
-        Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("summon"));
+    public static void spawnPlayer(Environment e, Prop p) {
+        //Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("summon"));
+        if(p == null)
+        {
+            Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("s"));
+            summon.ifPresent(s -> s.spawn(Player.instance()));
+            return;
+        }
+
+        String spawn = "s";
+        if(p.hasTag("s"))
+            {
+            spawn = "n";
+            }
+        else {
+            if (p.hasTag("o"))
+                {
+                spawn = "w";
+                }
+            else {
+                if (p.hasTag("w"))
+                    {
+                    spawn = "o";
+                    }
+
+                //else{
+                //spawn = "summon";
+                  //  }
+                }
+             }
+        // Eine Tür soll dir dich vor eine bestimmte Tür in ein Raum spawnen und nicht einfach in der Mitte
+
+        Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint(spawn));
         summon.ifPresent(s -> s.spawn(Player.instance()));
     }
 
@@ -93,7 +124,7 @@ public final class GameManager {
         //spawnPlayer(Game.world().environment());
         if (Player.instance().isDead()) {
             Player.instance().resurrect();
-            Player.instance().setLocation(Game.world().environment().getSpawnpoint("summon").getLocation());
+            Player.instance().setLocation(Game.world().environment().getSpawnpoint("s").getLocation());
         }
     }
 }

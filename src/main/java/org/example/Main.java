@@ -30,7 +30,7 @@ Main {
         Colission colission = new Colission();
 
         //load the Liti Library
-        Resources.load("Test1.litidata");
+        Resources.load("game_v4.litidata");
         //set the Scale of the Game: pixles * X
 
         Game.graphics().setBaseRenderScale(3);
@@ -38,7 +38,7 @@ Main {
         //create new Screen from class InGameScreen()
         Game.screens().add(new InGameScreen());
         Game.screens().add(new MenuScreen());
-     //   Game.screens().add(new ColectablesScreen());
+        Game.screens().add(new ColectablesScreen());
         Camera c1 = new Camera();
 
 
@@ -55,7 +55,7 @@ Main {
 
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
-        Game.world().loadEnvironment("TitleScreen");
+        Game.world().loadEnvironment("titlescreen");
 
         Game.screens().display("MENU");
         Game.world().camera().setFocus(Game.world().environment().getCenter());

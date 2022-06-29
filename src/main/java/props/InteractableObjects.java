@@ -5,12 +5,13 @@ import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.Entity;
 import de.gurkenlabs.litiengine.entities.Prop;
 import creatures.Player;
+import logic.GameManager;
 
 import java.util.Collection;
 
 public class InteractableObjects extends Entity {
 
-    public static String currentMap = "Bibliothek";
+    public static String currentMap = "atrium";
     static CollisionBox collider = new CollisionBox(20, 20);
 
 
@@ -40,6 +41,7 @@ public class InteractableObjects extends Entity {
             }
             //Door interaction
             for (Prop pr : Gateway) {
+
                 pr.setCollision(false);
                 if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())) {
 
@@ -47,10 +49,14 @@ public class InteractableObjects extends Entity {
 
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
+                    Game.world().onLoaded(e-> {
+                        GameManager.spawnPlayer(e, pr);
+                    });
 
+                    }
 
                 }
-            }
+
         }
         for (Prop s : Spellcrates) {
 
