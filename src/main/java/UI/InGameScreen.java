@@ -4,7 +4,8 @@ import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.gui.screens.GameScreen;
 import org.example.HUD;
 
-import java.awt.*;
+import java.awt.Graphics2D;
+
 
 public class InGameScreen extends GameScreen {
     public static final String NAME = "INGAME-SCREEN";

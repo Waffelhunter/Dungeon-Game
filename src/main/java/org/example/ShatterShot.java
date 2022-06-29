@@ -2,7 +2,12 @@ package org.example;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
-import de.gurkenlabs.litiengine.entities.*;
+import de.gurkenlabs.litiengine.entities.CollisionInfo;
+import de.gurkenlabs.litiengine.entities.CombatInfo;
+import de.gurkenlabs.litiengine.entities.Creature;
+import de.gurkenlabs.litiengine.entities.EntityInfo;
+import de.gurkenlabs.litiengine.entities.Prop;
+import de.gurkenlabs.litiengine.entities.PropState;
 import logic.Colission;
 import props.life;
 

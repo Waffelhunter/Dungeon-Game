@@ -5,7 +5,6 @@ import de.gurkenlabs.litiengine.entities.EntityMovedEvent;
 import de.gurkenlabs.litiengine.entities.IMobileEntity;
 import de.gurkenlabs.litiengine.graphics.Spritesheet;
 import de.gurkenlabs.litiengine.graphics.emitters.Emitter;
-import de.gurkenlabs.litiengine.graphics.emitters.particles.SpriteParticle;
 import de.gurkenlabs.litiengine.resources.Resources;
 
 import java.awt.geom.Point2D;
