@@ -38,7 +38,7 @@ Main {
         //create new Screen from class InGameScreen()
         Game.screens().add(new InGameScreen());
         Game.screens().add(new MenuScreen());
-     //   Game.screens().add(new ColectablesScreen());
+        Game.screens().add(new ColectablesScreen());
         Camera c1 = new Camera();
 
 
