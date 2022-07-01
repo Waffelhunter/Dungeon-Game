@@ -1,10 +1,8 @@
 package logic;
 
 
-
 import creatures.Bookmonster;
 import creatures.Player;
-import creatures.Slime;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
@@ -15,9 +13,10 @@ import java.util.Optional;
 
 
 public final class GameManager {
-    private GameManager() {}
-    public static boolean [] besucht;
-    public static Environment [] maps;
+    public static boolean[] besucht;
+    public static Environment[] maps;
+    private GameManager() {
+    }
 
     public static void init() {
 
@@ -25,10 +24,10 @@ public final class GameManager {
         besucht = new boolean[22];
         maps = new Environment[22];
 
-            int i =0;
-            Collection<Environment> mapCol = Game.world().getEnvironments();
+        int i = 0;
+        Collection<Environment> mapCol = Game.world().getEnvironments();
         for (Environment e : mapCol) {
-            maps[i]= e;
+            maps[i] = e;
             besucht[i] = false;
             i++;
 
@@ -47,10 +46,10 @@ public final class GameManager {
     }
 
     private static void spawnEnemy(Environment e) {
-       //prüft, ob geladene map schonmal besucht wurde
-        for (int i =0; i<22; i++){
+        //prüft, ob geladene map schonmal besucht wurde
+        for (int i = 0; i < 22; i++) {
 
-            if (maps[i] == e && (besucht[i]==false) ){
+            if (maps[i] == e && (besucht[i] == false)) {
 
                 //das passiert, bei erstem Besuch der map
 
@@ -58,15 +57,14 @@ public final class GameManager {
                 // enemySpawn.ifPresent(s -> s.spawn(new Slime()));
                 enemySpawn.ifPresent(s -> s.spawn(new Bookmonster()));
 
-                besucht[i]= true;
+                besucht[i] = true;
             }
-            if(maps[i] == e && (besucht[i]==true)){
+            if (maps[i] == e && (besucht[i] == true)) {
                 //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
-                respawnEnemy(e,Game.random().nextInt(3));
+                respawnEnemy(e, Game.random().nextInt(3));
             }
 
         }
-
 
 
     }
@@ -76,7 +74,7 @@ public final class GameManager {
 
         Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
         // enemySpawn.ifPresent(s -> s.spawn(new Slime()));
-        if (Game.random().nextInt(2)==2) {
+        if (Game.random().nextInt(2) == 2) {
             for (int i = 0; i < max; i++) {
                 enemySpawn.ifPresent(s -> s.spawn(new Bookmonster()));
             }
@@ -85,35 +83,24 @@ public final class GameManager {
     }
 
     public static void spawnPlayer(Environment e, Prop p) {
-        //Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("summon")); ii
-        if(p == null)
-        {
+        if (p == null) {
             Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("s"));
             summon.ifPresent(s -> s.spawn(Player.instance()));
             return;
         }
 
         String spawn = "s";
-        if(p.hasTag("s"))
-            {
+        if (p.hasTag("s")) {
             spawn = "n";
-            }
-        else {
-            if (p.hasTag("o"))
-                {
+        } else {
+            if (p.hasTag("o")) {
                 spawn = "w";
-                }
-            else {
-                if (p.hasTag("w"))
-                    {
+            } else {
+                if (p.hasTag("w")) {
                     spawn = "o";
-                    }
-
-                //else{
-                //spawn = "summon";
-                  //  }
                 }
-             }
+            }
+        }
         // Eine Tür soll dir dich vor eine bestimmte Tür in ein Raum spawnen und nicht einfach in der Mitte
 
         Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint(spawn));

@@ -13,6 +13,7 @@ public class InteractableObjects extends Entity {
 
     public static String currentMap = "atrium";
     static CollisionBox collider = new CollisionBox(20, 20);
+    public static long lastDoorInteraction;
 
 
     public static void Interact() {
@@ -28,7 +29,7 @@ public class InteractableObjects extends Entity {
             //colision Box collider is set to the current Prop p position
             //if collider intersects with the Players bounds, use hit() to change the state of the Prop to destroyed
 
-            if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())&&!p.isDead()) {
+            if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox()) && !p.isDead()) {
                 p.hit(100);
 
                 //spawn the Loot that's in the chest
@@ -39,41 +40,40 @@ public class InteractableObjects extends Entity {
 
 
             }
+        }
             //Door interaction
             for (Prop pr : Gateway) {
 
                 pr.setCollision(false);
-                if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())) {
-
+                if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())&&Game.time().since(lastDoorInteraction)>300) {
+                    lastDoorInteraction = Game.loop().getTicks();
                     Game.world().loadEnvironment(pr.getName());
 
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
-                    Game.world().onLoaded(e-> {
-                        GameManager.spawnPlayer(e, pr);
-                    });
+                        GameManager.spawnPlayer(Game.world().environment(), pr);
 
                     }
 
                 }
 
-        }
-        for (Prop s : Spellcrates) {
+            for (Prop s : Spellcrates) {
 
-            collider.setLocation(s.getCenter());
-            collider.setCollision(false);
-            collider.setName("collider");
+                collider.setLocation(s.getCenter());
+                collider.setCollision(false);
+                collider.setName("collider");
 
-            if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())) {
-                Spellscroll spell = new Spellscroll(s.getName());
-                Game.world().environment().add(spell);
-                spell.setLocation(s.getX(), s.getY());
+                if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())) {
+                    Spellscroll spell = new Spellscroll(s.getName());
+                    Game.world().environment().add(spell);
+                    spell.setLocation(s.getX(), s.getY());
 
-                s.die();
-                s.setCollision(true);
+                    s.die();
+                    s.setCollision(true);
 
+                }
             }
         }
     }
-}
+
 
