@@ -85,7 +85,7 @@ public final class GameManager {
     }
 
     public static void spawnPlayer(Environment e, Prop p) {
-        //Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("summon"));
+        //Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("summon")); ii
         if(p == null)
         {
             Optional<Spawnpoint> summon = Optional.ofNullable(e.getSpawnpoint("s"));
