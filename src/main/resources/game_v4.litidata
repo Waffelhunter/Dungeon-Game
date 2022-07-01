@@ -92,7 +92,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="7" name="n" type="SPAWNPOINT" x="352" y="288" width="32" height="32">
+    <object id="7" name="n" type="SPAWNPOINT" x="352" y="291" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -108,16 +108,16 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="tags" value="door,s,target"/>
      </properties>
     </object>
-    <object id="11" name="s" type="SPAWNPOINT" x="224" y="384" width="32" height="32">
+    <object id="11" name="s" type="SPAWNPOINT" x="225" y="365" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -129,17 +129,17 @@
     <object id="12" name="toilette" type="PROP" x="192" y="321" width="6" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" type="float" value="16.8"/>
-      <property name="collisionboxWidth" type="float" value="2.4000000000000004"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="collisionboxWidth" value="16.0"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,w"/>
+      <property name="tags" value="door,w,target"/>
      </properties>
     </object>
     <object id="13" name="gangklozuküche" type="PROP" x="352" y="257" width="32" height="32">
@@ -155,7 +155,37 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="normalBreak"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="door,n,target"/>
+     </properties>
+    </object>
+    <object id="14" type="CREATURE" x="324" y="344" width="35" height="41">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="true"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" type="float" value="16.400000000000002"/>
+      <property name="collisionboxWidth" type="float" value="14.0"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="spawnDirection" value="UNDEFINED"/>
+      <property name="spritesheetName" value="Hero"/>
+     </properties>
+    </object>
+    <object id="15" type="COLLISIONBOX" x="331" y="348" width="24" height="38">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
+    <object id="16" name="w" type="SPAWNPOINT" x="204" y="325" width="32" height="32">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
    </objectgroup>
@@ -219,7 +249,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="5" name="S" type="SPAWNPOINT" x="288" y="352" width="32" height="32">
+    <object id="5" name="o" type="SPAWNPOINT" x="306" y="341" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -228,7 +258,7 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="6" name="Badezimmer" type="PROP" x="288" y="343" width="33" height="42">
+    <object id="6" type="PROP" x="346" y="325" width="6" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -236,12 +266,13 @@
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="16.8"/>
-      <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="collisionboxWidth" value="16.0"/>
+      <property name="flipHorizontally" type="bool" value="true"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
-      <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="spritesheetName" value="doorside"/>
+      <property name="tags" value="door,o,target"/>
      </properties>
     </object>
    </objectgroup>
@@ -533,7 +564,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="6" type="COLLISIONBOX" x="384" y="288" width="32" height="32">
+    <object id="6" type="COLLISIONBOX" x="384" y="288" width="32" height="21">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="STATIC"/>
@@ -559,11 +590,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" type="float" value="16.8"/>
       <property name="collisionboxWidth" value="13.200000000000001"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="tags" value="door,s,target"/>
      </properties>
     </object>
     <object id="9" type="PROP" x="229" y="390" width="22" height="26">
@@ -581,7 +612,7 @@
       <property name="spritesheetName" value="Bookshelf_mixedColour"/>
      </properties>
     </object>
-    <object id="10" type="PROP" x="274" y="262" width="22" height="26">
+    <object id="10" type="PROP" x="274" y="254" width="22" height="40">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
@@ -596,7 +627,7 @@
       <property name="spritesheetName" value="Bookshelf_mixedColour"/>
      </properties>
     </object>
-    <object id="11" type="PROP" x="296" y="262" width="22" height="26">
+    <object id="11" type="PROP" x="296" y="254" width="22" height="40">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
@@ -611,7 +642,7 @@
       <property name="spritesheetName" value="Bookshelf_mixedColour"/>
      </properties>
     </object>
-    <object id="12" type="PROP" x="317" y="262" width="22" height="26">
+    <object id="12" type="PROP" x="317" y="254" width="22" height="40">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
@@ -626,7 +657,7 @@
       <property name="spritesheetName" value="Bookshelf_mixedColour"/>
      </properties>
     </object>
-    <object id="13" type="PROP" x="339" y="262" width="22" height="26">
+    <object id="13" type="PROP" x="339" y="254" width="22" height="40">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
@@ -641,7 +672,7 @@
       <property name="spritesheetName" value="Bookshelf_mixedColour"/>
      </properties>
     </object>
-    <object id="14" type="PROP" x="329" y="296" width="22" height="26">
+    <object id="14" type="PROP" x="330" y="298" width="22" height="26">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
@@ -656,7 +687,7 @@
       <property name="spritesheetName" value="Bookshelf_mixedColour"/>
      </properties>
     </object>
-    <object id="15" type="PROP" x="351" y="296" width="22" height="26">
+    <object id="15" type="PROP" x="352" y="297" width="22" height="26">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
@@ -744,6 +775,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="21" type="PROP" x="256" y="335" width="14" height="20">
@@ -759,6 +791,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="22" type="PROP" x="259" y="319" width="14" height="20">
@@ -774,6 +807,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="23" type="PROP" x="368" y="267" width="16" height="24">
@@ -789,6 +823,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="24" type="PROP" x="257" y="360" width="16" height="24">
@@ -804,6 +839,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="25" type="PROP" x="259" y="234" width="32" height="32">
@@ -922,7 +958,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="8" name="s" type="SPAWNPOINT" x="320" y="416" width="32" height="32">
+    <object id="8" name="s" type="SPAWNPOINT" x="321" y="397" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -940,11 +976,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="25.4"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door"/>
+      <property name="tags" value="door,target,w"/>
      </properties>
     </object>
     <object id="10" name="turm2" type="PROP" x="506" y="310" width="6" height="42">
@@ -958,11 +994,11 @@
       <property name="collisionboxWidth" value="22.8"/>
       <property name="flipHorizontally" type="bool" value="true"/>
       <property name="flipVertically" type="bool" value="false"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="door,o,target"/>
      </properties>
     </object>
     <object id="11" name="thronsaal" type="PROP" x="320" y="246" width="33" height="42">
@@ -974,11 +1010,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="21.2"/>
       <property name="collisionboxWidth" value="13.200000000000001"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorfront"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="door,n,target"/>
      </properties>
     </object>
     <object id="12" type="PROP" x="321" y="405" width="33" height="42">
@@ -988,16 +1024,16 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door"/>
+      <property name="tags" value="door,target,s"/>
      </properties>
     </object>
-    <object id="13" name="o" type="SPAWNPOINT" x="480" y="320" width="32" height="32">
+    <object id="13" name="o" type="SPAWNPOINT" x="460" y="328" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -1006,7 +1042,7 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="14" name="w" type="SPAWNPOINT" x="160" y="320" width="32" height="32">
+    <object id="14" name="w" type="SPAWNPOINT" x="179" y="323" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -1037,6 +1073,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="17" type="PROP" x="257" y="280" width="16" height="24">
@@ -1052,6 +1089,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="18" type="PROP" x="233" y="301" width="16" height="24">
@@ -1067,6 +1105,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="19" type="PROP" x="163" y="404" width="16" height="24">
@@ -1082,6 +1121,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="20" type="PROP" x="167" y="416" width="14" height="20">
@@ -1097,6 +1137,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
    </objectgroup>
@@ -1209,7 +1250,7 @@
       <property name="collisionValign" value="DOWN"/>
      </properties>
     </object>
-    <object id="6" name="gangthronsaalyualchemielabor" type="PROP" x="474" y="310" width="6" height="42">
+    <object id="6" name="gangthronsaalzualchemielabor" type="PROP" x="475" y="310" width="6" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -1219,11 +1260,11 @@
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="15.0"/>
       <property name="flipHorizontally" type="bool" value="true"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="target,door,o"/>
      </properties>
     </object>
     <object id="7" type="PROP" x="208" y="310" width="14" height="20">
@@ -1239,6 +1280,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="ExplosiveBarrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="8" name="o" type="SPAWNPOINT" x="448" y="320" width="32" height="32">
@@ -1878,7 +1920,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="6" name="s" type="SPAWNPOINT" x="369" y="416" width="32" height="32">
+    <object id="6" name="s" type="SPAWNPOINT" x="370" y="396" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -1894,13 +1936,13 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="32.0"/>
       <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="tags" value="door,s,target"/>
      </properties>
     </object>
     <object id="8" type="PROP" x="400" y="272" width="16" height="24">
@@ -1916,6 +1958,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="9" type="PROP" x="388" y="283" width="14" height="20">
@@ -1931,6 +1974,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="10" type="PROP" x="301" y="277" width="20" height="15">
@@ -1946,6 +1990,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Chest"/>
+      <property name="tags" value="interactable"/>
      </properties>
     </object>
     <object id="11" name="badezimmer" type="PROP" x="224" y="290" width="6" height="42">
@@ -1957,14 +2002,14 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="32.0"/>
       <property name="collisionboxWidth" value="16.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="w,door"/>
+      <property name="tags" value="w,door,target"/>
      </properties>
     </object>
-    <object id="12" name="w" type="SPAWNPOINT" x="225" y="301" width="32" height="32">
+    <object id="12" name="w" type="SPAWNPOINT" x="237" y="300" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2067,11 +2112,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="22.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,w"/>
+      <property name="tags" value="door,w,target"/>
      </properties>
     </object>
     <object id="6" name="thonsaal" type="PROP" x="473" y="289" width="6" height="42">
@@ -2084,14 +2129,14 @@
       <property name="collisionboxHeight" type="float" value="16.8"/>
       <property name="collisionboxWidth" value="22.0"/>
       <property name="flipHorizontally" type="bool" value="true"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="door,o,target"/>
      </properties>
     </object>
-    <object id="7" name="o" type="SPAWNPOINT" x="449" y="307" width="32" height="32">
+    <object id="7" name="o" type="SPAWNPOINT" x="430" y="311" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2113,6 +2158,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="9" type="PROP" x="249" y="270" width="14" height="20">
@@ -2128,6 +2174,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="10" type="PROP" x="263" y="275" width="14" height="20">
@@ -2143,6 +2190,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="barrel"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="11" type="PROP" x="394" y="268" width="16" height="24">
@@ -2158,6 +2206,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Vase"/>
+      <property name="tags" value="target"/>
      </properties>
     </object>
     <object id="12" type="PROP" x="280" y="279" width="20" height="15">
@@ -2173,6 +2222,16 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="Chest"/>
+      <property name="tags" value="interactable"/>
+     </properties>
+    </object>
+    <object id="13" name="w" type="SPAWNPOINT" x="175" y="307" width="32" height="32">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
    </objectgroup>
@@ -2269,11 +2328,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="22.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,w"/>
+      <property name="tags" value="door,w,target"/>
      </properties>
     </object>
     <object id="6" name="kampfraum" type="PROP" x="442" y="289" width="6" height="42">
@@ -2286,14 +2345,14 @@
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="22.0"/>
       <property name="flipHorizontally" type="bool" value="true"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="door,o,target"/>
      </properties>
     </object>
-    <object id="7" name="o" type="SPAWNPOINT" x="416" y="305" width="32" height="32">
+    <object id="7" name="o" type="SPAWNPOINT" x="399" y="307" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2302,7 +2361,7 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="8" name="w" type="SPAWNPOINT" x="193" y="298" width="32" height="32">
+    <object id="8" name="w" type="SPAWNPOINT" x="207" y="305" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2420,7 +2479,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="5" name="o" type="SPAWNPOINT" x="448" y="320" width="32" height="32">
+    <object id="5" name="o" type="SPAWNPOINT" x="434" y="323" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2439,11 +2498,11 @@
       <property name="collisionboxHeight" value="32.0"/>
       <property name="collisionboxWidth" value="16.0"/>
       <property name="flipHorizontally" type="bool" value="true"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="door,o,target"/>
      </properties>
     </object>
     <object id="7" name="schlafzimmer2" type="PROP" x="256" y="246" width="33" height="42">
@@ -2455,14 +2514,14 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" type="float" value="16.8"/>
       <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorfront"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="door,n,target"/>
      </properties>
     </object>
-    <object id="8" name="n" type="SPAWNPOINT" x="257" y="288" width="32" height="32">
+    <object id="8" name="n" type="SPAWNPOINT" x="257" y="297" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2880,7 +2939,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="5" name="s" type="SPAWNPOINT" x="320" y="384" width="32" height="32">
+    <object id="5" name="s" type="SPAWNPOINT" x="321" y="363" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2898,11 +2957,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="tags" value="door,s,target"/>
      </properties>
     </object>
     <object id="7" name="gangklozuküche" type="PROP" x="224" y="288" width="32" height="32">
@@ -2912,8 +2971,8 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="12.8"/>
-      <property name="collisionboxWidth" type="float" value="12.8"/>
+      <property name="collisionboxHeight" value="12.8"/>
+      <property name="collisionboxWidth" value="12.8"/>
       <property name="indestructible" type="bool" value="false"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
@@ -3041,11 +3100,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="13.200000000000001"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorfront"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="door,n,target"/>
      </properties>
     </object>
     <object id="9" type="PROP" x="331" y="276" width="47" height="61">
@@ -3072,16 +3131,16 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="tags" value="door,s,target"/>
      </properties>
     </object>
-    <object id="15" name="s" type="SPAWNPOINT" x="224" y="384" width="32" height="32">
+    <object id="15" name="s" type="SPAWNPOINT" x="226" y="365" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -3231,13 +3290,13 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="16.8"/>
-      <property name="collisionboxWidth" type="float" value="13.200000000000001"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="collisionboxHeight" value="16.8"/>
+      <property name="collisionboxWidth" value="13.200000000000001"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorfront"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="door,n,target"/>
      </properties>
     </object>
    </objectgroup>
@@ -3413,7 +3472,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="7" name="s" type="SPAWNPOINT" x="288" y="448" width="32" height="32">
+    <object id="7" name="s" type="SPAWNPOINT" x="289" y="439" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -3422,7 +3481,7 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="8" name="atrium" type="PROP" x="288" y="448" width="33" height="42">
+    <object id="8" name="atrium" type="PROP" x="290" y="448" width="33" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -3431,11 +3490,11 @@
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" type="float" value="16.8"/>
       <property name="collisionboxWidth" value="64.0"/>
-      <property name="indestructible" type="bool" value="false"/>
+      <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s"/>
+      <property name="tags" value="door,s,target"/>
      </properties>
     </object>
     <object id="10" name="gangthronsaalzualchemielabor" type="PROP" x="161" y="320" width="6" height="42">
@@ -3468,10 +3527,10 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="door,o,target"/>
      </properties>
     </object>
-    <object id="12" name="w" type="SPAWNPOINT" x="160" y="330" width="32" height="32">
+    <object id="12" name="w" type="SPAWNPOINT" x="174" y="331" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -3480,7 +3539,7 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="13" name="w" type="SPAWNPOINT" x="448" y="331" width="32" height="32">
+    <object id="13" name="e" type="SPAWNPOINT" x="435" y="332" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -3997,6 +4056,30 @@
   <sprite width="13" height="12" imageformat="PNG" name="life.png">
    <image>iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAABD0lEQVR4XqWQy0rDUBRFMzSV+gGKEUvVNG8rTUAcNbaotb76pfoBDoqIAydOnHRU1IlDRSkIWZ7cNGiCRcENh3vZ2WufJJr2HyUDHwYBHNt89+lbcCp+zyn4Gj03A048dX4cuSow2bdB7pwFGbg3LaRTF1O2HMrDXWmN1+HA4XnLgFAmWoOdDeg60PdIuhbaS1tCHTEjASJTgkvQqsrMKSjZrom/Cu2GKnuPrem2tD1qZM1p+KeJ6rzF5td3jfwKkzDdMgMS/6G5wpWtF3/GY7PGa0veP1wuQVXGmwY37nwRyHXvLzIKDEa+zlOgq/NawsPyhrIuLZ1zU+fO1Rl6C78DuS7Migr/Gch168wGPgFTg8r5prLosgAAAABJRU5ErkJggg==</image>
   </sprite>
+  <sprite width="25" height="25" imageformat="PNG" name="prop-2fackeln-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAzElEQVR4Xu2SPQrCQBBGcwIj2Jq9hZaK1p5B8QjizwVsBI/hUQRvYasgdpZqxkzMwjK4m/ksUu2DhTDzHuxCkiQSaZzr2pCcaVB3LKplB6hj8X3s6oMKuLttDdF5TJdV9pK7EOquEJ4s5ifgVgnQ8ZKlxyELiwJ1txymtJ90Sum+M+V3MculJ4E6lm3AZzNq07SX+m9VAXeLwTewZxaSHaCOb+DKcu8D6lw5+GQB1LFgg1rZAe5sMO+3fv8hHqDOynJeB9RBssO/XaR5PqDt2D2fde24AAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-2fackelngelb-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAf0lEQVR4Xu3N4QmAIBQE4AZohqZxAmfwl1u2V2UIPbBD1Ks/QfeB2OOd1zSJfNmxLqk1I9zjTAsh3ApwRrjHmZYLrOT63jBTskyMcS7fvmJFo2VFfsfdY6M/N2y+y3tPFbL5JudcyoX5xl0Nm+/KRXZwV8Pmh7BlbF5ERETk307HKVVn5ff7CwAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-2fackelngrün-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAgElEQVR4Xu3NQQqAIBQE0A7QDbqOJ/AELVx5/2VlCH2wQdSpTdA8EPv8cZomkS9bjyW1ZoR7nGkhhFsBzgj3ONNygZVc3xtmSpaJMc7l21esaLSsyO+4e2z054bNd3nvqUI23+ScS7kw37irYfNducgO7mrY/BC2jM2LiIiI/NsJ4jJT17Qw5HAAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="25" height="22" imageformat="PNG" name="prop-2grünefackeln-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAA0UlEQVR4Xu2SMQrCQBBF9wQqeAEjwnoBUyoWdp5BsbVJRLD1AF7ARvQcdoK38CiKY2Z0QhhM3F8KeTCQ7L4HE4hzNTWWbtone1YF6kuARKgvcLC/RMEh6ufEW0/n24Q6iX/Yu2+gvosSf+fgcA3bDvVdlHo6ZvLy1CN+tvcW1HfrUZN4WNbJ3p/WU1Bf0Gg3bctsxi2aDZql26F+zmr4DnXmPyLUF3iTYmTvLagvFKOQT0d9gUUNQyLUz9FwETeq/5QPqC9oZM/LQH0BjVD/P3kBVPu/lV1MEBQAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-3fackelngeld-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAg0lEQVR4Xu3M3QmAMAwE4A7gDE7TCTpDn7qle1UrAQMa0x8xD4L3gWiSO50D+JptmUtr1nZy1nZyrooxXoJy1nZy1nZyrqIgh4/v/CKTU0rTOT+EC63Sw8wqb12tHzOrjCqE0C1aZW6894WK9JY3ZpVRUYEfeWNWmaqRklUGAAAA4N92t4h/dncTiiwAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-3grüneleuchter-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhElEQVR4Xu3MzQmAMAwF4A7gBq7TCTqBh566/7FaCRjQmP6IOQi+D0STvKdzAF+zbHNpzdpOztpOzlUxxktQztpOztpOzlUU5PDxnV9kckppOueHcKFVephZ5a2r9WNmlVGFELpFq8yN975Qkd7yxqwyKirwI2/MKlM1UrLKAAAAAPzbDmAdfR7AMjXZAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-4fackelngelb-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAk0lEQVR4Xu3MwQ3DIBBEUXJ3DamGCqiBE12mL8dEgwzCKJnFPkXyfMnCy1vhnFL/0vZ65pk5Z/fY5220q3Mpxni4PDMzm5nbZYX9f531OqeUln5v1lsVfy0w7+w9GrK89e3xPubMkOWlEAJdYs4MWe689xlLOEdDzJkhy0vA+o2GmDNDlresBebMkOVKKaWUUvfsA9L1rMvPzDHLAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-4grüneleuchter-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAmUlEQVR4Xu3MQQ4CIRBEUdx7gvE6nIADGBesuP/GRMUUGQhDpBp3JtZPJkzzOjin1K90e13yypyzO40+253N1/t2mEsxxsPlNzOzlbldVtj/H6te55TSud9b9VbF2QLzzp6jIctbnx7vY84MWV4KIdAl5syQ5c57n7GEczTEnBmyvASs32iIOTNkectaYM4MWa6UUkop9Z+9AbN9qaTgY2NtAAAAAElFTkSuQmCC</image>
+  </sprite>
   <sprite width="22" height="26" imageformat="PNG" name="prop-Bookshelf_mixedColour-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAB5ElEQVR4XrWUTy8DQRyGl1MFB9lDRbUlWg5S/0LSuoj2RFwQCamIRNRF9OaoDpwdmoqEisbVV/BxJCJxkNAL7dh3tr/d2ZlZijo8mZndmYfs+3aMQsFoT8ZN1kqYYbQZmGRnI+xsZ44dLSf+BBxwwcnFeHi6Pq1s/CmFlXGLMa9Y5Hh1QnlGB/Ffycj7fMXyQT/kc4r4P3DC07GWiirPmsEjjpgd7O4wxEcQnhzm0FrHfbZHeaYVV68DfDwJmaxva4mDdWKmk4M5/jjtq+bd/eBbcSUS9IgProIc2iOLb6NBDua5TMwVYzEa6mZv5QAfbwQx1iTGnMR8nrdHEmOuiMWPj03iGtL9Yq8SksxGKqyKW8H2vD16xJQqktalTYhBiVCLtGK8wHejUMBjKeCpoRgUNQVQJloxXsjip3O3BbKYmvKlGImKYqzBy6XbArkB1BQ6qxUj1cHNRSXp17LdXVpDWhmwWwOxvF8RtxLlGwMKSvwZE7pGYL8YrlbMW9EISvwZE2JwVMmHov2pwlMj/mIeXpNias7zhR0u3SuK2GlFowHi/aBrBDWH7o7+7IK17lLFcrr8fij53w8Qy8+aaUXN4gPsZeLvGHfTsTrIpa33QD3j4Ih/xZBZs6gnYxaYYxTefwKeqsntaY3nKQAAAABJRU5ErkJggg==</image>
   </sprite>
@@ -4040,13 +4123,64 @@
    <image>iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAABBElEQVR4Xo2Tyw7BQBSGPYP7SiqtIEGoW11W7hZ00di4PQvdiJUEb+aBhjOck5kpo5N8XZz+X2b+XiKRz3LM5KNtJtg/MM8XDlcNQ4skO0baQOmydth932OHRekrKNNuMDiv6lopIKN43XbZybMDQeS267LjshwU1aCI71boNJL4TYYgcnvhu6/dmsIDgsu0EA39VDFLR4VBx0xK70wFMp6d4Tku2rUqH8CN38R4BrK0Yz+XIlkHSiTiueEGMBkO2Gaz5swnI5qLWbmjFa4jiWE6zorxYEdR1vG3Y6Nu827YczYe6juqnUQ61luiT078Q9ReKpIEq5VPZVHWIUniUo+nImaf9bimNp7aOjMAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="44" height="56" imageformat="PNG" name="prop-bett-intact">
-   <image>iVBORw0KGgoAAAANSUhEUgAAACwAAAA4CAYAAACGwxqMAAAEPUlEQVR4Xu2Zy0sbQRjApf0XWqgKLT31UCit9NSDBqEKLa0oevBSqI9oC33QaqGHolIvlqLGEAmh2hBCSAwoim+N7weKIEWNoon3XqU30el+084y+82seZh0s8WFH9Gdb7757eTbyT6yslK8WQtyCMcRbv+nW3Vh9g0kdG7wGLLtpeXqNc0OpeMvWYLagpxTPEAsSvOuaMDtMaDj8Q58u7ADqM2X/83AQhgaZ0kwPgGocJ3lD7gRJ09mgFjg/LHGEGY53o7pRM9BWic4yEiwi6HCL4puC/sw2CUp4VclD0jrp4+ko6NDBcfIcH9zafro8fVLm9oHu8Qt3Pi8QpPU7XaTUChEZmdnicPhIE6HXejDaKgspnHQDz55ZmZmhP8933tpbHt7u+ASU9jW2alK4sEYi4uLtD0ajZJIJEI/l+cUkYlRsruzTebm5khPT8+ZOWRAfFzC/X4fcTqdtIPL5RISybDZbGRoaIjKYqA9Udnl5WXa582z8tjCkYMDMjU1RSVwIj2Gh4fVWcasr68nLDw6OqrJpxHmZesLb9KAvb29uAcZHx/XlWVAnbPSwnUrA+LC4bAgrPBTI7y3qwQpdbi/vx9TeGRkRJXAgnqs/P2qZbCDstvtQk7eUSOsBkUOpLMBpcIPwk6y8zI/P0/PgcnJSQpux8LHgrACfCV4Frq6umhN4oTpRiPMn3g4UMb29rZ6kvF0d3fT5cvv95PBwUFaMhMTE0IpyYAZhs/NzU1ajvx4h4dR0liWJ143vyu5I8gxQZncwMAAFYKTrr+/n/h8PtLb26vWYLIEAgG6SsABbGxsKA4R8r70rijcUl10DIKw0EPt8klYgnQD40DZ8WODU0PZPVG4ueohFR4bG6OBOJkRdCq/tPAtDg/0icKf65+egHCmyALBYJAudx/K74vCykl3ArJwYYM7GgX7xdWsDpzwaSbNLgDCUBZ6whlVDoDphGEth2XSNMIej4f09QXMIwxr8urqqnmEYYXYVa4gTSUMF2GmEYYVwlQzDMLh8I55hMFnZ+uHuYS9tiZ9YdzBaOB2qdX62BzC8GQJ7l6aqorPFoYLeNzZCODuxev1kra3lfrC8DwCdzQKqF+4RRoM+vSF4YYPd0yEra0tYV+ygDA8sgqFpkXhioqsy7Dz9aNbNBiOjHWEh33wew43ozhpvEAOvC8W09PT9LPF+kRfGFhZWaGB8PyB1fPa2pqQUAbLAdRZrgvtycDyaYT5geC+bmlpiQaD8MLCgkYkXWBR9qyCjxFkAdlrrzrJAGqM+neu5mUKfrabKqiw3msvJopF9IDYmvxstT9uPws8th7CLONEQI3kBWOqwWPKDkRawzjISLDLhXCqwS4XwqkGu/w/wmXcspII0I+B2zAshu+D+8H/gjA+qgxH+9pLwJIr7jMYQRhmvbk565JaLwZvgp+Ve+3FhDNpU5yOeL/f9ezEjyjzS68AAAAASUVORK5CYII=</image>
+   <image>iVBORw0KGgoAAAANSUhEUgAAACwAAAA4CAYAAACGwxqMAAAEPklEQVR4Xu2Zy0sbQRjAQ/svtFAVWnrqoVBa6akHDUIVWlpR9OCl0KrRFvqg1UIPxUq9WIoaRZFQUxEJxkBEifEZjY9EFEFKNAaN3nuV3kSn+007y+w3s+Zh7GaLCz+iO99889vJt5N9WCwZ3myFuYTjALf/0626KOcaEjo1eAzZ9sJ6+Ypmh9LxlyxBbWHuMR4gEWX5lzTg9gTQ8XgHvl3YAdQWyP9mYCEMjbOmGJ8CVLjO+gfciJOnM0AicP5EYwiznGzHs0TPQVonOMhIsIuhws+Lbwr7MNglLeGXpfdIy8cPpL29XQXHyOj/5tD00ePrl1a1D3ZJWrjxaaUmaX9/PwkEAmR+fp50d3eT3u4uoQ+joaqExkE/+OSZm5sT/h/47qSxbW1tgktCYXtHhyqJB2MsLS3R9r29PRKPx+lnKKiITPnJ9tYmCQaDpK+v78QcMiA+KWHvkIv09vbSDg6HQ0gkw263k7GxMSqLgfZUZUOhEO3z+klFYuH47i6ZmZmhEjiRHj6fT51lzNraWsrCfr9fk08jzMvWF12nAbFYLOlBJicndWUZUOestHDdyoC4aDQqCCv81AjHtpUgpQ53dnYSCo+Pj6sSWFCP8N+vWgY7qK6uLiEn76gRVoPiu9LZgFLhB2En2WlZWFig58D09DQFt2PhQ0FYAb4SPAudnZ20JnHCs0YjzJ94OFDG5uamepLx9PT00OVraGiIjI6O0pKZmpoSSkkGzDB8bmxs0HLkx9vf3yON5fnidfPb0luCHBOUyY2MjFAhOOm8Xi9xuVzE6XSqNZgubrebrhJwAOvr64pDnLwruy0KN1cXH4IgLPRQu3wSluCsgXGg7Pixwamh/I4o/OnZfSo8MTFBA3EyI+hQfmnhW/SNDIvCn+sfH4FwtsgCHo+HLnfvK+6KwspJdwSycGGDOxoF+8XVrA6c8HE2zS4AwlAWesJZVQ6A6YRhLYdl0jTCAwMDZHjYbR5hWJNXVlbMIwwrxLZyBWkqYbgIM40wrBCmmmEQjka3zCMMPluRH+YSHrQ36QvjDkYDt0sttofmEIYnS3D30vSs5GRhuIDHnY0A7l4GBwdJ65sqfWF4HoE7GgXUL9wijXpc+sJww4c7pkIkEhH2pQsIwyOrQGBWFK6stFyEna8e3KDBcGSsIzzsg99zuBnFSZMFcuB9iZidnaWfzbZH+sJAOBymgfD8gdXz6uqqkFAGywHUWa8K7enA8mmE+YHgvm55eZkGg/Di4qJG5KzAouxZBR8jyAKy1151kgHUGPXvPM3LFPxsN1NQYb3XXkwUi+gBsTUFOWp/3H4SeGw9hFnGiYAayQvGTIPHlB2ItIZxkJFgl3PhTINdzoUzDXb5f4TLuWUlFaAfA7dhWAzfB/eD/wVhfFRZjva1l4A1T9xnMIIwzHpTk+WCWi8Gb4KfjXvtxYSzaVOcDni/3/NTxI0qIv+LAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild1-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACNUlEQVR4XmNgGAWjYLCBDl/R/7TE6PZhAJjCiS/+/59ERUySA9A1E4tBjq69/f9/zS1MORAmywGToTTI0L6nmIbCMEi+Dmo5DMMcBcLim/5+J8kBDXf/782/gjAcGU98jukAbNjYs+p/540P/8U2/v0vvvHvc5IcANT0B6QRxFbXz/3f+Qh30OLCIH0gLLbh7y+QWSQ5wOv6rH8Bd1rghohv/HcJ3QIYVtiKKdb+4hGYBlkMwyQ5QHrzz/9Rz+3+97x4D6ZhoYENwywAsSU2/fsf+ywcrAeUfshyADDBvAVpABkCsxyEYQkShvse/fqv71gKDaG/z0Fq9Pc/+B/5zPW/wU6E5WAzNvz9S7QDQJpAIRD+JAxo4H0UX2Dx/W9keYkN/74pLABGCxIGOUB805/1JDkAphFu0Pz/8ESJLfhheoDq3iBbjEwT7QB0H8hO/gimnY/txkjZsCCGqVVc8P+vwpxfYDWwKITK/STaAe5nVv8PvZ8FMbDp/H+FpnNXpWf8QrFIdsX///63Ov7r7HkKEZ+PcLCacQHcASC+/IL/30DmEO0AkCaQZpAmGPY+1fxfe+V7lJCJeOr9X2nRH9SoQsJg8ZZzf2BmEO0AmIaoZ/Zwtt/5KhQHgXDgtdz/gTebMCwGhQZI3nDW3v9KLefg6kl2ADKOeOKBIQbC4JBqPv9TEcmnMGwwYx95DsDlCAzcfP4dhhgODDMX3T4M0Okr+gemmPpY7BW6faNgFIyCUTDgAABwiJKAuZZk4QAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild3-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB0UlEQVR4XmNgGAWjYLCDDh+x7x2+ov/JwehmkQU6fUU/gQw7s8///9tLEXD8+Ezo/1PbfVDEYJiqDugJkgAb+uYipkXIGF2eag5oD5T4iW4ZCCtKCoCxprwIhhxVHdATKAE28PWFcAzLkTFM7u6xgP8LZupTzwEgg9B9B7Lw0f5yMNZTkQbzX18M/z+xT+V/e7sMGFPVASADQRY/BSY8Yw3x/48PVsEdAMKwUIBZThMHdHbIgWlLXZn/j66fBlpcBqXL/2vIicAd0Ngs+z8wQ5n6DoBh5OAH4SeHauAh4Jai+t8tWQWMqeoAkK88UlT+N7XI/leCWvbkYCVK8IOwf6EWbRwAMjip2xRuOHoowBygJC0IVgfCVHVAZpcROPhD7DTAGNlyEF7UEgp2gJ6hBPUdACyK/5XP8IE7AGTh/T2lKA4AicNCAWT5r9e3qOcAoEG//r27D/c9CM+pD/h/bFn6/ygX7f/RrrpwcZADQGr/vb1HVQf8RncALpwWYAN2wP931HUAIgRsNf5/vbvmf3mKF5gf72mC4QhwCFDZAWDDypP8wBaAHADC6BaDcKSzLtgBMD3oZpEFYIaRiH9TzQHkgFxPBnZ0sVEwCkbBKMAFAFWJZYVy3aY5AAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild4-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACCklEQVR4Xu2T72vTQBjH9zcI9S/w5WB/yd5vSAcO8b2goG/0ndiXw8FWh4rgFDaw6AtRtOzV9mLLRpakqSCuJEsusTabrlBRUs77kbtcr+nIsY7tRR740Gt6eb6fe5JOTBRV1GWrx9MleJ7IeUPFNvoAjBUlAflmFfq9H9DIuI45k8CopuLvXbPKBYb2+/YfNQE/qIvNReRwjDN/DTrlK9C5NQXdL++l8Ab6bAZqAqAZ0xtpE3dEuOc65OS/d55AZ64EnZuTVAThNQzo+bbhAfsf7qUq0BcFcCM5HIODjjYq8MR6Tvd5h1wAQ3okqAmgG7rmU8RK2iQJDbwDcuoUvI+uT8xn0HVbXKBrrZD3Qk3AtyMqQJsygdC16XdpCqD5OZGgIsfWq1QgeTHxRHMLrOozhNBYQCdaHjitHB5FPznivvbXT1zigE60llvgnXUX1qz7RII17JiLA48hSyDqpOvDMCThrQ/rSCDoY4ncAmIw46X9ELboSQjszcZEnfagSAIO5fjgb26Bt9Y9/hjW9DIReGE/IOA1GSkDCbCQzGDEdwB6mqapTWDduM0lfplLQxORQ0ahadsxDlcWWNVnuQBmc/8O/GY8gm/0G6QZQw5Mg9M9ygKv0djF8CwhkY971XhXOOkocguIf8XTuZ5xbQZu7dYzw3MJVKZLMds8fq625byiiiqqqAuv/xAvQzn3UGotAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild5-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABk0lEQVR4Xu2SwU7CMBjHeQl8F3mAjQuJJHqTHXwY1Cfw4snBzejFzXjg5NGZEBPjRdADMl3EgxDMxqCu3Vq6tizrAtFDv+SXNm2/7///2pZKKlT8tziqlcEmYfW4wAcX3h0Aa0TKAJucF2j6rdcFg+cutwcpaMBBIywauPFcBNwfJuIYbArdpq39yBl4ve6ApzYpTrP44A2IIM9oaRG6K2fA0kKUGM1n7w6YDO5XXm0mlvYQEcBacgau9Dk2QAqxxTE3dX5tmUeQM4AT2bkIet+uAjC8TfacggZsbUQlLufJh6RB74z2dZcWA52DlDi80fwGSKIe/wMavvtZWqg6HbcMwBI1dSllgC0wNg3yKYXXj3NM41OQO4djbgNsAe9kB42TdoMWRD87JQ7PtGIxnoZfyEC/WQG95vbj6HQvte6f74Lgok53LhAl4lNYR8oA7Bom0Xyf7QuKZ9M/rIQ4P7cBVjgLVhBhxjfHshEDCf4L1ekqchuQMPElWBOC67J6XBzXyiE+vH62PFZPhQoVKv48fgEVzfNeIehZvAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild6-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABk0lEQVR4Xu2SwU7CMBjHeQl8F3mAjQuJJHqTHXwY1Cfw4snBzejFzXjg5NGZEBPjRdADMl3EgxDMxqCu3Vq6tizrAtFDv+SXNm2/7///2pZKKlT8tziqlcEmYfW4wAcX3h0Aa0TKAJucF2j6rdcFg+cutwcpaMBBIywauPFcBNwfJuIYbArdpq39yBl4ve6ApzYpTrP44A2IIM9oaRG6K2fA0kKUGM1n7w6YDO5XXm0mlvYQEcBacgau9Dk2QAqxxTE3dX5tmUeQM4AT2bkIet+uAjC8TfacggZsbUQlLufJh6RB74z2dZcWA52DlDi80fwGSKIe/wMavvtZWqg6HbcMwBI1dSllgC0wNg3yKYXXj3NM41OQO4djbgNsAe9kB42TdoMWRD87JQ7PtGIxnoZfyEC/WQG95vbj6HQvte6f74Lgok53LhAl4lNYR8oA7Bom0Xyf7QuKZ9M/rIQ4P7cBVjgLVhBhxjfHshEDCf4L1ekqchuQMPElWBOC67J6XBzXyiE+vH62PFZPhQoVKv48fgEVzfNeIehZvAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild7-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACk0lEQVR4Xu2S30uTYRTH/SesC2+66zKIoOtugrSx7IcXLWz9WLNQZzjcJKdW2g9HF5FkDoqMvFAwi7A2QaIfg0CyFVQiGk7385UtU5AWo9PO2XvevXtehHejqIv3wJfnec9zdr6fneepqDDCiP8trpkq4W9K9NMEFy6m0zmtbqqup5ufR2KxnOIQiUZJy4lkaQBiQ1E/1r/D4ftpUvFZ/hsN2ZyA5H1ZAOFUitaluRkIx2MgNW8ngPW1Yig6n51WvmkKAkRJABvzk1PwZVhpzpJadxNERgrSWUZ6DdHZRwXj+FL+N9JKfvzxwlXoBgBpGgK+tqx/0AULwRH4+nYcwuE5AmCjAkCQANQQCoxsXBYANmYAVMDn+qhujudqYW507DEsSPkrYy3LjzE0EywNoP7oQXjS7yRzhhH/oRpgxb8VNuJvNDU0idx7WEx90w/w0Nu8hgBo2umo/8l7fpAPvOehp7EWks+qIJN8ReYv7zkknIBoPo/m8l43ABqicmPPWo8doj0CDPXYoNO2j4Tm70d2QeJ5Fdz17IGJ2066ghNyvcvt1MDoBjh3sg6OW/KmvstnqSEboxKyOerD6E5aMY8AuGK9w2qG8ZstMDXcB6F3wV8lvQGP3ERtOuixUu5Gax14HXshMrENPo3tUEAuNuxXarGu214DXWeq6U8EfG7w+9oyugHUxuqmrAHPEch87qU8r5cEALXwkYYm7+ifwJWmAxqA3kYzNcOr6ThdreRfDDUU1fW3WxQIzt1yWwhCN4C6IY8Wx4nrBbuZIHCPY1bXtlhNZNx+qjjPKhmAR4h7nIDYkNVhq9GMfaDbDlebassDEKegRyIAi6+L+4p+mrhuqsxy8Z/XFkn0M8III4z45/Eb76eZDNXCc+8AAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-bild8-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABo0lEQVR4XmNgGAWjYLCDDh+x7x2+ov/JwehmkQU6fUU/gQzb02hANKaqA7r8xTEsIAZTzQHtgRI/0Q3fVqv/P8ZZ63+8q87/EFt1sNiGSj3aOKDLDxICe1sMwfSiAp3/CW6YGCS+pFDn/94moAOaqOgA5PhfDLRkZake2MJH+8vBGOaAPUAHghyxrkIPrI7qDthZrw/3/ckVWXAHgHC8q/Z/B305sDwMU90BMINBDpjWmAq0uAxKI0JhcSFETW+SOnUdgOwz5OAH4YubEA6AqaG5A/oqYv+fWVv8f2ZzGjgUYA6YkKIBtpzqDgAZuBBkuQci1YMsBuH7e8rgYoYq4rRzwKQ0DbhFyFEAwj+y2eFyNHMACIMsyPI3Avq6FMMBzb6aNHPAL5CBVxMlwRa8zuD6P6c+4P+xZelgi2H4UxbH/3R3beo7oNNP9A/IQGTLQPg7EntlqPj/t5lc/z9nc1LfAUCDsDoAGwY5CqS2L0WLqg4AGzYvVBpiUbUchsUw/CaD+//kLEOweqo7gET8m2oOIAfkejKwo4uNglEwCkYBLgAAnH5VIsb6zRIAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-blaueswappen-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABsklEQVR4Xu2Uy07CQBiFMSZAp9FCWBEXImjUhdG4YOXOaMSNz+BCJFVR1KA738ENunCjPoNP4HtVBvvj38P0Nh1040lO0sv0nG+m0+Zy/0qgZv/B0zHmpBYPaz29RXvw6h0Ofs6NgKjKtz4+A8d4zscaAcCZUmmYcbwRAFVwnOkZIwBZrA2gev861t4HcQBL7SuvdnI5Nt43AoBhZF6cFALzY5UGoLrb8mrtXwZYPHa/i6e5AhwCC3ix3A9Yysu1AOYtq9u8CwIQRP20N/EasJgDyCzMj9UIAF4DL1RBrLi30wVQgaye9yc+Sb4i+gBCuLgP9h5fvEbn2lt2b0ILCZDKtQEq+fw6rgIvW+vej88lVL3TUwLIDMe29zE/kVQAqpniMVl79iT8EtAIgBBGAHAVxoX8z/f8PnGfyjMBOEJshwHEmQBKQhxhbipFrUKYjcye9OcAQohqGgi5aWm8Uyg0ME9LHCAKQpYbnT1pOJM6QhxguX+dlc9gjrbKtr3hB1+oVgLL54rFHczIrJJtb44KhDjjEFhudOlR8p/Oi1TGZ6amimUtSJeHXP6l2cCAhPoC2qUgO4nEUj0AAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="20" height="15" imageformat="PNG" name="prop-braunetruhe-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAABi0lEQVR4Xp1Ty27CMBCM1HtDOJA4rQocwiu0ifmHgEnP/P+nbHd2vSSAVLUgjRzvY7yPIUni7zNNs7aY0DNA/iW5vBhXIo5ZSg2f53b5L7SOc10q55XsUGYUmg/qx8E+4t5241tcfQepNqWkzV+p2xWC09e7BAqxnJrQez4jAt+Bs59TiA90u5y62pF3GQhTNjg6btUoYPIj27otn3WubfHr8B0lRgvo9qN7XZIvpqTzi3Pw5UReMQKP2fC5Wm+oYuAbPp9n7OMY7k7uLt6lZSaUkhlhNBObFezVaivA9zBnjGDJnZTXlmXjRoiEG7IRTB73dgNyQzMfCB+2+SSUMMfLc7IW7oP+AowB4xJCj+3xRm1+D3P8DVZAs5RNKyFvCIQmhdCAcEH9Yaj4O1YxkLAevXYFrZrUvBLqUvarSrUFMHloIVxOQCJEDWLcGxX3qX6L6ihos17LtpUwByGI8IrKR/41UrGK2yq4jSuiL/rxTzEdAqjUu6kAi4LqTbAIVLHjO0LsJupMcoAf3K+4Bz9+jDsAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-breakableWall-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACiklEQVR4XrWXV5LcMAwF9yKeoMk553T/U8luVkGGHkntjMNHu6wHgQQBEJr9arVa5f+m3W5HmvHFP91ut3y9XknW63U5Go0i3dPkf71es/YqADV4cL7dbpGu76hmFEVRns/nSIdvAzgej2Fx6Pf7kR2ez2fZ/bWJ6kZTcLUS5BiNxrXnXq8XTuVRn3eJMoCoUXqm02m52+3Kx+NRw7/DGqvVKvI9HA5VFu/3e+DjACzyXFOywWAwiHRD168CwFHT0wSbqPanhAC2221IiUY8mUzK8Xgc6R4WUU3tvkz+/1EJFDY/nU6R7mkKgEM12UMATClNS538FbNS5HqCA6Qa0ogyYBFbOey5CebAcrmM9HeJSoDonz0ExBxI9YsFo7q3qxZlIPei2lP3n3JsNpvofYMy8V3xWjaA+XxeOyUjuSh6Vdpy0y91nXPvQghAxRxMQE09Kack9qx2/HymbALaczIDHhZoqut+v89+pAB/1TwhgE6nE1LOMGLWa8rUyYM996lmfuT87VDVHLBNSac/MYFpKTyLxSLSPDl/2+/bEhhsBKob1JkFVfek7G8HQJ312impDdROI9M31ogf3YIcs9ks0oA7zxjmg1a3/e4x+i+bARZgxNpz6orRgJSGH57+Pfspx/BhDfU1GktA2i+XS6QbbKCawcbcKNWVt0vA7eDLZllRewo63fwY0dSfTPle4gZWGcBJIyR1ZAEb9RwOh6GmpNjSrD6Abt8LNuY6EkgY1W7O1Hogt1iT7W/1Wg94IydnMvqUekfD9NS4Tvmg+XerAPjJ7DcDPxXV5qHWqa/gu1RNqNEq1guqG5/auMIhAz8y11Dh77vUQsanNg5UleBfwCaqNWF/sv8EKzRKn4G/kyIAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-bärenkopf-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABD0lEQVR4Xu2TPQ/BUBSG+xuMBt1K6mMwWNRgNtAyKYnFoon4BdpYjCb6M0WMhuq5cuo6rQg5JZL7JG+uctP36amraQrFm4Re9RInIhHf0b1sZBS+DL3Hx8DNnI6eZDc3U2WQ9dhI9tiWzieBAqtRXQQ+QxnGd28r3cMqEC7SEjRUkFcgzjC+cbdRSIqyAr/j07ML0DHLWTo1sdpWKXl6NgGACtBJ9FpFsbKPH6ECXt9MTeGrAjgFjCzgu2V+AWAzLafOOv7pMEFcHkwM/nKATuF8Okb7QVOscA2nJJfxIyiAElCOwXe/nVXyEwAeJNr30cN1bu9eBgoOkoQc9rP/DCz6STmChXLoHoVCoVD8DVeuLIWO132lHAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="22" height="25" imageformat="PNG" name="prop-bücherregal2-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAZCAYAAAA14t7uAAABq0lEQVR4XrWUy07CQBSGqzsTlCDERImUQIkLUnDhQgzxUjBxh2IwGmNivPEW4sa1T+TeB/BtvNT+g2dy5kxbxcviy8ycdr5p5j/ghI4ztV7Lh3/JaORMO5icbpTCh8ut8PbA/xVwwAWnEo/6jYim9eKk3B+vqVGL5Qs4WZJ08N3hqlVLFKcdEIfcp8X/gQ5vUgYt16oRhriUnzHoehmrxtmNnj8/PWpQwxgrXlkYg/lRI6vGpc6cQooH0XO8s10tGHJDfNPxVLFdySq4uNzPKaQYzwGEvb1Ayy1xvTirxZhjE0YSY87RUt9Va8wxwmWIT1rL6rSLth3GWUxA9HX7vrm2xOc7nhp/RFA11oYYXUCdIJOW98vhgQNLzMNIk8ouoVzooxLFUijlsktITHsTxZQ6pSznsku4OLYrZOpJQOr2ClYd4tiuSGMoUv8KQ0x3VuzaP2GZPL97mUGsGMnycDKVshEQF5D0W2LcExfnmn6qmB+QKK4XM0w8rxKGmCfP/ytkx9DXW2JK92pzUc8hlulzIJI1S5xIMOY68N5BVHsddmovGD95k3vg/AAM2J63lpj7DAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="22" height="26" imageformat="PNG" name="prop-bücherregal3-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAABtUlEQVR4XrWUuU7DQBCGLUSDFCRQKAJREsjRkDiOBEWCEIfT0AUISCCEhDjfgtBQ80T0PADvY/KPmc141gsOR/FpZne9n62d8XqjkTfbbeSjvyTyvBkPycVWOXq52Y0ej/xfAQdccJIYk89nm9aD0zI6Dsa0k2LJ07BjzfFGfJVGP+cU640u9D5L/B+Y4qVx2qtYc1lIiN/fXqNyfo4iky9Xac5FrrpmzVliKd2rLUXF1gahN+bWCwTyxcCniOdBqpilg4OQoku80K0QUjwMVgjk9/36RIxBszhPQsSBXzFyjCWQFsYghxiRxcgtMX814qEfF4HHkks1BtfbcTzvlWyxIawlx1NwtR/HhNgUp7pK6LOV6A5Cjg4CqWIs4Ny4KPQi0QVfybnYqWIsaLHsAi2VuVOMimKh1GmZanMXAB5z5+jcKUZVsaArzmI978ISZ+UhQ9dYZ6zPTZ4lkL8uo4v7rVhLwbA9+XW5Jfmo+MJyitOERizuBO4cFvO9Yon5K3W1JSdB0dwJ3DlS3CzmbLGuLuR6TgIx57c7yxm7IhRd0G9QvAtjaE2sp2HEP6L2SV1Esf4Bjla7z3NlxCgAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="22" height="26" imageformat="PNG" name="prop-bücherregal5-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAB5ElEQVR4XrWUW0sCQRiGt+6KMnC9UFcNcpVAOhBdaEQH9cYCQcUoIogO+iMCtxuhc/3f0m3fWb/d2ZlR1g4XD3P65lH2/XY1y9Jmiznd/ktsTZvRMDnfydjv1/t2r7H2K+CAC04mxmb/dFsqnBarueGwHhTz3Lc2pT26iH8lItaNFYsXxyHek8T/gReeinZpWdoLQ0Cc0efsu6M0G8FWSmfQWoVVNaQ9pfillbDN2Lx9kFqyK7kkA/vHkQiDfhx1rL7mjqgHE8UY6yvRgPgmGmVQjShGPcC8UzF9MRYFY5FdwOiJ80m2JjHVfJzE2fy15tcDzCUx//BRxK9JjPmFEBS42nXHs1JaFnuUs8H1FFweumNATKkiaVXaBB8UD3WRUowDBEKhgMdGItCGfFDUKYDCVopxIImbfheIYuqUiWIkyouxBs+j9qI13wHUKXS3uqoQI1Uciom/teNMzHcMdQ11Co8kDks3RNdIzxhQUPxrTKg6AvV8uEox64pRUPxrTPDBUUs+NNwM6IOlFLPwQoqpc56crunXE953RRIj2WreFYvfB1VHUOegvlczmLhgLMhiMV0mjsmpExB7tXv+XBILDBy+QLeS+8R4WzaHoFN2zoF8x8MT/4isPnAYFk0HzDFy59+C6pj17SSz1AAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="22" height="26" imageformat="PNG" name="prop-bücherregal12-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAB30lEQVR4XrWUyU4CQRCGR28mesIDSFgS4GQADx5AiQt4EA0iIEZEE+PGQ5iAFxIXXF7Iuw/g2yiM8/dQMz3VMwFcDl+qunv6S6erprVOR5vOJHz6X6Jr2pSGpLkS1l8u1vV2Jfkr4IALTiHGZPdoWflwUjrVtEHKKZa5rS0pc7QRp+Lw7zzFfKMXfJ8i/g+s4rlRz0aUuXFwiD/e3/Swb0ZEorkaEXNedLaCypwilqUbsXn9uBQW8I03OyG9VwuIvFc0I74HrmKSlrfzInqJIeXiWnpBgPy6ELfFGCwG54QQsZyMWHKMZSB9PfSL/MkQI5IYuSKmUyPuJ80i0FjmlI3Bec6MjWxIFVvkY87xBJxtmtEhpjtEpd2qLcM7CDk6CLiKsYCCUFHAfSUgOmGUnIrtKsaCIq7aXcClcu4pRkVlMXXB47C9aEydw3NPMap6shtVKv5c9wsxn/dCEY9La4yuUe6Y35t8l0D+dQkUVi7uSDGXglrK/nWpJe8qZg2aOfPB8hS7CS2x9CZQ5zwYXdPdC+iNUtRdTKfk1ZY5SAetN4E6B6dtF4PDd2VWFfPqQs7nZCCm/HLNzhUxo2/wBVqFxCfiVT4+ANd5Yx2oeyws8Y+I+foGg0zcADmitP4NwJXXE50AkbAAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="22" height="26" imageformat="PNG" name="prop-bücherregal22-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAB60lEQVR4XrWUTUsCQRjHt6gwykMYFZiGqBVEW/SGdon0HlQEhZcg0kvkLYoo99K5gxhB2SfoK/Rxggg6BOWldNv/rM/u7MxoVnb4MS/7zE/Z57+jFQpaZyIeMNuJqWkdGiaZ5bB5ubdinq9P/wk44IKTibF5sb0gFf6UwsaMhe4V8xibs9IeHcS/EhHrGorFg40Qz0ni/8Bpnoqt5Ji01woecTjQa94fBdkIQvNRBq1VPGQGpD2luHLnY6MvsmYOGREG1tOLfQzM8eNUV8m79eBbcZd+5hEf3g4zqEYUa7rBwDybjrliLKaCfvO97GMjikiMNYkxJzGb5916gLkk5l++Xz/xrCE9KI5ITRLZSYZkcTvYXbVHj5i6ik6ruk3wjeIJzcUZSjEe4L1RU8BTyeeJId8oSgqgnijFeCCKn6/cFIhiSkpTMTrKi7EGrzduCsQEUFLorFLMsnw8LnX6rWxnl9aQduunTlrEekncTqR3DKhR/GdMqBKBer65SjFLRb1R/GdM9EzmnMZRJB+L9qsaXbIvLKWYNa+JmE8EJefl2m7uoDGhFjupqCeAvx9UiaDk0N1h3yv9sljsLrsfSo3vB4jFvVZSUbX4BLl0/APjfipWA9mU9RzIZxwc8a+IBqoWtUTMAnOM3PMvLl/Dz0MAkr0AAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="22" height="26" imageformat="PNG" name="prop-bücherregal123-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAACBklEQVR4XrWUSU/CQBiGqzcTPaERRMAEPJmCGg+iRKV4QeMCiFHRaNz9DSbixcQFl/+rMPad4WunM6Pidngy2zcPpO/XWvW61T09GmJ/CbOsLguT2kycPR/Ns6uS/SvggAtOLsbmzdaUVvhd6uWMSzoolrmujGt7dBH/SkWt+1CsXvwI9Z4m/g+88ExUswltrxMC4nioh10uxfgIarMJDq1N1Bej2p5R3KhE+LiQ7Gc7K3EO1vu5CNvLiTP8ONU1in49+FK8ZgspiS8WBjlUo4ormSEO5qeFlC/GYizaxy9gXLMTnhhrElPNy2aYzx+Lop7EmGti+eGv28EwuNgJ8/meEhQ4zIlxOxvTxR5OMrj+Bgd5MQbElCqSNqVN5JMDXlAy1EVGMQ4QCIUC7kqRQBuW3WdZssU5uoX2KROjGAeauOx3AZA7gDrlUzESlcVYg4d2e9Ea0o206ADqFLprFCPV3eURLfGnapiLab01OcyqE363qPWauFPOOuga7RkDCgrByOEA+dWV6+VwjWLeFe2g5NeYqKT94Kglb0sig1pOfLCMYh7eZ2KpI6hz7t2uuVmNsO2VEbPY64p2B8jfB2IjE/W+CdQ5qL8qRtvflV5drKZ7nnfFeT11AmKaH8/5c02s0HR5A2eF0VeMJ06qBU4d9xzodzw88Y9IhpouremUC+YYpfN36Fqn6TmdeFwAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="22" height="26" imageformat="PNG" name="prop-bücherregal1234-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAB5ElEQVR4XrWUTy8DQRyGl1MFB9lDRbUlWg5S/0LSuoj2RFwQCamIRNRF9OaoDpwdmoqEisbVV/BxJCJxkNAL7dh3tr/d2ZlZijo8mZndmYfs+3aMQsFoT8ZN1kqYYbQZmGRnI+xsZ44dLSf+BBxwwcnFeHi6Pq1s/CmFlXGLMa9Y5Hh1QnlGB/Ffycj7fMXyQT/kc4r4P3DC07GWiirPmsEjjpgd7O4wxEcQnhzm0FrHfbZHeaYVV68DfDwJmaxva4mDdWKmk4M5/jjtq+bd/eBbcSUS9IgProIc2iOLb6NBDua5TMwVYzEa6mZv5QAfbwQx1iTGnMR8nrdHEmOuiMWPj03iGtL9Yq8SksxGKqyKW8H2vD16xJQqktalTYhBiVCLtGK8wHejUMBjKeCpoRgUNQVQJloxXsjip3O3BbKYmvKlGImKYqzBy6XbArkB1BQ6qxUj1cHNRSXp17LdXVpDWhmwWwOxvF8RtxLlGwMKSvwZE7pGYL8YrlbMW9EISvwZE2JwVMmHov2pwlMj/mIeXpNias7zhR0u3SuK2GlFowHi/aBrBDWH7o7+7IK17lLFcrr8fij53w8Qy8+aaUXN4gPsZeLvGHfTsTrIpa33QD3j4Ih/xZBZs6gnYxaYYxTefwKeqsntaY3nKQAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="10" height="33" imageformat="PNG" name="prop-bücherregalseite1-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAAoAAAAhCAYAAADgWTpIAAABvElEQVR4Xo2S204CMRCGeQbFeAJBBfUCEPHALiuogN4YlVOIKCAImPgKJnIwYuIh+rKGK83YmdKybImwyZ+2M1//mW1rs7FP806DojU5/0WGoOvIEqmZ9sNTPkQjqhpzUxwZCYrkRzUKn7UDGnHdB3sEPqY41C3sQTsXhNeSBu83EWhlAhSXjs2MjwLo9FbSoZPbYqBB62bGD9GNGQSnfhB6LRvwhYl+C53cJgfNjg/nPgpiSQFSv8wVR2PdTmCvleW7Xwq7Q6Di2Ezzpq0SrUhQ/J1Zz5c70oDAsHf6W5xjm7WAI7aCm7uslfukR4JDN2OWiMvSk4jAgu6EpG8W8pqDHIqGCxpxDyRYTDrqa7y0CKJK+y64S3ggt8c3SkdcZHcdlES32uEKzUtsroBnoQVKChhH5WdqR9yhEV+VyZGgcBIJAYqYBOvMCYNX+gC87fep9IjBfNgpQXOfSumC5oQrS/mRoLnHfx0FlA/zMx0LirIKiDcwEWhNWNcKWD8aczP4zCoHgwNG4YHjU1NAfI/lqBsqsWVKFplOAnNqaQxebPMXhOvU9iKcBucHoO61y3Lmx4vgsd/iOIn+AE35McOpwswUAAAAAElFTkSuQmCC</image>
   </sprite>
   <sprite width="33" height="42" imageformat="PNG" name="prop-door3-intact">
    <image>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</image>
@@ -4066,6 +4200,15 @@
   <sprite width="10" height="15" imageformat="PNG" name="prop-fackelAn-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAYAAADd/14OAAAAk0lEQVR4XmNgwAKel8r9RxfDACBFRCv8e1iGOMWvmuX+/7/r9P95iewfdDk4eF4q+xuk6N8xPKaCJEAKPi+Wxa2o2J7/f7ePMFjBmw45MBso9g9dHVghTDEIlzkK/I8z5cduaqEdRDEMx+NSCDIBWSG6PBwgK8RpLQiAJGGK8SoEAZjiRDM+TB8jA5hCdHEMgEshAA5cbCK/eB9ZAAAAAElFTkSuQmCC</image>
   </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-falltür-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR4XrVXWXLbMAzNISK7PUJUb9riXZatZKY/TRp3y7RJt3RJ738Alo8qJBgiJbd2P96QhEDgEQRB6uTMP1PHRBAENZkLvV5PndAgz/MdwNB6va7JCWEYGh0pt8n4t81mY/rk1xCQinDcZGg+n6skSWpyciJl/NtyuSzHVgKLxcIozv2nJaSh1WplIkBjrIocN801emFFsCSASYTr4FS9DE93jGAM3Pxp22Cbe6XtZlmmoiiqE+AsX4yKCb+yrsHd1FPvzj3T/5521c9VIec6wKOWv4pP1cdZp5RJYoga3zonAW7Y5swlA4EfadFHy3XQx+p5jvwXAoiETQd92G8lcHUAASmTBCjPkMROAodEQMpo/KiBBEYS8oR3ngJKNGmIYxvp/W7Q4zmAbQEBvgWoNdYIQPHrospkaZgT+Las9B50HzLXPGcO0MpNYUmn6m3iqftpO4GbaDdSD4t2AvCTpukuAYoAzuckGqgv846JgsvQ38hsBHi0a1vwPE9NWI9F4NOsskUE+AV3EIHX+swDUo8KEZdhq/aOACmTAWSw3FtuXI5tBJBX27hT5hpd5UArgc86J94kxV0gYSNg08ECtnFXxUlsbkT+JqjVgfeT6vIBcCRtBOhsS2dSDzKcGBCYzWbNWwBmcH43YedbE5B7DWBV/OZrIoBFoKUS7CQAyDrg2gKsihcicmbLAWq5n5KA/8wvjwYicKsj8GFSOcR7gI8Jm/4T0+LR4SKAMS3GSWA4Gpb3NFAQqFZ2rwnICMDpdeCVlZBI2AjwvpWA3IJt5JkCwh3KvaWnFh+THp/7zwT2uYz4u49ktlcQ7/PTZq0DABQ5cCqQcPtkvJSjfzv2SlutldBG4JjYiwAQBCOV6xNxma/VxSZTlxqmzTMVhyN1Hocq1jpxODTtRV5Utmp+4Yi/gHAN83+JGgH6GyLgZIzHYzXRgKFQywCQ43c6dKm0AvSTEgcDg3UG3ULmjAAM4iMqFdUEOEXppImyinEC/HdLEpK61rvAtg18kpTJ7/yOb9KHY7oNyW9JAPB9X6EyoiVZf9Av+zbAYdO4CfD1G0V1rzWBez6/AAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-gelbblau-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADt0lEQVR4Xu1W2U+TQRDHBxHaUsAYfdTog8SDSwwKWq7SYolShNpWekFLoYgoxgMPoohEARXBEINHPDBIvEi8/at8NCbY9ftNmc3XjyNtjQ8mTDLZ3dmZ3/x2O7Nf09JW5T+RNTk6XZFRp6tPRrN1uhItUMLCIAFLftRnKZgPWPN/sy0nI8OUbcioNur11my93qKMdYrdptgrcnNzs7vtJUpM/i+vefcPjtHiryhIgCBXp1cM+E0/r/tNUUXnsU5Ew/VF0fPeSsRSzALBxEnA2d3pWQTMeuJ8sxifqJaq3nMv4U8kEiWQlZ6epyZw5rKdkvhPHpfJ7oyZRaDHLT6/LRIzz/eR/eaoJS5h39UjKRLIytoAZ2eHV4zeNRN476XGuNOOjdfQ+H2ugBTztzN7xdQDE83Vt8MxwNyUlqbX5lskXO24gbv3amQSd8RDhAZv1YmJ+1Vk+/C6WPT0HaX5l3eF0ndyslIM37aIc/0N4tv7GEFg5mZmlmvzLRKuWmeHT7x6UUqAAGJwVtQBX++RQIDU5msVm01di3yZQEI/Azu6FAI4VUNrDDTP3EkjFHXByUsbwtLO2hj0iypnkOZPHpaJ/sH65AlwNQOktKFDVDiCcs2KU2MESdwYRktLSO7nmSNEMLUbUIIACG0MBmiEDYlq3CGZKNTrpPrAviPsk76sOAjqKXkCCydCMXECtTKZ9jNOqnS0prc71qpQdUxKNwDwli4PgaHtMCJB94UmMaKQujRwmLoBLYoEZ6/YyS942kUtifpBzNUbttQJIBBJMeJhQVt6TrTIU3KVX7x2OK7qR+7U0vjsSVnsNlIl8PRxuQSdfrpfzkEK60/KSwhysEXOOWRnsHILpkSAn2JO+vV9oTjZ10S2rZURpStiN8S1oP697W2x7thW1SU+vSmm/YQJ4LWCI4DQzwgGmL2tVeyyRoTV00brLRXxvQ9/tb253R+3B8wcRbT5lhQmwAAVjnYad9TGHqMDTWE6bbUrRHP2s/lij0/lsRAlRUuqCWjzLCtMADWA35lPA1ugxymGhutoDhJcrLwPfflsH8W1nnJRgXINaPMsK0wALYXKBxjrR+U3xdh51iFt14ZscT6Ppg4SEbTm7HRp8jew3pC+k0kAEF88rngovoJYD41YJRE8SPhazs3ukX78eV5IvlabZ0XhqtUqAPFx4SRI7uzwRHm9fdf2Nm1MUqdn0QL8rWrxExL+M/kXeshgMGzU4iYlS4CupDYkNRqN67U4/0LWKZquNa7Kfyd/ABwMlIo0hsDsAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-geldblauschwarz-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEWElEQVR4Xu1W7W9TZRS/pmN33HbdSoiEEBBfPgx1ZSyS8iJdt75t7bZubrOra9duLVs7xiIEcKIEFkRhvAmGENGJgEGigBHw7U/wi3+FH/2iJoQYs8fzO7fPTXu76O38RMJJTs7znOe8/J7znHNbRXlCjwk91ahpW5yaFq2GGzTtFXMgyySDpEPuxUzILUaDzb9JXWNdnbfBUdfhtNvDDXZ7iGQn6SOkb3O5XA3Tsa1/6z7uh173hmPwMcf/V0ICOA3nU2IuvWtxLu0l6f0deys82d0qDqV88OF9EaB1EDBO5JMVgSXvOTQoLlzsMLj0LLGEPYOwCqC+trapFMD+d/o4SXrvG0ays+cDIjOTEN/d3iJuXtvG+g9Oh8oSzh7tXSaA+vrVMI5PpsTpcwEOvu9wf9ltz1/ws/zpm83MWN++uVV8fFkveWl1pA9irlEUuzlfBcluRwXOfeg3kiQKSQZ0/GSnuPhRO+vufdUqZmZf4/X3d1oM20uXfGL7yag4eCQmfryrA0RM18qVO835Kkh2enxyVHx53cMBEUgGl4w+kOXtzWSYI6Nj4hnvVIWtBGDpGXRDNTpMAHCr2JgetCmQZwlGX8jkntiEoZfcn02L9niW1wtXdogjx6NVAFDVqM1mi8puRhBPbFK0DWWNvWTcGhIgUTHI0EjOOG8KFBhgVRXQigDghIDg/myGJXRI5E/kjES5fXHuD5wPTYwatpJxEfSTZQAwYgDFG506EzISlLIEs3t/nDsdo5ma1kcVXOpTVQUYgKJwE45MJTkYxg4SCabfGhDzBOrwXA9PA0YUCQ6828d22TeHeSTRP/A5+l5kGQCoAgAARySFxIcFY5ncM2LcUnb528d6yrp+/myQ5ecLO/RqVAsADABXP91pBL1xdbuxBijsH9CXEOCgKxwcEuQeltMh9ZDLAiA/xTLpD3dbxN7ZAdY95yvQVOgVkr2Atyb30PqN6+N94/p0PN8+JR583crnlgHgawVDBMY8wxnB+sbHxMvhgggnx3m/sa189mFP7kHiNuwHd6fLzhCzkcicb0nSnyD5lwxAql2QLwb1j9GrAxN8447hHK+hW+uOXSE7H7Hf93qOk6rUSziL51OPLN1eEow11RZFD+CdSRUuAunIzMTFiVOdnAAgZLPW1NR46TxA3H59Yduf8EMzo0FpJD+rGgAYI0VbP3HozhebfyXpu09vWgTV/O2tlj+wnns/sli06yIOnJn3/Lxuw7pBVVV7bt3wVP+HZJWj9iU4PEu3rl+zKadpau+1T5p/oaOu4lv7iFtPzIdF/gB3P5KHFb0HsA6i/Ktdtm75/qRbIeNbIlkFMEpJKv5A4Smwr6GqkC6MCiAZdC5N65b20JXGMMf/TyoHoBgAsEYCIwn9dkgApT5mNse3RPLtOCEnt0XljxV+ss1JluAuh8PxtDluVYRAfMMigCWSlHIESZ1O5ypznP9LLyiV/+dU4lqT7gk9fvQPJi06YtK9pfUAAAAASUVORK5CYII=</image>
+  </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-gitter-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAxklEQVR4Xu2TQQrCMBRE69YQwR4ytR4u53JbKG6kVCIE6u9Uh2ZcCHmQRR7l/f5FmqZSqXzhfHLzXicBhVknIYVt3Dp7l2Lj+b50rT/ef/IDaBjrJKRgjHE1jHESXlt597DD7LbIyUBR1klAYdZJQGHWFdNfwtB3YU4nu2sXRuBu1slAm7FOAgqzTgIKb7jBOgkbwygnAYVZJwGFWScBhVlXTH7by/fNOhloM9ZJQOEP7mB9ESmaz5vzblo5850MFGVd5S94AqCBmh1HQ2M6AAAAAElFTkSuQmCC</image>
   </sprite>
@@ -4075,17 +4218,56 @@
   <sprite width="32" height="32" imageformat="PNG" name="prop-greenEyeBreak-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1ElEQVR4XrWXaVbjMBCEuciQfeORDbKQkJD7n8rMJ1455ZbtEGb4UWB3t9Sl3uQ8PD4+Fr+NTqeTyYQH/vR6veJyudRitVoVk8kkkzva1h+Px0Z9SSAqHCx+f3/P5NEmyoR+v1+8vb1lcnCTwG63S5uD4XCY6cHHx0fR++skyoU2cpUUNGEymVbeB4NBOpUjrvkusgggjCxlzPPT01Px+vpanM/nCojCdrst7ZfLZbHf7yv7oFcUT6dTwrcIrNfrjHksSqKCHAej0ai0owDdLu5fEmBhdNIGd/KvSAReXl5SSJwdmM1mxXQ6Ld9ZQM7dBlkkxIGICtXvclJFyrQ2SwFQNHjGuedSG7m9O1C71hVmrAmQCDClonEV1xOLHJGJzjkd8nz9V4QozFgTWQRIgxzETX4LWQoQ8n8+n6dn2DtBVTygJX0zz68jDaveV4p4ljyLABABPXsRShaLjndAy7ot8A7jXnFdI4Hn5+cyHYCR3O9fT96EuuJrQyIQhU0g3LrZAGQJJ04ZTG672WyKw+FQsQWagK0RcLC4bkgpjzhSTUCCVou2cU9HItDtdlPIGUbM+hhGDONA0QZ1sja5oAOUc0BOOY1XKcR8s4if6uUvSwFtotvOGdOSaktAUSJXnv2rx2eI7xHfQYVAHVvySkSoA5GSDrLKuYhoY3S8xzHO4agbFeJdXfBT5FP1WmPUX2MX+MSLULR0Uv8+4HT+KUfq6m5akNWAQxtEuetVF9EBhOioW3t8OwVEg5HMKF0sFpm+Dv69yIjWIPMCpwPLCGAYGXIyFRjX6Xg8Tjnl+06O9C0IXI49znBMyjhAGmo2Zyo1UEdAcF2cjJJ7yAWfKXEfUKkBV3JyJqNvFouS02mNrtumdyGSKgl46NwhxrdyTp5jVO5BWYTO1KFCUmtFvVCno140B6KOFk4R+NPQhhG6kKJcuFdHcZcp+B/ASZS1QT/ZPwEBJBrhUKUNLAAAAABJRU5ErkJggg==</image>
   </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-grün-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADk0lEQVR4Xu1WS09TQRitCyu0paXERyKFlvaWmJgQMS5MNJi4QARcaNyiIuIjIVGIAopBURCMogXEQivlLYiAIAiKRB7qj3LjOGem3+3lFkhb4oKELzmZ6dyZc87M/b65NRh2YpvErlSTKddqMhXFA5vJdExPFHMQyaX8nD9X8nMYbxmNpSYl5dksSaetZvMZm9mcz9sCPl7Ix0/Z7XZbacERhjUArdHzbxoQwKKagJc1XM4j/MXvWHCj+CirKzuurgkbjN0EJtcGlChiwrMBDxuadqrQPqtdZ74wEauBFKPxkNbAy2G3EHnY41XF+qecrD7kZSvL6ezLQoYY75l0rRH0jbgTNJCSsheTq/mivk8uQf5iKLJjkA2G29+rBwXQX1h0sI+zmaKvPR1aA84DBoNZrxcVlO04gQG+UxKpDUpDgXEXG/4sx5eW0tnzQY/or/LToLkjM04W4ify6r2b/VqRBsFpT04+odeLCsra6kA2m1twCEIQETkBeUDHe/utREWnwgqfZkbNJQMxvQaaWMMNYFd3/NmC9HyzU7QA8oLES1rd6jihqsvLyts8oj8552BvPmTFb4CyGSQlrR5W5pOiWiHsGi1M4sTQ3uyQhqVplzCY4Al4BSFQ1SVbjEHoertXFWroVUR+4Pm97shcAjaCfErAgCRAMpGAFmTmSZ8iMh2lWRcuVUC7JqETAPn9oCRE2aGFQDNPvl5uqn3ULaoBJQqBVp6omPeYnwhKEvmDNf4xeT8kZAALIYoWFwvK8sG7yC4py9tG11ZJLy9XtNNf5SWF15CQgan5DJV05lukD1P4vcx3CXMYa+qPlCWBSjAhA3QVk+jPlXTWMihFihszeVVkqEJUAfS+K/2yOs41Odkyv6zwPGYDuK0wEUSoZywGWSUnv9iSxW51yMumSFf7mK8dv9sdKUfKgVQeer11gwwQQZlPil7gdY229LUidlvepog+zavolKLXfPKkUJJaA3qdDYMMIAfwnmk3GKsPeVhwXGY2TFCy0nNgNpwfj0KKSFDKAb3OhkEGUFLIfJAR8AFC29ivqGP+saw1cybmpBmU5vx3R/wnkGYxHiYTIMQXjzIeIBPBCZdqBBcSvpaLP6QgQJ/nsPhuvc6mQVmrBwjxcSERiFcHFPXvWu7JfVf1a+LaPYWeYKvQ88cU9GdyCzhrsVj263njinVIN0MhRK1Wa5qe53/EHg6jfnAntl38A5p6tiw8Ei+/AAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="18" height="20" imageformat="PNG" name="prop-grünefackel-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAYAAACAl21KAAAAoUlEQVR4XmNgGAVUAUoFGv/RxUgGIEOoZtCMg4rUMcysXv3/rtuu/xXy1f+gyxENFPPVf4MMmXuEAlcpFqj/nw80IGuByn8QG12eKFBsz/8fhEEGwDCQ/w9dHUEAM6jbRxiMyxwF/seZ8pPnqkI7iGEwHE+uQSAXIBuELk80QDaIbG+BAEgzzDCKDAIBmGGJZnykxxgygBmELk4yoJpBxAIABHNfy5l7nUMAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-grünschwarz-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEG0lEQVR4Xu1W3U9UVxC/zW1ZuPsBa5oaZGGX/TBNbGlseNBQIEpFWNCkDY8qrR/9SpMWUgWlIbXVQtPSglaBRRcRrFYRUasgbSJYTfrUv0KfWl/6ZEz1dH7n3Nld7hK43KQPJkwymXPnnvnN78ydObuatiLPiDxXYBjrfYbRsBzNN4xyK5BtYZDm2tf+fae2TOzaUvZ3xSvFh+AryM2tyvfkbva53Vvz3e5asnXkj5O/2u/353+0vfyvZorZUfPqfcax4i8qSICgtkRMHG6uMrXyCZ7t6PuNr4uOPRtkHJ5NgvZJYHN7IpoFzPr12YgYuxpMaea79gX2SxJ2CXhzcl7OJPDdubBM8vnpWCrZyGRQdCZjYm62SNyYKZb+0xOheQl7z4cdEvB6X8TmAxR05kpIgn87lj4xwEZNe+/OGqlYz/wWEJd+KZHrzOpwDDBXa5rbmi9LuNtRgbN0Uk7SPqQIJcZD4tw15b99u0h8MxqR6ztUDd57/npQJKki3/8UFnfnFEFg+vPyKqz5soS79kBirbg5E5CAAGJwVvQBl/eTk0o/PhEV8a9KsvYyAVufgTe2EQGc6tP+tRL0ra6gtFD0BSff2RNO+VlbB2JiX19EriduBsSPP5cunwB3M0B29kTEnl6VNDMRTg0LkqgY7AfHFWFFOiQJOqxATAJCWweUhQ+J3jsWSyU6PByV/YH3+wfTe1lxEPSTAwIKAM3ECTKVyXx5Jio7HaPZYY4qNDPGUQUAfnBIAWLsYJGgi5pvmEgduxCW04ARRYIealTs+4IqgpFE/yCm/6K6HxwRQCCSwuJiwVgeOpU+JXd534X5UzJM4wp7dVpdUvgMjghMThWnQK/fSq9BCs+zdEqQg+/oSERQ+CaeDvbDOiLAVzEn/X2uSHSPqnI3HimhqShOJeIJoPDqdeWeppZ+NR3bjgbFLF1WeG+bAG4rbAQw5hnBAGuhBE3dpeLD4+qyabDMPvZT+CbSKjx/NpgeR+6BAhJrvgUFm/cPxh4zALnqYd+muYZ994eoPPG+vqhcw7dh9+oE7auB7u1VlXLpegPe0e/KI1unZ+FyoQfwnckVN4ls6UxGxNC46myQ4GbVda1eUxWovTYV+AdxOhFAg9I0JR0RwEjRY5x06/T0mgdka/ADZJIK08/xQ6wHLpU+xR7SN0mrT40V/REt8zQZLn3b1K+B5f8hWeXJWYcAnBqn8Hr17eOXC/+kV3Xmt0aptaHLIXFkRJKsJN1MGjJtHcpfUvj8G/z9yfeCCW9PuAoAAgkqcYPhcqVI0ZZ4nqZtRAV85IfP0PVGWMRwPKsVf0nJJAArSWiKBNvMREzSZ7iykjsiAOFvp9Qlk1qBl9B6j8fzkhV3WbIA6GIaR1Kfz7fKivN/iIs0x+pckWdO/gNhbljm/XBqDwAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="20" height="27" imageformat="PNG" name="prop-kaminvorne-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAYAAAB836/YAAACCUlEQVR4Xq2TSUsDMRTH9aKeBZVEcanW6sy0dhG60JlWqS11wSpexAX8BooHD+JFEQQr+CU8+xW8eBPEsx9CcUFE6TMvY6ZpXGa0ffAnyyS/939Jpqnph9A0DVzUou75NTKZDN+ILSqVStWM2ZJmdY9ryADTNEHXdQH7exSLxdZvyuRS13oKPCPm5k52KZX79/gE3jcMmM1m29RS6yoZw7KsV9mZcKuu8xxqqXUDRYn4XBpSsupMSF3nOf4FVG+wXtX8Xt+5+W1enmMvotIQIANxibGnkkOGBtGgBpHg12/4AgzDcMbOWcpZB3op12AfhWiAwkSYwMN+J+SiBJI6hRGf/R3Xfrp7k66lCpRhqDE/hUKMwQ46oZQkXHNxApkQAX8/BV9/D9+De1XeFyC6SzA38wkCiwz0KEGxHwtUXboCfQwWHqa8TARcbXY5QOxjawYJT+oKRNgYg02x81pO225QL2etcLtTBWOyyLAHoD5IIR+rlvZ02s5hKAFHbRcIWOwsXYHjI/a5yc5ezkahcr1bA8WEePuuwJRBnZKEs8rNHrxfbDjAnQU/T5oOdbsD4xqF8roB5TUDHg874PU8Cc+XW3x8sm7raEXnSeO6y7Phr36IQi5COFQAVO0tBeCYJQgO/XApOCGUZcpPWjCft2ChYEEpb/dLrL88Y8LqbJq30zmLr5X3IusDIR1Gcv//d2wAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-kommodegrünerleuchter-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3ElEQVR4XmNgGAWjYBQMJdB8gf8/Mk13kJ+VBrYYRtMdDAoHwDC6HN0APsvn/+LGKUc1gM8Bn/7dxSlHNUBPBzCCiDIvxf8wjJwGkMVhGOQAZD66gSQDoCG/0S0hFsdYSlDmgDR7qf+U4OHjgNlFNiRhujgg2EIejNHF6eYAfJjqDiAJOyDYNHdAur00hhgyppoDsAVxugOmOM2iAKsFDtIY4iA8Pd+aNg4IsUSkenSHoecImjgAIwSwiKPLDwoH/IdWaGQBmEHk4lgrKoUAuRjdPJIBuQaRq2/AAADRzDEQNgxrkQAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-kommodemitzeugs-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA2ElEQVR4XmNgGAWjYBQMJfC9n+0/Mk13kJ+VBrYYRtMdDAoHwDC6HN0APsvpkjbwOeDTv7s45agG6OkARhBR5qX4H4aR0wCyOAyDHIDMRzeQZAA05De6JcTiGEsJyhyQZi/1nxI8fBwwu8iGJEwXBwRbyIMxujjdHIAPU90BJGEHBJvmDki3l8YQQ8ZUcwC2IE53wBSnWRRgtcBBGkMchKfnW9PGASGWiFSP7jD0HEETB2CEABZxdPlB4YD/0AqNLAAziFwca0WlECAXo5tHMiDXIHL1DRgAAO50MUyMCNfAAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-leuchtergold-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAr0lEQVR4Xu2VQQrCMBBFI95ArxAP0k1v50XcmgPpEVzYCraNifghfEJXkxFxHkwzk1DeTzd1zvhllqOPvKfKEpQD8I05AJ+LA2F6bN5rODxr581Igkde48ltP/PqFxEnCW40qwcYaNYNEIOf0WcZqtxDL04pRF26HfqxFkgclqNU5CWQXfu9rrhE/dY1virPWAALYAEsgAX47wBJPqn/DSFcK35HDBZV6+zvTUO04AU//vJnsd8XYQAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-leuchtersilber-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAr0lEQVR4Xu2WTQqDQAxGp3gSzyX0ODIZcNVNz9Cld5Mu+qMONCV8Heomk1LMg+hkgrxv3GgIzj/Tje2Me6ZESrYB8MQYAOfqsHC9HPKdKN1K82q8A1xCI3ucVwMFW706p6F/yh6F2KtDKT14nWVcco/X6kghV3s8v9Z0LQVSB+VcJnLJ5xswEkvMT13ip/KMB/AAHsADeIB9B1j/ju7mX0MWfit8Rg0UFSvSVDVEDRZQJd5/xEcpLgAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-lila-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADsklEQVR4Xu1W7UtTURhfxObc5l4staCkoEAytRc1TVPT+ZJzqdOpU+fmTKdOnXOJVlgWhklpURFBUFBU1IeCXoz6U6K/oQ996YPg6f7O9bnb7lS2SR8EH3g4L/c5v9/vnPs8516FYse2ie0yajQn9RqNJR43aDT5cqCYjUCc1Tm/e8y5f1y1eSs0Z1Sryww6daVeq601aLU1QlsnzNcL8+Umk8kwaD39y1WTu+quyWW0Ro6/qYEAi3rTRthNVxl8RfCfGMfi3oZTbNpWyWZdZX8xXhMYuwgEe9J9UcDkgeMe9rjLKnn4M096dDwXEauAFJUqK1zAlQInJxk4OCSRPbA3Mm/mIFueL2JvJyv4/N2m5gjCmdKuBAWkpOxFsFtYdL+1kYNP5fdE7PaRQ2x/LBZwR//DTCl7dqmO98NPh9YAM0Oh0Mr5ooyyHSfwsONiiCRDFDRvaWVPui187tPcWTZ5wsX7y3eKpNin7nq22NzMrhV3s+/3CiUBpuTkEjlflFHWutNG2bupCg4IIAInRx7Q8XYZxrh36vysVjEZFUsCYnoNFNgrCMCuug3jHNSiuMxbOPKCyG2KoDRP7jSNsbakAO+/GDKzW1Xt8QugbAaITSC3KwPSmBy7RguRODG0HZoJ6bmFrw0megIjHBDuNPl5izkQtasDEpHvSD/PDzx37RmVYsmxEeRTAgLEHSGZiCDcSczo0X6e6SjN/gPDocwPW5PQCQDcs8/HwVB2aEEwkeNhS4KoG+UOXg0oURBcPePkccOHB3hJIn+wZs7clrgALAQpWlwsKMu+/aFdUpZfP+eIyPqllibevvJX8Ti8hoQEvBwxS6CvA5VSH6Iw/irchBCHufHsPqkyyKkEExJAVzGRflsoZME8t1QJdmWIiCqA3rfTKFZHneBfbhfz5zELwG2FQA4k1DMW89o2+plVaB1a8V4AeHhJkjCad6WKIugZMI2CyfnWNRJAAHaleNk0rF1GrbuDfLe4bNCnuE6dePnYVeKdgZIMFyDn2dBIAHIA75l2gzlv5gBbaGjhfYigZKXn8DfB83zd0CEvT1DKATnPhkYCUFLIfICRfxbeKdqxrD5pbq66LSLm+WAtF4LSfD9dHv8JpOpU2SQCgPjiUcbD8RXEeMFqk4TgQsLX8uNsiRRHn+c1cqWcZ1OjrJU7APFxIRKQu9N8qzQ+ZszzyNfEtXsyOcBWXY4fk9HP5Bb8gk6nS5fjxmXrgG7m9SDV6/Wpcpz/YUmCq+STO7bt7B/cr1M8b/fy8gAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-lilaschwarz-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEN0lEQVR4Xu1W7WuTVxR/JE2e9kmbl9rqBp1uQ0HQUoW2vqxrY5KmbdJWGxs1tllqtFX7aqxFnagoOlc2dWwigqCgyJjgYG+O+Rf4aX+EMFDBLwoy/LC78ztPzpO3MZKAHwQPHM59zj0vv3vuOTfRtHf0ltASj2FscBlGpBx2G0ZrYaCSSYKMBpufJLqbnye7W16JzlNd3emurfa7nM4et9MZItlL+jDpu7xer3tysPVxItj8fCSw7rH4FMb/X0ICOO1tnFZnk51PiJ9C4rsU3h/e8Ox41P/6XLLzBb4zAEsHAePUsqmiwMLpdSl1dWTA4ty91LJiewZRKoA6h2NNLoATbQlOMvHBISvZN7Ft6sCKg+rBxU3q+wUf67/aPpSX8FTHSIUA6uoaYDxGTleGt3HwY62f5Z32u7gpH15qY8b6x1Md6sb+Xl7nVkd8EHO5pjkL8xWRdDsq8O3uwWyS5Sagi5FhdW00wrqfz29RC+uTvH7w5SbL9vpYWF0aGlInN4+qP75utwB4a2o+KcxXRNK1Y40z6odjPg6IQBJcGH0g5R1xzzLvqZ1TPdpCka0AKOkaxHAvAcCpRt2HOWhEO8oSjL6Q5FFt3tILJ7yzaqee5vWtQ0F1LrCrfADSzQgSpeQxe9r6FsapIQESFYPcbRyx9iPsO19pBaY5IDjhnWMJHRLtqk5biaZWjXN/YD+5dMayFcZB0E8VADBPhGaSBLksYGZWj3OnYzTHmyaznZ/jU1EFEDz13hQHw9hBIsGR5pS6TKDOdMV5GjCiSPD5xgTbTX40wSOJ/oHP+eDOygHAEUkh8bBgLPe9nz2ldPnpT+N5XX95x3aWd+YCbIdrqAjA7emgFfRu2m+tAQrfv9FLCHDQHV67T5G7T6ZD9JAVAZCnWJL+vtiu5lvGrEmI2bOJZALIPfSh4+N4wmNORy/xrxc2837JAPBawRCBMc9w5tn2zKkBknGn+S4geO5Iwp7ce4i78Z2sN0HIHmJ6iArz/SfBONkw9VoCkKoDsj/zGA3b5vnEeGywhq5di1/XTACdMYf5Zthstgj26Hfl75JOLwRjOKMHcM+kas8A8R1YMaEW+3dwAoCQZq2qquql/SDx1rtp30v46RQDDZpqnL5ZNgA4Y6SqKCmpQvfPtv1F0vcL3WkGVPinCxtfYP1FKPYPfW/VMgCuJHyPVtasjNIhBu4d7yr/D0l9rWOtoevcB6hEna4P3j7Z+idtBTJ33UXctzgQVbNruPsDmln+ELEfEgdoMGyDcv+ks1sJSiGpAhggmDUtMk6PE3RUcj9VJ4gKyB7p+8VW100d1mWdXigXgMvQOQjWTTVNeziBBU6zEqFqpjSTQpr+FQAAyd1ZrAOIzokYlI51FkSeLbPeZ7fbWwrjlkXFQc0JySTIOznpwsR9LpervjDOmyCd2KGZTYcmfEdvJ/0L+dEA0BnENLkAAAAASUVORK5CYII=</image>
+  </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-normalBreak-destroyed">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACkElEQVR4XrWX6W4iMRCEOSMOIRDKIoS4D0EQl7jEzfs/lXfLkb09Zc8wQ3Z/fAnTxtXtbrvHpLrdrvrf9Ho9x2ZI4c9gMFDP59PLZrNR0+nUsUui5l8ul9BxGwAPSDD5er06dv4O2wzD4VCdTifHDl4GcDwetTgYj8fOOHg8HmrwxwnbDVHBBUoQxnQ6CzyPRiO9KgnPiYuTARg5Ssl8PlfL5VJn5n6/W+R3oLFer525h8PBZvF2u2kSB5BKpRwKhYIdh4PJZOLMM7C+DQATOT2Sfr+vKpWKdvjx8aFKpZL+n8vlVKPRUM1mU7VaLS3YbrftEWMdHzqA7XarU8IRf319OStOCpzIMsnPTgkYZIYFk4IAWNegA0CXkilBKlkkLihJOp1W2WxWP8OBb0MGApAZQBkgwMLvwvX24ZTgVQC/PDYDmpLUkvhK4WQAsGgScBq4LxjwPsF7Rdq8AeBcs/C7dDqdyE6pA2AjwMRqteoIJgW9QmbEdMDIDEhY8B1YU6IDQJdbLBa6GaHXy5Sx2DuwU2A2q+0DxinedHIn/7QM6KRcXmD8vSwBQA1ZOA58iYFD1o4VAGDxOLAGAtjtdmq/39uNGHoKmFfNyYe5S8JJUO/vHsP+C80ABFarlX1G1D95ObE+iCwBnJ3PZ/uMAIrFoiP8CtPY0FvYR+wS5PN5RziMkscG0JRwRZeNCSfQZgCOOEKsGllgsThkMhn7uVwuq9ls9n3zEn0msAd8ARhYPA6fn5+ODvsI7AE5iJWjM5pIWTwO7Mz4QKPDhQVltQHgysx1l11R18rjJAz36AWp1WqqXq9/L84YOVoGeyHqe0nH0Cl1Bjohx5DB7zufkCHpGBZkS/AvgBO2RWF+sv8GlGSBF0NBqvsAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-normalBreak-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1ElEQVR4XrWXaVbjMBCEuciQfeORDbKQkJD7n8rMJ1455ZbtEGb4UWB3t9Sl3uQ8PD4+Fr+NTqeTyYQH/vR6veJyudRitVoVk8kkkzva1h+Px0Z9SSAqHCx+f3/P5NEmyoR+v1+8vb1lcnCTwG63S5uD4XCY6cHHx0fR++skyoU2cpUUNGEymVbeB4NBOpUjrvkusgggjCxlzPPT01Px+vpanM/nCojCdrst7ZfLZbHf7yv7oFcUT6dTwrcIrNfrjHksSqKCHAej0ai0owDdLu5fEmBhdNIGd/KvSAReXl5SSJwdmM1mxXQ6Ld9ZQM7dBlkkxIGICtXvclJFyrQ2SwFQNHjGuedSG7m9O1C71hVmrAmQCDClonEV1xOLHJGJzjkd8nz9V4QozFgTWQRIgxzETX4LWQoQ8n8+n6dn2DtBVTygJX0zz68jDaveV4p4ljyLABABPXsRShaLjndAy7ot8A7jXnFdI4Hn5+cyHYCR3O9fT96EuuJrQyIQhU0g3LrZAGQJJ04ZTG672WyKw+FQsQWagK0RcLC4bkgpjzhSTUCCVou2cU9HItDtdlPIGUbM+hhGDONA0QZ1sja5oAOUc0BOOY1XKcR8s4if6uUvSwFtotvOGdOSaktAUSJXnv2rx2eI7xHfQYVAHVvySkSoA5GSDrLKuYhoY3S8xzHO4agbFeJdXfBT5FP1WmPUX2MX+MSLULR0Uv8+4HT+KUfq6m5akNWAQxtEuetVF9EBhOioW3t8OwVEg5HMKF0sFpm+Dv69yIjWIPMCpwPLCGAYGXIyFRjX6Xg8Tjnl+06O9C0IXI49znBMyjhAGmo2Zyo1UEdAcF2cjJJ7yAWfKXEfUKkBV3JyJqNvFouS02mNrtumdyGSKgl46NwhxrdyTp5jVO5BWYTO1KFCUmtFvVCno140B6KOFk4R+NPQhhG6kKJcuFdHcZcp+B/ASZS1QT/ZPwEBJBrhUKUNLAAAAABJRU5ErkJggg==</image>
   </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-orange-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADRUlEQVR4Xu1Wa2sTQRSNH0zz3E2aQf+CKFqUImoxlSKtRin1gVKsSW2r1arFJz5QaQSf1SqCKIovEPH9s/wiQrNfKohd75m5s5lO2rJJ8UOhFw53dnbmnDOzdyaJRJZikcSyTCKx3kkkdtUDN5FotYlChyYpda77W9y+dqq/q+W37svEYnk3FetwkskuN5nspLyD+gvU357NZt2R7tYfNG+62NnyR6QT3Zhj888bEMCkypDwy/35yXL/1l/lYv4nnsNgePcGf7xvo18u5eUzGwxvAoO9oVwNcYBzhEcGjHeePZYR2kA6Gl01w8BlFjlhiD0gjJDYZ8pvuP+uJXpt5nN4A+m0kNs/SAbGmfwSZ21ggvN3BtrvCU+5be4OzwHnykgkaevVhK52uQMPDZGjQhm6RXjMfR8JF7n9xRj7hHCPcJXwTQQGsvF4m61XE7rSK4M08S0TgkiTa6AO9Bb3NSv0Zn1vU7R2LBsI9Rn0QA8GsKrDQpJ67TGVIYC6YHGvkA76g/elnO/tdVX7ORkba8SAFgBpwfG9Hqf6rIVo1TKTSbljyAdUnzIdlwYb2gG5QhACJc7og9D+bCBUOS1UfeD9gDGWgYWgnuo2ID8BSFBMWsCENjMqVKXjaB7nNmDOaWgHQH6MySY4Q+A8rQimbgh1GnBEYeYKjzsl1JFE/dAcr6zuk8YMgBiiyLhYcCyHFbGErvLrRhu4z/mlGofP0JiBFwbpK6MNU3jGTQhz6DvLbRN8BBsyEFzFWvQr4QITbqEK74lXhXS96Noo5tQpaGvyvU/qfWgDuK3kDoCIzjMmy2ovUu5I+pWD6rLxNltnH8aM/sqR6pHVNZChsPVmDW0gEOjJqLwtrnK3q1a7LyPbgVAvr3yPq3aixObZgK0zZwQ7gBrAd+bVyL4Rutlu81bDBBdr8B54zfNOClmgugZsnTkjMIAjhcoHmQa+KfIZo++mNeaZUEZwNN+pdl0GmlPRNYEJEOIXT1c8gF9Bep68I6pGRoX6tfxgjOOfZxZfbuvMG7pqbUjiMUME4oO5af18aHVmwJ5T1+p12AQLhc0fKvSfyQVgZyqVWmHz1hWzkM6HAkQdx2m2ef5HNBGidudSLLr4B2NA98w8Am5AAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-orangeschwarz-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADvklEQVR4Xu1WWWsUQRAeWbPH7J0d9EV8FEWIKF5RMBp1k8wmIR4oombVxJMonnigooj3iSCo8UQRjceT/0LwVfwB4ougO/ggghnr666ajJMgkxEfBAs+qrum+6uvu6ubMYz/9o/YmIJpTs+ZZmU0yJvmzCBRaBOS6tKGwQ3lBndDy7TBjsZJTxArJJML8plkcy6dbsmn02XyrRS3Kd5ULBbzfV0zf6g55YZB4Qny/9aQAJNqvZZ7srrAA/phsLV9hntx3WxvDgsMLwKDnd7SMGIPewlXffB9c4JjGaEFZOPxyb8IOMRJtvuSXSLsoGQD5O9z/Fwg6dFf++EFZLOW2v4eEnCRyQ+yFwFX2L9ioP2YcIPb/t3hOeAcbxjpYL5hJtWuduCyL8lmSws6TbjGsaeEA9x+7ht7nXCecITw0vIEFFOp+cF8w0yqttZDEx8wIYiEXIA6kC1eV6+xpug6c+PDx7KAUMcgAx0IwKrWW4rUaUpqjwSoC07u2Fkv7n2vllxneV63b5KwE1EESAKQ2jnX6coN9SURrVp5Eql2DH6VjmnRKSUw0g6oFYIQqLJHDIlWFr1EtZ2Wrg983+Qby8BCUE+jFqCOACQoJkngh4jZZelKx9Xcxm3APyfSDoB8C5NdYY8E+2hFEHXc0rcBVxRiDvO4PktfSdQPzXFO6vckmgAQIyk8HhZcy62aWEGq/JivDVxg36/H4RiiCbjtI73ra0MU+ngJIQ6xPZZL08tyO7y4qoEIArynWJK+IOxnwnlU4V2poURcLzTdbp1YV611l/QtmJ9wnWf6e2gBeK3UDoCY7jMmq2rvJt+cdmur9WPjNAbufq8WQKio/sahKys1UCAL5hvRMPhzT+m7EFCorNoLU5q0M6+re0VBtRF7PaXuDo1rMyBgWV4EaTG91rdQqxfz6gA1MKBXxkLs2g562c7w1kMEF2siZiBBmVD51G99xbwYtVGgdJz3ognoU8mxqpaPj0of4Gs4Uy2q7dMTy1GFeMoapD4StBLsd2fq3yyeEF9rxoyO2sMIPyT1mfhUqYNELFYpmLHO97dKb+lTK29tM6Hy5Swl3+2dPdCCMdyuWFmjU86f+nXCH8pkF8xEQgHbqbaURdEQO4YjGfD6FfLtaiz3zURMcYxq9WJ+ATkWgEQSE0GIAWqcfKM+kPgTATCcHYiEVAQwoU5EXmICGUvz7EwmMy7IOyqTIxgpidoFnyiCTWgbaxhLDI1kkC+KzSDMCgbJmgx9Q+YEP5AtYvxVGx8M+Aw34b+Fsp+cuZXG/69XmQAAAABJRU5ErkJggg==</image>
+  </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-redEyeBreak-destroyed">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACuklEQVR4XrWX2Y4aMRBF2TWAEAgRRBD7ImDEJjYxwyz/kr/Lv+UlD3l2uJ6xU33tbrpJ8nCALrdvVVfZ5SbV6/XU/6bf7zs2Qwofw+FQvb+/e9lut2o2mzl2SdT85+fn0HEbAA9IMPlyuTh2vodthtFopM7ns2MHNwM4nU5aHEwmE2ccvL29qeHVCdsNUcEFShDGbDYPXI/HY/1UEp4TFycDMHKUksfHR7VarXRmXl9fLfIeaGw2G2fu8Xi0WXx5edEkDiCVSjk8PDzYcTiYTqfOPAPr2wAwkdMjGQwGqlKpaIeFQkGVSiX9ncvlVLPZVK1WS7XbbS3Y6XTsFmMdHzqA3W6nU8IRLxYL54mTAieyTPK3UwIGmWHBpCAA1jXoANClZEqQShaJC0qSTqdVNpvV13DgW5CBAGQGUAYIsPC9cL19OCW4FcAXj82ApiS1JL5SOBkALMr8yufV1+v3t0xG/5Zj2A3cFww4T3CuSJs3AOxrdhpG3WOTdLvdyE6pA2AjwMRqteoIJgW9QmbEdMDIDEhY8B5YU6IDQJdbLpe6GaHXy5Sx2D2wU2AWq+0DxilOOrmS/7YM6KRcXmD83SwBQA1ZOA78EgOHrB0rAMDicWANBLDf79XhcLALMXQXMLeakw/zLgknQb0/awzrLzQDEFiv1/YaUfsOp/SVjCcAhvVBZAng7OnpyV4jgGKx6Aj/uHbDn6Ijojt+/zyMgGls6C3sI3YJ8tRyoyh7bABNCa/osjFhB9oMwBFHiKdGFlgsDpnrWWF+l8tlNZ/PP968RJ8JrAFfAAYWj0Oj0XB02EdgDchBPDk6o4mUxePAzowPNDq8sKCsNgC8MnPdZVfUtfI4CcPdekFqtZqq1+sfD2eMHC2DtRB1X9IxdEqdgW7INmTw/84nZEg6hgeyJfgXwAnbojB/2X8D79mHST/D0VAAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-redEyeBreak-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1ElEQVR4XrWXaVbjMBCEuciQfeORDbKQkJD7n8rMJ1455ZbtEGb4UWB3t9Sl3uQ8PD4+Fr+NTqeTyYQH/vR6veJyudRitVoVk8kkkzva1h+Px0Z9SSAqHCx+f3/P5NEmyoR+v1+8vb1lcnCTwG63S5uD4XCY6cHHx0fR++skyoU2cpUUNGEymVbeB4NBOpUjrvkusgggjCxlzPPT01Px+vpanM/nCojCdrst7ZfLZbHf7yv7oFcUT6dTwrcIrNfrjHksSqKCHAej0ai0owDdLu5fEmBhdNIGd/KvSAReXl5SSJwdmM1mxXQ6Ld9ZQM7dBlkkxIGICtXvclJFyrQ2SwFQNHjGuedSG7m9O1C71hVmrAmQCDClonEV1xOLHJGJzjkd8nz9V4QozFgTWQRIgxzETX4LWQoQ8n8+n6dn2DtBVTygJX0zz68jDaveV4p4ljyLABABPXsRShaLjndAy7ot8A7jXnFdI4Hn5+cyHYCR3O9fT96EuuJrQyIQhU0g3LrZAGQJJ04ZTG672WyKw+FQsQWagK0RcLC4bkgpjzhSTUCCVou2cU9HItDtdlPIGUbM+hhGDONA0QZ1sja5oAOUc0BOOY1XKcR8s4if6uUvSwFtotvOGdOSaktAUSJXnv2rx2eI7xHfQYVAHVvySkSoA5GSDrLKuYhoY3S8xzHO4agbFeJdXfBT5FP1WmPUX2MX+MSLULR0Uv8+4HT+KUfq6m5akNWAQxtEuetVF9EBhOioW3t8OwVEg5HMKF0sFpm+Dv69yIjWIPMCpwPLCGAYGXIyFRjX6Xg8Tjnl+06O9C0IXI49znBMyjhAGmo2Zyo1UEdAcF2cjJJ7yAWfKXEfUKkBV3JyJqNvFouS02mNrtumdyGSKgl46NwhxrdyTp5jVO5BWYTO1KFCUmtFvVCno140B6KOFk4R+NPQhhG6kKJcuFdHcZcp+B/ASZS1QT/ZPwEBJBrhUKUNLAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-schwertgold-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuUlEQVR4XmNgGAWjYBSMguEIXu02+P+qROo/ujjdANgBQIwuTjZQU1Uh2jCQWqpaDgIgQ/+vCmUGsV/vNvj5crfhd6Alv2A+RcYwByA7Ap2PE/w/Y8wKY58BskGaXu6CG/oP3TJsGNkBEGz4AZQewJiQI9ANw20obgxT+3K3wY///yGhBpV7im4f0QBo6Et0MVwA5gCgVxnR5egGgA74A3IEujjdANDylwNaDoyCUTAKRsEoGAVDCgAAeGjCE+AWHWkAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-scrollBlue-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADlklEQVR4Xu1WS0xTURB9FfFD1LiQWBEiJizUldoElSJ5mKiUCBKwGCUqbaHUFvlFQCXhkfCJxvIRUQqk/AXEqhB+JvLRRAMSKwgIRlzpyp0rXUjfeOe2r0AFlbZLTjLhvsftnZkzZ+48hlnFKlYGkeMLG5Z77zJEHMOsUUsknhzLrEXDtVzOeEREMF6R0m2bOdZ7k/A/3Ot4gNNAJ7IAZr1Suh3+ZqpgsX1dGL13B8e5IQh07uhovFENnztzFtgNmwnrHFAGi/kqCePJuFoShc2p8SrLF6gCAQ2fJ5s1MNOWDLNPs2FL79yCAKw2055mwX3gSgBYSzxkQB8JxkyWmmMQ6Bzt48Nk6lh4Luky0T2cfN86p0sh0D9QHEmzcbSJpiT40HKZMKGjAUy3amGWMFHQ1UmDSZf5z2WE755rl8s9GGeYsKqe8URnV2QB3piJnGSULvfdiO/eVMcTFuaDwAAmm+f1MUEYwn1qtQS14ByQBTTGmgFtRTy072aUxWxU2ilfyj49ySIBiMHGgHvAsSzVRX9xDJhrFdRRX2suTD7QwkyrDqYIIwIDuK+OYzc4nuE0UNGkFPQ+GCyN4UdrLsF4QwJMEi1MEbqxBIIYsTtwn1uzF/TQr4+0DJVF85h9T0MWjNWrIMXUAfu7v0Lh4xbanm+NKipc7CTGGQEuBdbWloPFp6Hvbtyievv1fIdrJhNhQUcFifvy1BIvm37cA47jqACf3TrFv7gTA6/unYURw3kYrbkI7+qU8L4xEaZbtNS5IsjN2ROI8OCaVOmXjvwwfrAsmgYwTAIYqYoDc52CH29IpHcDbT1SLrcOJEF8pUmB3x5xJy1I+9beX4vKUNJWCWMkCBVpPVPeiT1CCzt9Ey6AKPm4nw8GYEiR/jTkRvE6QwU0FcfDc30UvCyPhdHqC2A2xsPw/XM8uTnttyXOEpd1IKi/XHvkR2Wq1FKTEQKVKUHQcv0YdBfKYKgEgzgDrytiIS1sF3WsOiqG+qxQunY1AJEQQGVq8JxecxjKdUF/zAU0veIg/XtbcYAOruqMEB6fbSVwSYwiZZDVCU5CNbsTEkiGRQmH6HMTYaKWZNtdFA61maHUeX22NXu1xMcLf+944EohwpYSvg3yiVM0YTQvNENasH1yalh/f8eDnAa2FNYSJ5sm1JdSu6QRpvDCcrXuy0FE24oMJLzjURtCqwkfq7YvIJcp/xeWc7Dc+1Ws4r/wG+zFkyfcDW1sAAAAAElFTkSuQmCC</image>
@@ -4099,11 +4281,65 @@
   <sprite width="32" height="32" imageformat="PNG" name="prop-scrollYellow-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADp0lEQVR4Xu1WW0hUURS9k42l1E8kmRkZ+VF9BDlg5Zhdo4dKTqaNkWE4jo3vJ5mUH1cwpUhTpNQU3/mWdECwDx9ED0WSxJpGUCMfGEX0IU79OHd39vHe0UatnJlPF2w893rmrP1Y++zLMBvYwPogMX8hYK33VkPCMcwmjUwm5VhmMxqulUrGLjCQcVTId27nWKdt4v9wr/kBFgNJ/N2ZLZHyXfA3U3s7m9Y5wYd2c5wNnEByc6LhWg2MazOX2R3BxHUmRHo7809kjJSxtiQqgbTiJsvfVXsCGj6/fxoDhnEpGN5I4bM2FQyTDmCYkcJ8h5Q6oW9JMeI+sMYBrCUe0pOngIp0ltoKJwgp2mybAia1STClTYQJMQtkD6c8bG9xKcT09+QraDTmNlIXDbqGWBhtioPR5gT42BgHY6ZSZEKqv9tCWsD+hRal0o6xJBOLqmekSJbo7+6EkShJRKlKVwd8N14XALOtZ+Bb2ylSDgeYaA6n2RAdGCEZwn0ajQy1YBkwC2jMYgS0FfHQrntBRjH91KYcl9aCFqbbVcQBZxAyYBtwLEt10Z0fAiPVYTBCOuIDiVRXHwv6xnhK/kmbYdJAFcduNT/DYqCiSSnofdBbEMLPdTnBcE0UjNZHUCdQA6gFJB9rz6AO2DR6UQ/deQpjX2Ewj9GOdVyC+T57+KE/ApMtITT1+qYEeFuhpsLFTmIsEeBqYIW27M2/CFP1HmCYXq6BpbW+KZ5Gn6WROQr6sQ04jqMCfH7/Ao+Rvnp8BQZKw2Cw/DroasPgS4svTDaHUnKVl42jJ5DgweXJ8qmObD++tzCYOtBPHNBpA2GoSsUP19ygdwNtPVIumw4kUXwF0Z5fW7nzxpdlAfC99cAfraervQbviBNq0nptWecOii1s8U24DJKEs3td0IHSJPmvmXo3E+ncsx0wUBwEg2XhMFQRAf3FV3lyc5puS5wlVutAVH9R3ImfJclyY3maD5QkeUHD7dPQmeMPfQ+D4EXRZXj9KBRS/PZRYvVJZ6i+5UvX1jogER0oSfZeyIs5DkXxXivmAlqeyoP+faA6SgdXWZoPj89CCawSoyTSa5EEJ6GG3QNRJMLcqGP0uY5kopJE25kbAJXpvpS8OmMxeo3MxRF/b37geiHBlhK/DbIJKZo4mpdbaYq3aXLGsG5u5gdZDGwprCVOthhfV5raVY1kCi8sa+u+FiS0rchAwjsetSG2mvixKnwBWZ3yf2EtgrXeb2AD/4XfQciV3ln9lgsAAAAASUVORK5CYII=</image>
   </sprite>
+  <sprite width="15" height="30" imageformat="PNG" name="prop-spiegel-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAA8AAAAeCAYAAADzXER0AAAB4klEQVR4XpXR3SuDURwH8Ccl/4DnzMuFaOJK9jxDuFCUW8m1NrNoi3KDSPkDXOzSBaWU5IoLpbhwJWWrPa1Zmy2ebTbXbuS1Y+e0c5y3h/nVr/OsfT/nVdMUNWdq9TOmDnEb4BWPniZdzEk1Y4IQhZUO9DXRbzHLlQiKeRs+PZVhcKDVGfs8rjEKvS48IkR6ZWJAjRfd7gZ2m+GRDg6i3t/aIP+/c5iF1xenOFwul2A0GqW4YN/D+eE2nJnucbUrMQlblgVTqRT+JpOQDLMuiwHFBNi2XRs+3o1IOBaLwXz1xqu5j5oxe+6F0S64ONYN/SYIS/jsYAeHCoW8El+dnVTeuwX6Df1BwudHexQUiwWYzd5xmGzdb+rPEr48OZS2jJ4smUzCRCLxc25D/6J41tPcRs7Mvq84Uqy68cjSNA7mcln8xr/gdGX1KIdXJwclkMmkYTweFzE69wuHUaNAqfTITYJ+14zJbYtbFvCnIyZhJ4xaiS3r54xsZ9O3f2NVH0Q2OYi3boC3P/Ha1BB71ntpdScsrLQc8IIpulsDzCtxKn7DrpYjQFkkuL0e4lbzecGwmJWK2151DHgavWJOKn+v3ski1GLGsdhV/42D/a52Ef9rgk1Nq0O3SqDPBONiRlXfWbUggDFR6ggAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="12" height="24" imageformat="PNG" name="prop-stuhl1-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAABOUlEQVR4XmNgQAKbqi3+gzCyGF5AkgagwicQDeb/0OWwApjpRNmwsdriD9EagAr+ISsmRgNM4c+NNeZdyBqADEZktWAA07Cx2vx8fT0DE7KGVfVabMhqwQCmYXO1RR6Mj64GBUA13EJi48VgRavKTMw21ZivB4bW/5mZev/7k7T/TEnT+d+fqAXHE5O0QRr+wp0AovuTtFAxVPGMDD1UGzZUW3xeVWaKVTGIDTMMrgHD9EStn8jOAclPQNYA4mA4B2oLsoEoNuDDID/CNWyoMscweUKi1j+Ygvl5hmgaqjE19CdqvwTSz0DBjGEDSBDEgUUkMlhbYfoXQwOIwKVhebHJb2QNYEF8GpYUGf2EaQCBmWnGXPg1FBr9XF9phioH1pCo/Q1FEApmZet/Q7YBDPDZMDVV9wO6BgAGZnKDWbxKXwAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="12" height="24" imageformat="PNG" name="prop-stuhl2-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAABO0lEQVR4XmNgwAM2VVv8B2F0cZyADA3m/6CanqDLYQUwG4i2BVnDxmqLP+jyGABZAxT/Q1fDALSbEcYGm1xj3gWkf+J02qp6LTYYG6Sgvp6BaWO1+XmcGpABTMHmaos8uAYs7sTAUM23YBr+TkzS/t+fqAXHU9J0/vcnaf+ZmakHCp3/m2rM168qMzFDsWFGhh5CUxIqRrIFogEmCFaARdOqMtP/G6otPsM1TIBpQHIWEP9EtwXDBrgmNCeBMMxQuAaYGwlhFA3z8wzhfpmQqPUP3ZYNVeaYNoCCEch/1p+o/RJDQzUWDWsrTP+C2OgApAZkGJwDokEalheb/EZRCQUgNWA/zEwz5oIJggSWFBn9RFYIA3ANyGB9pdn/JYUkaAAJzMrW/4YiCAXAQPiGVcPUVN0PKIJQALMBAGsjcoOSmUfoAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="12" height="24" imageformat="PNG" name="prop-stuhl3-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAABNElEQVR4XmPYVG3xH4QZiAVkaDD/B9X0BF0OK4DZQLQtyBo2Vlv8QZfHAMgaiLIJSeFPojVsrrY4SpINW6ut5EnSAMQnN1aZpyFrwmnAhipIPPQnaf1fUWoCVjAlTQfI1/4DEtsI0lRjvh6uAWbKvFwDsCaYZmSMYguIMz/PACw4IVkboiERVcOqMtP/G6otPsM1wEyBYbDCRK2f6LbMr3fggGtA1oTuJBCeAHMaTMGENC25GZl6KDZhw3ANIOfNzzOE2zAhUesfui3AEEXVAGKDghHIf9afqP0SQ0M1Fg1rK0z/woMQCYDUgAyDc0A0SMPyYpPfKCqhAKQG7IeZacZcMEGQwJIio5/ICmEArgEZrK80+7+kkAQNIIFZ2frfUAShABgI37BqmJqq+wFFEApgNgAA3lxoCJzkeMkAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="12" height="24" imageformat="PNG" name="prop-stuhl4-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAABKElEQVR4XmNgIBJsqrb4D8Lo4jgBSRqACp9ANJj/Q5fDCmCmE2XDxmqLP0RrQFZIqoafpGr4v7na4ihJGrZWW8ljaEBWgIw3VpmnAemTKBo21ZivB4bI//4kLSDW/jMlTQeseEWpCVgMxN5QhRQPIAGIYgSGic3LNYDbBla8odri86oyU1QNiRANE5K1wfT8PIgmhvn1DhwYpidq/YTZAMMwPtgpE9CcguwkZMPgGvDhGZl6/yekacnBNQB9jmHyhEStfzAF8/MMwR5FaKjG1NCfqP0SSD8DBTNYEbIGWNjDwxcJrK0w/YuhAUTg0rC82OQ3sgawID4NS4qMwKkUxp+ZZsyFX0Oh0c/1lWaYCQ7oyW8oglAwK1v/G7INYIDPhqmpuh/QNQAA40doCDo4qDMAAAAASUVORK5CYII=</image>
+  </sprite>
   <sprite width="65" height="40" imageformat="PNG" name="prop-teppichblau-intacts">
    <image>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</image>
   </sprite>
+  <sprite width="35" height="43" imageformat="PNG" name="prop-tisch-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACMAAAArCAYAAADyijE0AAACEUlEQVR4Xs2Xu04CQRSGeQRjfAFLKjZyUaIinW+grQUkdi4iRsHFxl6xspaLQlQuvoT6JHYGChMNuu7ZsLCcdYe57In+yV+R85+PM5OZ2VBIUNW9qEll3IupVi45D0U9YyM4l9NmVY8NrNwn3I8pAOmU1r2BiobcSkb7wP2YsqdS9oapuFNK2TCXGY1/ma71pbOaHuwSdY30GEQIJvC9MrIDY2yH/xbm7mhVHMYqeL3JJzxhap5aomcRGLvYG6hm91S4YBr56ELQGxf+WE2PjTcuNwzQt4nOFjcINwwOUnW7uAYwn0IwdT1xSgHjTMU6dd9cMEPcf0oUIODflmjmZChgbg+WPRt3JkxjP242CyueMFVPzpZIhRuGYipgBwZ6cIG0inGNAsZ14vo3x6rqdO8WADnf0eZwT19RTKV1mDSvdrWB0FSahaRZz8U8YWqeXIqVrPaCe/qKYipg98blFgWM+1LE/XwFIPDgwWFKLk+mcpGNbOKevqKYysOxfSmKTcV5peMwVY/PlqzWxz19BUVBny2Pxj/auHXrfhPeuPfwSg/8aTn1binhnr6imApYeIl6J6lFCpjxxhWBgaM/6G+irqHwpUhlYRhnlEGb6+GExf30E5B0pnQhQ9KZ0oUMSWdKFzIknSldyJB0pnQhQ9KZ0oUMjbL6wpmEMKaxFf4WynSBfOHfZGVlDS2QdyEQSz97mXXjBn1K4gAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="20" height="15" imageformat="PNG" name="prop-truhe-opened">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAA2ElEQVR4Xq2RwQqCQBCG69ADaIFGIaVIpRReTEqtm9T733yZaXdzbHemlEThw2X2n89ZdzJpnnRlQRfHOFbQOsWQ3Q8ulOECitCGIujntnNUj8SQld5MFTCYCy4d5MHcEKND6KaG8OqbjanPyXzLyDChfuRfki50aSOza/pjKd8u5Ly2IPPe70/drtV0VeTA4+TBM9ky5B4K5ZruY0aipkShbKBBJG2moHUEP9YKaWAoowrZkWngX5gQocE+9F5DmER7qGJXsBTBDWuk6CJ2KfrmYMQgrXBMXrjUsQDGhemYAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="20" height="15" imageformat="PNG" name="prop-truhebraun-opened">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAA2ElEQVR4Xq2RwQqCQBCG69ADaIFGIaVIpRReTEqtm9T733yZaXdzbHemlEThw2X2n89ZdzJpnnRlQRfHOFbQOsWQ3Q8ulOECitCGIujntnNUj8SQld5MFTCYCy4d5MHcEKND6KaG8OqbjanPyXzLyDChfuRfki50aSOza/pjKd8u5Ly2IPPe70/drtV0VeTA4+TBM9ky5B4K5ZruY0aipkShbKBBJG2moHUEP9YKaWAoowrZkWngX5gQocE+9F5DmER7qGJXsBTBDWuk6CJ2KfrmYMQgrXBMXrjUsQDGhemYAAAAAElFTkSuQmCC</image>
+  </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="prop-tür-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADgElEQVR4XrWX207bQBCGeQiScEOAEJooStsISEQSxzmQIPUBqt5VlThDCaf0+V3/6/ze8ezagKpe/MTetWc+z8zOLhvVajX639rZ2XHGqA382dvbi8bjsVedTidqNBrOuFTR+4PBIHc+BdATUnh5OBw64/oZPUbVarXo5OTEGYfeBOj1esY4VK/XzdiivVkobaMILpOCPDUaTfMrnfzqV6LrYDN6mVeii6AS/TnbMpLP1Dy2tJwIYFBTQjT6NE10PqyYXzhdLRLnr/NyOu+LRrfbTaMYBIHRuwBo7GpkHQDAfHXsfDmzEcDccpLM+yC0/RQAZDo8FIz8Hpeiy8AFeDktRzcxGK6fZyUzdx8/ywjhXW1PywAcHh6akEg6iF+RB4DrmzABAIxOEd8fjUapTXntpECLeb8LswCX68LD9fU6Ai+nSQQkACG0XcoAoEvpsMjwJw7LJgo0ejt2AVYLW5g34QcAZASQBjjGL8Mnv4hOn05t0dkUJICyIAlwVlALTgowiF86J8Dr3H61dILIyCLEcnyYJs9ibDWzxSj9QE4ECDDofDKSANLJnUjBw6QUN6TsVz/O7D0BsJ9gX3k3wOeDavq1suqh+4m957rnHIQa0AA69JAB0IMQnEMwguLSAA9Tt/FIAD6PtF3EBcxCZAcsjACFl2AE61sC6IgQQALyns/mrQQDsLu7G7XbbdOMWq2W2T4RBQJIg8+zLABrwgcw6hyYVPoAwjC0AOgDdLq/v59O+gGSij8Psu1XA8gCDmIQXQP0V5CC0AuA68dpyeTVB8BnUD/LSTKH6w8tQ2iiAFh0aDbcF4oAfva30kJmCgBwdHQUHR8fp4WYuwpwmJAAz+t1DmG3IwA3IM6xHcMpUyABEiXhh1B/b0aAeafuYgD0/5XojNyc2I4ZEa4gXYRUbgoguQzZeKjlrGxaLgF0Ecr7NwF0+CFUcfC1njpkSCUEpR2iNfsAkH8c0eV5ACswjYCsUt2Kr0Y2p3SMcNOJPB/AISA0QLPZTE5e6yXo1IAEYAXLkEoAHFAIgk4oNyN+vSxIpkD6gDI1ICd5HvABYBXwEIIC1a3YFqAtSAnARpcBwJFZ10EewG1oAXCvN6O8CGj7VFqEpKLw0o+eu67ZB3iPxqQBeA197/pXAf7dMxHYLliGEAz8i759KXkB+v2+TcFH1aptv0v6PSn+y/4XLy+N8voqj0UAAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vase3-broken">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAC+0lEQVR4XnVU604TQRTeEP1h/GGICuVSqAoGoRfabUvLbmkR2mpvsKW7BUGlRomUe+kFECkmlkAIamLwAXw4X8LAcc5sZ7qtOsm3lzPnO+ebM3NGEOrjpb3zdtrVBUZMjZggYjVBzG6i33GHidoZhw/V33sLJ/ayAdjTZOrM4H3UwXFA5hHoGwoJN3gANOAEEqTHnU0kioEO8A3qdvRZS7iblbAAxbnxf2ZmKKkST4TgAZhB8T7kDkwuApe2k/ZzezkjwcxoSy0UrIEqU4cZzwNIiP1QzsoUW4qPkgvkXdHk36hYGeq5y8lVQWhT7J0dbCmIkiaRzI2CFomCcp1syNsY1arQhm90QAXGnTACd6yV2zTY/rNa4BLwu6JJV7PO/2THsSIKN41LQETtPTyAUUUrlw5GZoQyqQErIgJrsquOw7RVP6V/kfNxkTtXstJV0m2h2bbTPm7H/zw5RPjNg7A178yNQSnbOEiLoeHr1bj72ig9n9TJqHDeZ9GDsABp2cyzLE/bmuQjjnIi1LaCcPxuGKprQfj4frIR4Ksiw8aCG6oLFoiJZp6x/DoMZ+tDUM5F4PCVp6mQvBb4KD4LwGVUz76l+eFLmcjMSfT/Z60djlaeki6VYF2doraLiAxzEwO01WkfoIJLYkyN9lOH77MStUXINuJ/YWkMTuITUIqH4DgZgJitB/bDLl0BOmwSIxKqq0FK+BEeh1OFELJR2MtMUts3ovB02wpnKb2p6DJG6gqwKOclGfbfTMMnZRK0UQu1FTJhKEQn9ADPA1CdcdPv2rYMuaQNEo66grTUBYvhJzzyZtQJn1eCcPg2BGFSrI2YE86WA6QP9B652DXTreRFxDZNuPrhJG+G8x0HpLy9TdWurYtQfNHHybit2KlpV/cvIeW8141NgpMZ/yAcLPrIzTMGH5Z8cFHo42ejpHmgMq8fb5ZdFdvv0NOoOkxeDLIQGILclI3KxkZiKhB4W+EbbyNK9tw3GduBKsGJVmClkRi361c6Xbdh/AHejkAS6BxnkgAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vase3-destroyed">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAABzElEQVR4XmNgGBSgnoGBCV2MJBAaysCMLjb0ACO6wCigIqivJyKR1cRYfkMXIwnUZ9v/b8s3SgezMxwUQHRZuM0+IP6PohAX6A+0+Q8yBFmsPtH4f3mC2////wmkkSAjyf9Jtob/nbUl/jfnWvwGifWV2fxtSLf/X5vuBDMUtyH+hpJgzVPdbP7XuVuBNUwOsP4PclVFnNv/TD+j/w2ZaK6D5t5QLS02BpDmPF9bsIZ6oEIQf6ab9f+OQLv/peHuYH63p+3/Ce6Y4QF0/QmwASD/d5fa/K9McgFrmOEGCZOiEFcwH2T4BKAh9UEmSiCNrQU2YHEffYn/YAO8jCXgtgdZKP1vD7f735Jm/78mxeF/qYfJv+Yo2/+dCbb/ayPMHjjriIn3Fsv+T3U3AKsHByKIURFu+z/eXQoSmGkG/8LsZYCucPhfEWH1rzXH+P+EEmWwXJq/1H9Q9FaEQ1zB4GcoIuWmI/E/2ELlfxXQkJIw0/+VkVb/s/31wQpAuDLa8n91tMX/8ghrsGaQOpDFocaC/ODACNWXMAMpBEnAcIyD1n8/E0WwAWCDgyz/xzvpIDSbikqghCjIJSAJGHaBBhKIDXIhyCBvKB9ZHwChquht+3a7HAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vase3-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAClUlEQVR4Xo1TbU/TYBRtiH4wfjBEBUQlRjQhakAY4EbbrSO6QYjICFunIIEFhgoKDLoNGGwTphACLjEk+tUf558g7Hjvs7VbO4g8yWmf3HvPuS+9laTKed/ZfH285w4uA5NjnbDn3jV2pHUVm4T+9qZzwT4Gx2qadMUSYAM7UhGl5CQJPGqC+3GzJZIMy/ZKTIGyU6kXqMAgYm0V5wqcB27NiCg2W90sbFVQcFK3w/RRm6ccG+q4e9MiZyWpIdTZ3FQrYkRkymwnJyvkmrzVk81KDfw2RcwvYgqYZP5iTq7tOOdhCqQi8tmF2fnEXdJVJ9nZAuNCEZNcLVmuGySDW6sTqSUzUrp8Rj2XnOSyQPltifAlM+VBKirD0Acq/SqnKV2xiaSjA9adY6LuB2URfmQXffi23C2cuU9enjgH2yrYmXWhsOxDbv6JiN/+4K8K/Agpwlicf0gCGjkHkSVCaiaAg6UOJGcDyEz3IbeoIT+tYXPMj/y4ryqwPqTiJKhg97MbmZgfx0mqZIGyLAziT6ERO/FBpGmoiclhkeg4UE5oq+CEjDvBAWyNevFzTBa29HQA+ZiG3EdqccQLY4Tur1UhwH5L4AsZRRsUmKPA3wEZ+yEi6EGkJ/w4HFZRpAr3V56JuP0xRYjYhnhoKNiIvUQ+5MevSomJiVdIBL2CVCSR7JteqkZDYcXRwtHafZH965KGvTkfvute7MV9yMxpMIZ6S7vvVBzMqNiO9gkix1tbyY/y2qo4Wm3D4WoXduPPS8drTylYE9+/sORCcb0dW1MvBNlcqPGe1r/SaPetVlNEYNKNjbc0zCk3jhJtInhj0oMtsvOymYvEnLCr8YbYxnBXS79N5D8Q5L7bLbW/g1XJZVDL+wfZdXDR7yG0ZwAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vasegrün-broken">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAC0ElEQVR4XnVUW08TQRTeEH0wPhij0lIaMXJRFMulFLrdGqsUF1sEetltw02pYKwB7Lb0AolpE+MDiQ8okYhBxTdfffHZ+GP8EwSOc852ptsWJ/kyc2bO951zZs+sJFXHgst2PjrUBoix2/Y6zAya+xycI4YmO8/hQSlxF7YYRjpbTwWeIYJMNBCQzggBjICRirr/pJFE6GoFb7cNvF2mSDrkrmXyoLetA8lLQRcd5mI+8PXYmkUYrGXVlTJxxy7Sw8NsxCtsRDYqQ17307oQV2C875S7wA100HzdUGDOhYQJHjFXFWVlHqFv5Gb7JUEuS1JLxGVr5SKIvK6wSzVFeGYT/c7myHyUy1ILzuiQYyljmkjiAiyrI7TxizVy6wZPuagpJrEqUNSV4/9Gx/HcLZ3lTcTLsJbAy8BP3silgYebei1iOjxc99kyUS81EDZbUybosDzeL2q2EtE2YjKtV6c8lBWuI1wk5ukA1eWAYtIPqzMe2IiazsWE/zgddp9wkVLSd4JzSjUDJb3XIC5fByk2chWML7uQOliHSU8nHeZiChFPgzraC6n9NQJyxa3TodxHYrguzQ1A6rPpGFYVMLQBeLZvMKyRz0LFgNiwRQA30JkLLH17ZWbG9tBe/GHAyv4W7T3dCdNMAtNDTnLATY65N0GarYJkb0/CVFyFxbcvzBLc7WYG85UQPNlZEZlwodTHlxBSWVcOO8meTT+GR4Ha542wfWlqsL3uklAAMdbnIHs6GRai6coKy+gDRc//+cUusQOkuNwN2e975Kz/fg3Zwz14qPRAaGIA5n8WxT3gnNkui0DYbHG5CyTdd4MM7DLVewuMg/ewdJghAuHrLix/WqXIs/d7iUx9wRAdcvxlJVx28GfM1Te0USKv772rK4+T+UvV3BcvUDdq/fYRLlLSa628mbwnHtJmdR/X6Kt5rtitz0Fkwl9k46/cCivvH6s3WsSHAKVGAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vasegrün-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAACbklEQVR4Xo2Tz08TQRTHJ0QPxoMxaov8NArRE0ZKm3a7jRxNNEZou1tSFilIQwUpbd1ui0CJiSZ4UdQQqigYEw944uLZ8Mf4TxB4zpvZGfZHSZjkm9l5876feTM7Q4jdjIHgxdHB63AWCY9s6VjXBZyo6QlYoorcCrQUzqEwd3iYnJMADOCEpanHXhNTXwCi/UEJqabj7koEgE+qfoAtkxqdVbQEtBJuzdRUV8x3Fq4qaHJVd0vM0W0eYu7Inc4r0twgpG1kIBhwQkwtTld2m6u22bHuSWs0SBv2AiL+iAAIM/4xr9fVvOchAJYWPzp1dWz5EDnvNXu3gDoVIswnJcd9B4nCrfkgTjPK0uNHdM/HXjMH8F5CkuFeWB5XwMqoYOqKvV/10NJVF6SWUeR36dsnyERvQCp2E0gy0sMCU9sLUMk+gLGDVTxxTHZVsJoLgfHbhPJ3mtt8wYReCuiFXPM5gwjVVhagQQ1TX3gixpYnwjDdLFHxsbFWguQQA/SwAUokY2Jup8grs1d7uleBmeYSi01+eMh6DhjqZmYMeiWA2LPx+iOWO/Fmlm8h1MkBk++e0MCcLE0AsFznePbtNBS/boDxepFXEO5GQBcU3uflSmI7OH65/0uOEVBYm6HxjyzPPPgDeH4kFeuH8o9NyO0WQfu7AuXdTZaQ/1yA8X1LgrFfXG+w78reDvvdqVgfEE25bV/bBJR/bkFpe4PCeIlM9Lc925pnK9eNBAOICzU62PGPPL53tcP1BrJRqI8pEoDJ9WwMXtG4leHXW7yJdOjyJXYb03fbI96HhKpn7vti0hy+1u58DrKSs8jp+w97bJRtQ7w3nAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vaserot-damaged">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAC70lEQVR4XnVTW08TURDeoD4YH4xRoRRRDKBGtheKbXfb3Xa73UKthUJLL8jNCpIQkIDQUi6mJMYHY7y8GogPRv1p/gkC45lz9pxe0JNMO2d2vm8uZ0aS7DPv7rqW9XVDs8SHHBck6XIAx4iTV+9cRUCtqMM+kUB/5z8Fv426nJTcMKTLgoBHWx/3n7eDqAx0gjLYBUGiW3I3VPNhSiIIELyTC9EI1bxGQQqCBhokqFcIEH3Rr4XAIsaKTdBe84u4S+j8+8a4v5UADxq4Q7WgQbXYkK2cKghIFqcYcOpRz00BrktSx5S7q5M7UccCS3c1/URkQIhPL0Tmp16XOvCfZ8JfJCGzBi9a8hk+Ib5YO7blcAIuWEKNNDbl7YUxJJCkS+0YelZGpCvNzWNZaLBjl7I1qVDbhPc/JfDIGJHVGxb6eiYg9G3yWhf60AxeTnobTWt6Cbzn1EGaFd4FCSqHcyrslsJQKYZgr6DDq6T3bMGUz9O+ezDqdlLwy1GXIMNgJaWPkSTk1sGpr8ZgjYw06ptZhQLezKWgVo7C+1UNVqwwbE7q8MVMQ9rbwwi+mRqZLrYonOiwHIbdhRisjAWF7af5HI6I71IiSu+IpSXUrTR8N0uEXYeT6DSrnzhumzocJckkRhWYN5SWTFMeuwT8+aD7qbGciECZALOefpoV2gq+Qfp/EFHBGuqGmaALfpFM8LsgOI4VIeHqgU/mUzh6FqEOHy0NNnNxkfpnk+3JVwI8MXPwm9gEQSHwGDLePnhtRgiBAYdBGVK+u7BgGTAfY6kf2xlVTGykBpVhd4Ng2QiI2jZUNgfvsLE2aNsIwQ8zy0oKDMGaT6ZPKQj2ixG6PFsZNrZccG3HPL3wdolsZ5xEXUxSO90POkzOP9LE8C0nn0QO3JsJQW3WHmniuDerwsGsQoZNh6dkqXj0/MiN63Qa8x5HAA1pUjeCdqfD1CkfegAZ/32qYzYl7WED7L/taF4HkQnPAnV+RzAKtzXj/gLbJjvRMdUbfAAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vaserot-destroyed">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAB9UlEQVR4Xu1STWsTURR9VqwLBREUM7UgSBdixtYmjRrzZhLeTNKknaSSMqQai9TUVDJWIWkateoUdaMgdCUUpEvX/h3/gP9ANy6O775k4nSoi4I7PXDnfpz7zrtzZxj7jwOxsVw4EcS+mzsZ5v6I0sTEcdd1j0brh8WRaOFfRbOZPEYWrR8avs9GhrF7eTTM/T34jI20BL8drYfRvjv3NVrbscqvhsmu4HhcNn6G+H1YF1mQt+KxH+Qb+Sx2xYKqMTt+7otvO9gTS2jaRr84QEcY2C5y9OQF8jBWK5n35PO6Bs/iqCa078yZ0uBcGcfHPMdK3sSK4G/pME31RN68JX2jkFUCa7MmPJm3kikQLwXAKlc1FPVx1fRBlLA9b6op3lkZdGuzaJc51hJJJdDKpbEjD34Si/gs7vQF6EGkHdewLkwpkFN5YMHtrzMJ0C66UqBpc3SnJ38LPCpwtC1DNRf187g/cwlvaLFktyxsDnbwwEyrd6e4U02HBJwUFlIX4c1fV+SL1Rx6FolydJZLeNkw0JXxw6oB38tis9YXqSbGvrHK9JkxSjxnBs9rxnD0p3UOb/KCan5WT2OrfgO9JUPlQZ+bPH1KfS53KnaNJiGCbGPxpvKtucHypA+4e0JXo7ups7HQF2dqEiIOsvBS83ps37/yC51NAfj2gBm9AAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="16" height="24" imageformat="PNG" name="prop-vaserot-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAACk0lEQVR4Xo1TXWsTQRRdij6IDyJqUquioIIPEmmqJcl+dpM0ibZpk5JsbNpKqFTamGqim03byAa0gkjVJ0H8eBAU/GP+idJe7539yO4mxQ6c3dm555x7584sx9ljORI+XYxehOPA0bijFL98igIdTYRtxOT10FBQjEBcReFOuAa0QAGjLBwGRQw3QhC7GXZN2iXeX4ljYAWFQQMbOgq9VQw1GAbaml4WfGsDvfBVgeS25ocTw23uE7dw69I5V2xy3EghEg55TfQyj5n94rYt9uTtD9PkRujtmDgn4hg4YjqxoNY3gv1wDIwyf3BkdhprE9zJoDi4BcKRJo64XzI/0EgCbW3AxCsmGBp/gHs+DIotA+vtmtCkuxQHo8KDriXs/Qr7hib4TDqVhDsnTiV2zTKhRz0pgFmX4eViCsz1Keo4kV1Ba+k+dGoy7K4LsJbi4fm8CB/VGVi4e8Uy+KIKsDmLTcuL0MqK0MzL0K3xYKxMQaugQEOVYQPxS12EHnJX0zJq5voVmKkZ+KFW0F1kpDcZzIzEF6oIvSz2xBa1qjlWbRO/6e0aUAWf0wLU0hLUcP4umWFrzzDrDomnZXiL8ycZCer4TUko7hp8x+xE2lNz0HsgMcL7lIBNzUBr1hJ8wGo2lDh8QuE3dQF+45pr0KAmYtkNVUIDBf4gyahKsJJSmDFl+6pSXAZdpUai+Xikb/B0GjudFBl5Fwl7iNeITcJ8kvXjp1pkBrT3evR2/1bSY1uT2A1rzvGs3O5jBYwkmWIjl3PwahX/Tpzrj7LsuJ0LVYyO/eXy4+fHLBP7vldjsPUwAZ0qZopcZeStahx2cN2o9K86aUoTZ8+w21i6MzrpM/kPmPjehVHv7+BWchx4df8A7gpn9RWZxl0AAAAASUVORK5CYII=</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-wappengrün-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABkElEQVR4Xu2XQU8CMRSEMSbAttFl2YvGgEZPHtRoYvDgWUUPHjx6NJFEo78Bwb/i70SK+7RMX3e73a5enGQSaLozXx+FhEbjXw4aPG7MfIw5paWHXU/7+Z70ZzeT7e/3QUC48uOP+6XX+F7fGwQAT0qlNuP+IABccJHpmSAAVewNwH3+5NOHxFiz2fse2ABU+a8BYNjhXbdUuQ6B+YVCgK+TK4CuUVDkIADksh9BJQAOggBM85PxvgPrUfQ6GJkAV+MeU26fiCpXWZhfqAUAM4GzUWqUKw/fesbeWgDwtPVNQIgnvAdcUR4APe8FkDab+zgFW5FtncpjKS8w30kIYHMRAOY6y/ZNIF+O+YsXFMBpCu87xhqVVwKIhThxAmBMAB0hbjG3lJynwJRXOj3pzwGEEJtlINSlpf1xq7WHeV7SAfIgVHnQ05PmJ9lFiOH05z/Aojxb18pXMMdbiZQHWfALNwksX2u3zzGjsjpSHi0KhHjWIbA86OhR6jddL+KMz9SmNIq2lJM5V7a0urTBUZ/eYksU/4OKpgAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-wappenrot-intact">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB3klEQVR4Xu2UvUoDQRSFI0KSnUWTEAiKJoIWEjAkioqFWNr6GIKiD6KV2IpWthb+gArGV7DxEQS7BFMIWqw7ITfcPTuzu5mddF44sD+z53xzZ2Yzmf9KUCeNqmci9Bm5uNnLei1GVa/N7q2AqMJ7z6uBa7znY60A4EwpVCccbwVAZRwn+sYKQBoZA6jWn+t9f97rnc+EnqOM94EWYKPm/V5WhqK1b2+Gw1MDoJkUBf9cVLzvm2Xv7azudW6bkfskNQCa8w5QFz6vG4Ex/JvUAGiKAPgeZQyAXeABeK97ZrwHph3n+BS6QAFS3Xt/3Z+if0IEIL3QP7bkR6plQJCvx1bo/dgBpGSwbubtLRsAQhzgPtABvO4shN5TuDFAOZutYxeo3Z27ZgBA1QUCkB4F191F/0TFASgQg5MAoG/iwpPQfWgNuzCE8U+C/D1juDUAXAbSx9VKP5h3gZ8ICk8FUBBiLRKA3eNxJICiEHvoO1LpuoAAqvBUs6fSAUjFbT4rAEKI2SgIlNy0NL6Qyy2hn1FxgCgIGW519lT+TBZDEHD06DkLn0Af4yq5bmNgfKTqBIZP5fPb6JG6iq7b7AcIccghMNxq67HkP50HqYTfjK3KjjMnVfK5Bo8mAwMS1h/HUtN3/d4PDAAAAABJRU5ErkJggg==</image>
   </sprite>
   <sprite width="32" height="32" imageformat="PNG" name="props-2fackelngelb-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAf0lEQVR4Xu3N4QmAIBQE4AZohqZxAmfwl1u2V2UIPbBD1Ks/QfeB2OOd1zSJfNmxLqk1I9zjTAsh3ApwRrjHmZYLrOT63jBTskyMcS7fvmJFo2VFfsfdY6M/N2y+y3tPFbL5JudcyoX5xl0Nm+/KRXZwV8Pmh7BlbF5ERETk307HKVVn5ff7CwAAAABJRU5ErkJggg==</image>
@@ -4122,6 +4358,9 @@
   </sprite>
   <sprite width="4" height="11" imageformat="PNG" name="ratte1-idle-up">
    <image>iVBORw0KGgoAAAANSUhEUgAAAAQAAAALCAYAAABYpyyrAAAAUUlEQVR4XmNggIKstOT/MDaYA8W/QZzvzMzMYAEQjSwLwvcYAny9/4MwSABEMyQlJfGGBQf8L8jJhAggG4puyxu4wMuDyx7DOWCBQ8sQytEFAOuqOZ2MuyNAAAAAAElFTkSuQmCC</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="ratte3">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACE0lEQVR4Xu2SzysEYRjH/ROclHJzdnBz15h2/SilJCWRNqddtPOK7PpRancdONi5zGKdrFJOZCUclAPWQeTHRSmiRLR6zfPaZ8y+r9U7Ig7z1Ldnmvd9v9/P+8wUFbnl1n+rMbWY/qb4PKFw49blHd3+ROnqcuGdjBwB8IdR62Y4AGwcngtrIIBOHT3QxcyDsIYQfJ5QPMBOroMphM9WldF4ZSnTyt4xVRSFtrZ3sPWlXDgKoUAhPfbkCGAtc7G2vJuxwiEw3VXO+tbFOxSEgzxeL21uaRVujJ8xFI+ail05Agjp0SwchOfN8zu6enKfN9qlnQMLANU7NCpAmD774XjsBbwcAYRnoq8IgEZ2Yz68vqGRdQGA3f5d0gDrh2d0PpmkSVN2k68APHVe1sN6jG6eXrM98P98CwCCUebBGzTAH5IPR6mqyjrsnVyYywuHiUoDGIbBwv1+P5024nlGEzMGC4E1HgDV1uGjoWgiT2E9kpIGAPNAbx/rbApgEEmwnxICmtQamu6uEIIVpdZ61kamPgAixit0aYBgMGhNwC4x8GsNRwwbROJZGoAPJgMkA93n81nmHm+dEMhrcELPARiPhBD5CVjB5iGUk0l09vRbN9eIlkUPaQB7sF2BQEAA48Nz4xbO/ghAIQ0Q8kxsNy0kaQBZCE0jt/y7QkJfPk+ocbU4i5t/XiXXfJ5bbrnl1p/XG9nBQTxTD59GAAAAAElFTkSuQmCC</image>
   </sprite>
   <sprite width="7" height="7" imageformat="PNG" name="splitball-idle-up">
    <image>iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAyklEQVR4XmNYJVMvtEKkKWKlaMv/dYr1/9fINP5fI9Qatkq8WZFhuUi9CUhip1v+/z3+uf93e+f9Xy3Z/G+FcOt1hpViTf+3Oxb9PxiX8v/BMq//r7Y6AxUU/l8p3PqfYS3QqEMJ6f/vzvf4/+Xy+v9/3n76/2JjwP91yrX/GVZJNAONLPi/Pzzz/8ut9v/vL3MFmpLxf4MGUBJsp0jL/63WJUDji/9vty/6v9mk/P8qucZ9DJulGrhgCtbIN/xfKdb8H8RfJVMoBAANxG8M05LFdgAAAABJRU5ErkJggg==</image>
