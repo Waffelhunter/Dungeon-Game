@@ -1,4 +1,4 @@
-package org.example;
+package UI;
 
 import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
@@ -19,7 +19,7 @@ public class HUD extends GuiComponent {
     private static final BufferedImage ARMOREMPTY = Imaging.scale(Resources.images().get("src/main/resources/hud/RuestungLeer.png"), 5.0);
 
 
-    private static final int PADDING = 10;
+    private static final int PADDING = 30;
 
 
     public HUD() {
@@ -41,8 +41,8 @@ public class HUD extends GuiComponent {
     }
 
     private void renderHP(Graphics2D g) {
-        double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING * 7 - HEART.getHeight();
-        double x = Game.window().getResolution().getWidth() - ((Player.instance().getHitPoints().getMax() * (HEART.getWidth() + PADDING) * 2.55) - PADDING);
+        double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING;
+        double x = Game.window().getResolution().getWidth() - ((Player.instance().getHitPoints().getMax() * (HEART.getWidth() + PADDING)*2)) ;
         for (int i = 0; i < Player.instance().getHitPoints().getMax(); i++) {
             BufferedImage img = i < Player.instance().getHitPoints().get() ? HEART : HEARTEMPTY;
             ImageRenderer.render(g, img, x + i * img.getWidth() + PADDING, y);
@@ -51,8 +51,8 @@ public class HUD extends GuiComponent {
     }
 
     private void renderArmor(Graphics2D g) {
-        double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING * 7 - ARMOR.getHeight();
-        double x = Game.window().getResolution().getWidth() - ((Player.maxArmor * (ARMOR.getWidth() + PADDING) * 0.92) - PADDING);
+        double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING ;
+        double x = Game.window().getResolution().getWidth() - ((Player.maxArmor * (ARMOR.getWidth() + PADDING*0.2) ));
         for (int i = 0; i < Player.maxArmor; i++) {
             BufferedImage img = i < Player.armor ? ARMOR : ARMOREMPTY;
             ImageRenderer.render(g, img, x + i * img.getWidth() + PADDING, y);
