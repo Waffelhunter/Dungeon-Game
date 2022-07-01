@@ -7,7 +7,10 @@ import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.CombatInfo;
 import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
+import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.graphics.emitters.EntityEmitter;
+import props.Armor;
+import props.life;
 
 
 @CombatInfo(hitpoints = 100)
@@ -39,6 +42,26 @@ public class Slime extends Creature implements IUpdateable {
                     EntityEmitter walkDust = new EntityEmitter(this, "slimeWalkEmitter", false);
                     Game.world().environment().add(walkDust);
                 });
+        onDeath(entity -> {
+            int i = Game.random().nextInt(3);
+            Prop h;
+            switch (i) {
+                case 0:
+                    h = new life("life");
+                    break;
+
+                case 1:
+                    h = new Armor();
+                    break;
+
+                default:
+                    h = null;
+                    break;
+            }
+
+            Game.world().environment().add(h);
+            h.setLocation(this.getX(), this.getY());
+        });
     }
 
 
