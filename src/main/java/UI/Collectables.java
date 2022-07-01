@@ -4,7 +4,7 @@ import de.gurkenlabs.litiengine.Align;
 import de.gurkenlabs.litiengine.util.Imaging;
 import logic.CollectablesManager;
 
-import java.awt.*;
+import java.awt.Color;
 
 public class Collectables extends CollectablesMenu {
 

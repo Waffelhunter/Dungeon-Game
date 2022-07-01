@@ -1,6 +1,8 @@
 package logic;
 
+
 import de.gurkenlabs.litiengine.resources.Resources;
+
 import java.awt.image.BufferedImage;
 
 
@@ -8,6 +10,8 @@ public class CollectablesManager {
     public static BufferedImage[] img = new BufferedImage[50];
     public static boolean[] imgVisible = new boolean[50];
     private static final BufferedImage HaloChar = Resources.images().get("src/main/resources/Collectables/Halo.png") ;
+    private static final BufferedImage Kaneki = Resources.images().get("src/main/resources/Collectables/Kaneki.png") ;
+    private static final BufferedImage Apex = Resources.images().get("src/main/resources/Collectables/aus_dem_cringen_spiel.png") ;
 
 // nicht hinterfrage erstes Bild das gerendert wird ist nummer 11 ka why
     // Die Figur ist vom Doom Slayer aus doom
@@ -16,8 +20,8 @@ public class CollectablesManager {
             imgVisible[j] = false;
         }
         img[11] = HaloChar;
-        img[12] = HaloChar;
-        img[13] = HaloChar;
+        img[12] = Kaneki;
+        img[13] = Apex;
         img[14] = HaloChar;
         imgVisible[11]= true;
         imgVisible[12]= true;
