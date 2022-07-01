@@ -25,12 +25,13 @@ Main {
 
 
         UserInput.Input();
-        GameManager.init();
+
         CollectablesManager.init();
         Colission colission = new Colission();
 
         //load the Liti Library
         Resources.load("game_v4.litidata");
+        GameManager.init();
         //set the Scale of the Game: pixles * X
 
         Game.graphics().setBaseRenderScale(3);

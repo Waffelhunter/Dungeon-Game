@@ -52,6 +52,7 @@ public class InteractableObjects extends Entity {
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
                         GameManager.spawnPlayer(Game.world().environment(), pr);
+                        GameManager.spawnEnemy(Game.world().environment());
 
                     }
 

@@ -1,16 +1,20 @@
 package creatures;
 
+import de.gurkenlabs.litiengine.Align;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.CombatInfo;
 import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
+import de.gurkenlabs.litiengine.entities.Prop;
+import props.Armor;
+import props.life;
 
 
 @CombatInfo(hitpoints = 100)
 @MovementInfo(velocity = 30)
-@CollisionInfo(collision = true, collisionBoxWidth = 20, collisionBoxHeight = 20)
+@CollisionInfo(collision = true, collisionBoxWidth = 30, collisionBoxHeight = 30,align = Align.CENTER)
 
 
 public class Bookmonster extends Creature implements IUpdateable {
@@ -26,16 +30,38 @@ public class Bookmonster extends Creature implements IUpdateable {
         super("Bookmonster");
         this.setTeam(1);
         this.addTag("enemy");
+        onDeath(entity -> {
+            int i = Game.random().nextInt(3);
+            Prop h;
+            switch (i) {
+                case 0:
+                    h = new life("life");
+                    break;
 
+                case 1:
+                    h = new Armor();
+                    break;
+
+                default:
+                    h = null;
+                    break;
+            }
+
+            Game.world().environment().add(h);
+            h.setLocation(this.getX(), this.getY());
+        });
 
     }
 
     @Override
     public void update() {
-
+        this.setCollision(true);
         if (this.getHitPoints().getRelativeCurrentValue() <= 0) {
             this.die();
             Game.world().environment().remove(this);
+        }
+        if(this.getVelocity().get() < 30){
+            this.setCollision(false);
         }
 
         if (this.isDead()) {

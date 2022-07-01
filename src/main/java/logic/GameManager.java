@@ -3,6 +3,7 @@ package logic;
 
 import creatures.Bookmonster;
 import creatures.Player;
+import creatures.Slime;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
@@ -26,13 +27,14 @@ public final class GameManager {
 
         int i = 0;
         Collection<Environment> mapCol = Game.world().getEnvironments();
+
         for (Environment e : mapCol) {
             maps[i] = e;
             besucht[i] = false;
             i++;
 
         }
-        Game.world().onLoaded(GameManager::loaded);
+        Game.world().onLoaded(environment -> loaded(environment));
 
 
     }
@@ -45,29 +47,43 @@ public final class GameManager {
 
     }
 
-    private static void spawnEnemy(Environment e) {
+    public static void spawnEnemy(Environment e) {
         //prüft, ob geladene map schonmal besucht wurde
-        for (int i = 0; i < 22; i++) {
-
-            if (maps[i] == e && (besucht[i] == false)) {
+//        for (int i = 0; i < 22; i++) {
+//
+//            if (maps[i] == e && (besucht[i] == false)) {
 
                 //das passiert, bei erstem Besuch der map
 
                 Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
                 // enemySpawn.ifPresent(s -> s.spawn(new Slime()));
-                enemySpawn.ifPresent(s -> s.spawn(new Bookmonster()));
+                enemySpawn.ifPresent(s -> {
+                            double sX = s.getX();
+                            double sY = s.getY();
+                            int m = Game.random().nextInt(4);
+                            while (m < 4) {
 
-                besucht[i] = true;
+                                s.setLocation(sX + Game.random().nextInt(-80,80), sY + Game.random().nextInt(80));
+                                s.spawn(new Bookmonster());
+                                m++;
+                            }
+
+                        }
+
+                );
+
+
+              //  besucht[i] = true;
             }
-            if (maps[i] == e && (besucht[i] == true)) {
-                //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
-                respawnEnemy(e, Game.random().nextInt(3));
-            }
-
-        }
+//            if (maps[i] == e && (besucht[i] == true)) {
+//                //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
+//                respawnEnemy(e, Game.random().nextInt(3));
+        //    }
 
 
-    }
+
+
+
 
     private static void respawnEnemy(Environment e, int max) {
 

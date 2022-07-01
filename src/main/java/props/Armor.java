@@ -9,7 +9,7 @@ import creatures.Player;
 @CollisionInfo(collision = false)
 public class Armor extends Prop implements IUpdateable {
     public Armor() {
-        super("Armor");
+        super("armor");
     }
 
     @Override
