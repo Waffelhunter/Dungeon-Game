@@ -53,28 +53,25 @@ public final class GameManager {
 //
 //            if (maps[i] == e && (besucht[i] == false)) {
 
-                //das passiert, bei erstem Besuch der map
+        //das passiert, bei erstem Besuch der map
+        Collection<Spawnpoint> es = Game.world().environment().getSpawnpoints("s");
+//        for(Spawnpoint s : es){
+//            s.spawn(new Bookmonster());
+//        }
+        Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
+ enemySpawn.ifPresent(s -> s.spawn(new Slime()));
+//        enemySpawn.ifPresent(s -> {
+//
+//                    s.spawn(new Bookmonster());
 
-                Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
-                // enemySpawn.ifPresent(s -> s.spawn(new Slime()));
-                enemySpawn.ifPresent(s -> {
-                            double sX = s.getX();
-                            double sY = s.getY();
-                            int m = Game.random().nextInt(4);
-                            while (m < 4) {
 
-                                s.setLocation(sX + Game.random().nextInt(-80,80), sY + Game.random().nextInt(80));
-                                s.spawn(new Bookmonster());
-                                m++;
-                            }
+                }
 
-                        }
 
-                );
+
 
 
               //  besucht[i] = true;
-            }
 //            if (maps[i] == e && (besucht[i] == true)) {
 //                //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
 //                respawnEnemy(e, Game.random().nextInt(3));

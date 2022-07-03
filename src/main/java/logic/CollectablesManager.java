@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 public class CollectablesManager {
     public static BufferedImage[] img = new BufferedImage[50];
     public static boolean[] imgVisible = new boolean[50];
-    private static final BufferedImage HaloChar = Resources.images().get("src/main/resources/Collectables/Halo.png") ;
+    private static final BufferedImage DoomChar = Resources.images().get("src/main/resources/Collectables/Halo.png") ;
     private static final BufferedImage Kaneki = Resources.images().get("src/main/resources/Collectables/Kaneki.png") ;
     private static final BufferedImage Apex = Resources.images().get("src/main/resources/Collectables/aus_dem_cringen_spiel.png") ;
 
@@ -19,10 +19,10 @@ public class CollectablesManager {
         for(int j =0; j< imgVisible.length;j++){
             imgVisible[j] = false;
         }
-        img[11] = HaloChar;
+        img[11] = DoomChar;
         img[12] = Kaneki;
         img[13] = Apex;
-        img[14] = HaloChar;
+        img[14] = DoomChar;
         imgVisible[11]= true;
         imgVisible[12]= true;
         imgVisible[13]= true;

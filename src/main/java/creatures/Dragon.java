@@ -1,5 +1,6 @@
 package creatures;
 
+import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.Creature;
 

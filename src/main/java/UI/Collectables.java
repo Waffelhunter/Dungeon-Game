@@ -1,6 +1,7 @@
 package UI;
 
 import de.gurkenlabs.litiengine.Align;
+import de.gurkenlabs.litiengine.resources.Resources;
 import de.gurkenlabs.litiengine.util.Imaging;
 import logic.CollectablesManager;
 
@@ -31,7 +32,7 @@ public class Collectables extends CollectablesMenu {
 
                     if (CollectablesManager.imgVisible[comp.getComponentId()]) {
 
-                        comp.setImage(Imaging.scale(CollectablesManager.img[comp.getComponentId()], 4.0));
+                        comp.setImage(Imaging.scale(CollectablesManager.img[comp.getComponentId()], 5.0));
                         comp.setImageAlign(Align.RIGHT);
 
                         comp.getAppearance().setTransparentBackground(true);
@@ -54,6 +55,7 @@ public class Collectables extends CollectablesMenu {
                             comp.setFontSize(10);
                             comp.getAppearance().setTransparentBackground(false);
                             comp.setTextAntialiasing(true);
+
 
                         });
 

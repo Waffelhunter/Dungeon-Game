@@ -2,7 +2,6 @@ package UI;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.gui.screens.GameScreen;
-import org.example.HUD;
 
 import java.awt.Graphics2D;
 

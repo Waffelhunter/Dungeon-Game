@@ -46,9 +46,10 @@ public class Bookmonster extends Creature implements IUpdateable {
                     h = null;
                     break;
             }
-
-            Game.world().environment().add(h);
-            h.setLocation(this.getX(), this.getY());
+            if(h != null) {
+                Game.world().environment().add(h);
+                h.setLocation(this.getX(), this.getY());
+            }
         });
 
     }
@@ -60,13 +61,13 @@ public class Bookmonster extends Creature implements IUpdateable {
             this.die();
             Game.world().environment().remove(this);
         }
-        if(this.getVelocity().get() < 30){
-            this.setCollision(false);
-        }
+
+
 
         if (this.isDead()) {
             return;
         }
+
 
 //            if (lastFired > 100) {
 //                Player.instance().damage(1);

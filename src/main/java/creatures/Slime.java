@@ -30,7 +30,7 @@ public class Slime extends Creature implements IUpdateable {
 
 
     public Slime() {
-        super("Bookmonster");
+        super("Slime");
         this.setTeam(1);
         this.addTag("enemy");
         onMoved(
