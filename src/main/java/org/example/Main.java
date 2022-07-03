@@ -8,6 +8,7 @@ import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
+import de.gurkenlabs.litiengine.resources.Images;
 import de.gurkenlabs.litiengine.resources.Resources;
 import logic.Colission;
 import logic.CollectablesManager;
@@ -20,6 +21,8 @@ Main {
     public static void main(String[] args) {
 
         Game.init(args);
+        Game.window().setTitle("LegendofLogolas");
+        Game.window().setIcon(Resources.images().get("src/main/resources/misc/icon.png"));
 
 
 
