@@ -7,8 +7,6 @@ import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
 
-import java.awt.geom.Point2D;
-
 @MovementInfo(velocity = 10)
 @CollisionInfo(collision = false)
 public class FireWallAttack extends Creature implements IUpdateable {
