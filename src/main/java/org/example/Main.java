@@ -5,11 +5,14 @@ import UI.InGameScreen;
 import UI.MenuScreen;
 import UI.UserInput;
 import creatures.Player;
+import creatures.Rat;
 import de.gurkenlabs.litiengine.Game;
+import de.gurkenlabs.litiengine.environment.CreatureMapObjectLoader;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
 import de.gurkenlabs.litiengine.resources.Images;
 import de.gurkenlabs.litiengine.resources.Resources;
+import logic.BossSpawner;
 import logic.Colission;
 import logic.CollectablesManager;
 import logic.GameManager;
@@ -35,6 +38,7 @@ Main {
         //load the Liti Library
         Resources.load("game_v4.litidata");
         GameManager.init();
+        BossSpawner.init();
         //set the Scale of the Game: pixles * X
 
         Game.graphics().setBaseRenderScale(3);
@@ -55,6 +59,7 @@ Main {
 
         PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
         PropMapObjectLoader.registerCustomPropType(BreakableWall.class);
+        CreatureMapObjectLoader.registerCustomCreatureType(Rat.class);
 
 
         //loads the inserted map path

@@ -39,8 +39,8 @@ public class Slime extends Creature implements IUpdateable {
                         return;
                     }
                     this.lastWalkDust = Game.loop().getTicks();
-                    EntityEmitter walkDust = new EntityEmitter(this, "slimeWalkEmitter", false);
-                    Game.world().environment().add(walkDust);
+//                    EntityEmitter walkDust = new EntityEmitter(this, "slimeWalkEmitter", false);
+//                    Game.world().environment().add(walkDust);
                 });
         onDeath(entity -> {
             int i = Game.random().nextInt(3);
@@ -58,10 +58,11 @@ public class Slime extends Creature implements IUpdateable {
                     h = null;
                     break;
             }
+            if(h != null) {
+                Game.world().environment().add(h);
+                h.setLocation(this.getX(), this.getY());
 
-            Game.world().environment().add(h);
-            h.setLocation(this.getX(), this.getY());
-        });
+            }});
     }
 
 
