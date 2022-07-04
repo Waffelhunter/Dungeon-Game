@@ -9,6 +9,8 @@ import logic.GameManager;
 
 import java.util.Collection;
 
+import static logic.GameManager.anzahlMonster;
+
 public class InteractableObjects extends Entity {
 
     public static String currentMap = "atrium";
@@ -44,15 +46,22 @@ public class InteractableObjects extends Entity {
             //Door interaction
             for (Prop pr : Gateway) {
 
+
+//                if(GameManager.anzahlMonster !=0)
+//                {
+//                    return;
+//                }
                 pr.setCollision(false);
-                if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())&&Game.time().since(lastDoorInteraction)>300) {
+                if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())&&Game.time().since(lastDoorInteraction)>300&&GameManager.anzahlMonster ==0) {
+                    System.out.println("nach Gateway = " + GameManager.anzahlMonster);
+
                     lastDoorInteraction = Game.loop().getTicks();
                     Game.world().loadEnvironment(pr.getName());
 
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
                         GameManager.spawnPlayer(Game.world().environment(), pr);
-                        GameManager.spawnEnemy(Game.world().environment());
+                      //  GameManager.spawnEnemy(Game.world().environment());
 
                     }
 

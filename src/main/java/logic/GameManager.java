@@ -16,7 +16,7 @@ import java.util.Optional;
 public final class GameManager {
     public static boolean[] besucht;
     public static Environment[] maps;
-
+    public static int anzahlMonster = 0;
     private GameManager() {
     }
 
@@ -61,19 +61,28 @@ public final class GameManager {
 //        }
         Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
         enemySpawn.ifPresent(s -> s.spawn(new Slime()));
+//        anzahlMonster++;
+//        System.out.println("nach enemySpawn =  "+ GameManager.anzahlMonster+ "\t erwartet: 1");
 //        enemySpawn.ifPresent(s -> {
 //
 //                    s.spawn(new Bookmonster());
 
 
-    }
+                }
 
 
-    //  besucht[i] = true;
+
+
+
+              //  besucht[i] = true;
 //            if (maps[i] == e && (besucht[i] == true)) {
 //                //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
 //                respawnEnemy(e, Game.random().nextInt(3));
-    //    }
+        //    }
+
+
+
+
 
 
     private static void respawnEnemy(Environment e, int max) {

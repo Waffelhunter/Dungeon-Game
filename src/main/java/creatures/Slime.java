@@ -9,6 +9,7 @@ import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.graphics.emitters.EntityEmitter;
+import logic.GameManager;
 import props.Armor;
 import props.life;
 
@@ -30,9 +31,13 @@ public class Slime extends Creature implements IUpdateable {
 
 
     public Slime() {
+
         super("Slime");
         this.setTeam(1);
         this.addTag("enemy");
+        GameManager.anzahlMonster++;
+        System.out.println("nach Slime() = " + GameManager.anzahlMonster+ "\t erwartet: 1");
+
         onMoved(
                 event -> {
                     if (Game.time().since(this.lastWalkDust) < STEP_DELAY) {
@@ -57,7 +62,12 @@ public class Slime extends Creature implements IUpdateable {
                 default:
                     h = null;
                     break;
+
             }
+
+            GameManager.anzahlMonster = GameManager.anzahlMonster -1;
+            System.out.println("nach onDeath = " + GameManager.anzahlMonster+ "\t erwartet: 0");
+
             if(h != null) {
                 Game.world().environment().add(h);
                 h.setLocation(this.getX(), this.getY());
@@ -92,7 +102,6 @@ public class Slime extends Creature implements IUpdateable {
                 this.angle = Game.random().nextInt(360);
                 this.lastAngleChange = currentTick;
             }
-
             Game.physics().move(this, angle, this.getTickVelocity());
             return;
         }
