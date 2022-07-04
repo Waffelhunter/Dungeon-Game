@@ -42,7 +42,7 @@ public class HUD extends GuiComponent {
 
     private void renderHP(Graphics2D g) {
         double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING;
-        double x = Game.window().getResolution().getWidth() - ((Player.instance().getHitPoints().getMax() * (HEART.getWidth() + PADDING)*2)) ;
+        double x = Game.window().getResolution().getWidth() - ((Player.instance().getHitPoints().getMax() * (HEART.getWidth() + Game.window().getResolution().getWidth()/18)) );
         for (int i = 0; i < Player.instance().getHitPoints().getMax(); i++) {
             BufferedImage img = i < Player.instance().getHitPoints().get() ? HEART : HEARTEMPTY;
             ImageRenderer.render(g, img, x + i * img.getWidth() + PADDING, y);
