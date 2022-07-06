@@ -878,6 +878,13 @@
       <property name="spritesheetName" value="grünefackel"/>
      </properties>
     </object>
+    <object id="16" type="COLLISIONBOX" x="468" y="279" width="13" height="87">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
    </objectgroup>
   </map>
   <map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1" name="arbeitszimmer">
@@ -1285,7 +1292,7 @@
     <object id="29" type="PROP" x="226" y="373" width="32" height="50">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -1865,7 +1872,7 @@
     <object id="13" type="PROP" x="231" y="370" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -1947,7 +1954,7 @@
     <object id="49" type="PROP" x="257" y="370" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -1964,7 +1971,7 @@
     <object id="50" type="PROP" x="282" y="370" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -1981,7 +1988,7 @@
     <object id="51" type="PROP" x="365" y="370" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -1998,7 +2005,7 @@
     <object id="52" type="PROP" x="391" y="370" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2015,7 +2022,7 @@
     <object id="53" type="PROP" x="340" y="370" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2032,7 +2039,7 @@
     <object id="54" type="PROP" x="231" y="327" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2049,7 +2056,7 @@
     <object id="55" type="PROP" x="257" y="327" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2066,7 +2073,7 @@
     <object id="56" type="PROP" x="283" y="327" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2083,7 +2090,7 @@
     <object id="57" type="PROP" x="340" y="327" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2100,7 +2107,7 @@
     <object id="58" type="PROP" x="366" y="327" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2117,7 +2124,7 @@
     <object id="59" type="PROP" x="392" y="327" width="26" height="45">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -2235,6 +2242,48 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="blaueswappen"/>
+     </properties>
+    </object>
+    <object id="69" type="COLLISIONBOX" x="448" y="353" width="32" height="38">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
+    <object id="70" type="COLLISIONBOX" x="340" y="399" width="77" height="9">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
+    <object id="71" type="COLLISIONBOX" x="232" y="399" width="77" height="9">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
+    <object id="72" type="COLLISIONBOX" x="232" y="357" width="77" height="9">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
+    <object id="73" type="COLLISIONBOX" x="340" y="356" width="77" height="9">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
+    <object id="74" type="COLLISIONBOX" x="191" y="380" width="15" height="73">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
      </properties>
     </object>
    </objectgroup>
@@ -3213,7 +3262,7 @@
     <object id="12" type="PROP" x="160" y="310" width="14" height="64">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -3595,6 +3644,13 @@
       <property name="rotationSprite" value="NONE"/>
       <property name="scaling" type="bool" value="true"/>
       <property name="spritesheetName" value="vasegrün"/>
+     </properties>
+    </object>
+    <object id="41" type="COLLISIONBOX" x="157" y="275" width="16" height="92">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
      </properties>
     </object>
    </objectgroup>
@@ -4364,12 +4420,12 @@
     <object id="19" type="PROP" x="403" y="340" width="14" height="64">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="13.200000000000001"/>
-      <property name="collisionboxWidth" type="float" value="4.0"/>
+      <property name="collisionboxHeight" value="13.200000000000001"/>
+      <property name="collisionboxWidth" value="4.0"/>
       <property name="indestructible" type="bool" value="false"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
@@ -4537,6 +4593,13 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
+    <object id="31" type="COLLISIONBOX" x="404" y="361" width="12" height="40">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="STATIC"/>
+      <property name="collisionValign" value="DOWN"/>
+     </properties>
+    </object>
    </objectgroup>
   </map>
   <map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1" name="speisesaal">
@@ -4701,6 +4764,15 @@
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
       <property name="tags" value="door,s"/>
+     </properties>
+    </object>
+    <object id="10" name="s" type="SPAWNPOINT" x="187" y="376" width="32" height="32">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
    </objectgroup>
