@@ -1010,7 +1010,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="7" name="s" type="SPAWNPOINT" x="352" y="416" width="32" height="32">
+    <object id="7" name="s" type="SPAWNPOINT" x="354" y="397" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -2272,6 +2272,15 @@
       <property name="collisionValign" value="DOWN"/>
      </properties>
     </object>
+    <object id="75" name="n" type="SPAWNPOINT" x="195" y="334" width="32" height="32">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
    </objectgroup>
   </map>
   <map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1" name="gangklozuküche">
@@ -2933,7 +2942,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="target,door,w"/>
+      <property name="tags" value="door,target,o"/>
      </properties>
     </object>
     <object id="7" name="o" type="SPAWNPOINT" x="399" y="307" width="32" height="32">
@@ -3786,7 +3795,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o"/>
+      <property name="tags" value="door,w"/>
      </properties>
     </object>
     <object id="9" name="EnemySpawn" type="SPAWNPOINT" x="428" y="369" width="32" height="31">
@@ -4121,7 +4130,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="door3"/>
-      <property name="tags" value="door,s,target"/>
+      <property name="tags" value="door,s"/>
      </properties>
     </object>
     <object id="7" name="gangklozuküche" type="PROP" x="224" y="288" width="32" height="32">
