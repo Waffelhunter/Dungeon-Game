@@ -11,7 +11,6 @@ import de.gurkenlabs.litiengine.configuration.DisplayMode;
 import de.gurkenlabs.litiengine.environment.CreatureMapObjectLoader;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
-import de.gurkenlabs.litiengine.gui.screens.Resolution;
 import de.gurkenlabs.litiengine.resources.Resources;
 import logic.BossSpawner;
 import logic.Colission;

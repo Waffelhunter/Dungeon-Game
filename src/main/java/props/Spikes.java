@@ -1,12 +1,9 @@
 package props;
 
 import creatures.Player;
-import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.AnimationInfo;
-import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.CombatInfo;
-import de.gurkenlabs.litiengine.entities.ICollisionEntity;
 import de.gurkenlabs.litiengine.entities.Prop;
 
 @AnimationInfo(spritePrefix = {"prop-Spikes"})
@@ -17,7 +14,6 @@ public class Spikes extends Prop implements IUpdateable {
     private  int inactiveTime ;
     private  int activeTime;
     private int hitTimer;
-
     private Boolean active = false;
 
     public Spikes(String spritesheetName) {

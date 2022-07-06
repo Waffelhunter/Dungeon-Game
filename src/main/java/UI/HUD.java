@@ -20,6 +20,7 @@ public class HUD extends GuiComponent {
     private static final BufferedImage ARMOR = Imaging.scale(Resources.images().get("src/main/resources/hud/Ruestung.png"), 5.0);
     private static final BufferedImage ARMOREMPTY = Imaging.scale(Resources.images().get("src/main/resources/hud/RuestungLeer.png"), 5.0);
 
+    private static final BufferedImage HOTBAR = Imaging.scale(Resources.images().get("src/main/resources/hud/Taskbar.png"), 5.0);
 
     private static final int PADDING = 30;
 
@@ -39,6 +40,7 @@ public class HUD extends GuiComponent {
         }
         this.renderHP(g);
         this.renderArmor(g);
+        this.renderHotbar(g);
         if (BossSpawner.triggered) {
             this.renderDragonHealt(g);
         }
@@ -80,6 +82,11 @@ public class HUD extends GuiComponent {
         Game.graphics().renderShape(g, DragonHealtEmpty);
         g.setColor(Color.RED);
         Game.graphics().renderShape(g, DragonHealt);
+    }
+    private void renderHotbar(Graphics2D g){
+        double y = Game.window().getResolution().getHeight()/3;
+        double x = Game.window().getResolution().getWidth()/25;
+        ImageRenderer.render(g,HOTBAR,x,y);
     }
 }
 
