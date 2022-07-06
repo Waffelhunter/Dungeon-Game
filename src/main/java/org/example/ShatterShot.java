@@ -155,6 +155,15 @@ public class ShatterShot extends Creature implements IUpdateable {
 
 
             }
+            Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
+            for (Creature c : Enemys) {
+                if (c.getCollisionBox().intersects(this.getCollisionBox())) {
+                    c.hit(50);
+                }
+                this.removeShot();
+                this.shatter();
+
+            }
         }
     }
 }

@@ -24,6 +24,7 @@ public class ShatterShards extends Creature implements IUpdateable {
     private final int Yvel;
 
     private int moves;
+    private Boolean hit = false;
 
 
     public ShatterShards(Point2D spawn, int Xvel, int Yvel) {
@@ -87,8 +88,19 @@ public class ShatterShards extends Creature implements IUpdateable {
                 moves = 0;
 
             }
-            Game.world().environment().remove(this);
-            moves = 0;
+            Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
+            for (Creature c : Enemys) {
+                if (c.getCollisionBox().intersects(this.getCollisionBox())&& hit == false) {
+                    c.hit(20);
+                    hit = true;
+                    Game.world().environment().remove(this);
+                    moves = 0;
+                }
+
+
+
+            }
+
         }
 
     }
