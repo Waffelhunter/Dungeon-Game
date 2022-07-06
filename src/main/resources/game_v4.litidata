@@ -155,7 +155,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="normalBreak"/>
-      <property name="tags" value="door,n,target"/>
+      <property name="tags" value="target,n,breakablewall"/>
      </properties>
     </object>
     <object id="16" name="w" type="SPAWNPOINT" x="203" y="332" width="32" height="32">
@@ -396,7 +396,7 @@
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxHeight" value="16.8"/>
       <property name="collisionboxWidth" value="7.4"/>
       <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
@@ -753,10 +753,10 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="7" name="küche3" type="PROP" x="132" y="262" width="26" height="22">
+    <object id="7" name="kampfraum" type="PROP" x="132" y="262" width="26" height="22">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
@@ -1479,7 +1479,7 @@
       <property name="tags" value="door,target,w"/>
      </properties>
     </object>
-    <object id="10" name="BossRoom" type="PROP" x="506" y="310" width="6" height="42">
+    <object id="10" name="vorraum" type="PROP" x="506" y="310" width="6" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -1494,10 +1494,10 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="target,door,o"/>
+      <property name="tags" value="door,target,o"/>
      </properties>
     </object>
-    <object id="11" name="thronsaal" type="PROP" x="320" y="246" width="33" height="42">
+    <object id="11" name="thronsaal" type="PROP" x="304" y="229" width="64" height="67">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -1505,10 +1505,11 @@
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
       <property name="collisionboxHeight" value="21.2"/>
-      <property name="collisionboxWidth" value="13.200000000000001"/>
+      <property name="collisionboxWidth" value="64.0"/>
       <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
       <property name="spritesheetName" value="doorfront"/>
       <property name="tags" value="door,n,target"/>
      </properties>
@@ -1686,21 +1687,6 @@
       <property name="tags" value="s"/>
      </properties>
     </object>
-    <object id="26" type="PROP" x="305" y="310" width="32" height="32">
-     <properties>
-      <property name="addShadow" type="bool" value="true"/>
-      <property name="collision" type="bool" value="false"/>
-      <property name="collisionAlign" value="CENTER"/>
-      <property name="collisionType" value="DYNAMIC"/>
-      <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" value="32.0"/>
-      <property name="collisionboxWidth" value="32.0"/>
-      <property name="indestructible" type="bool" value="false"/>
-      <property name="material" value="UNDEFINED"/>
-      <property name="rotationSprite" value="NONE"/>
-      <property name="spritesheetName" value="Spikes"/>
-     </properties>
-    </object>
    </objectgroup>
   </map>
   <map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1" name="bibliothek">
@@ -1866,7 +1852,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="greenEyeBreak"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="n,breakablewall"/>
      </properties>
     </object>
     <object id="13" type="PROP" x="231" y="370" width="26" height="45">
@@ -3183,7 +3169,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,o,target"/>
+      <property name="tags" value="target,door,o"/>
      </properties>
     </object>
     <object id="7" name="schlafzimmer2" type="PROP" x="256" y="246" width="33" height="42">
@@ -3778,7 +3764,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="7" name="summon" type="SPAWNPOINT" x="353" y="352" width="32" height="32">
+    <object id="7" name="w" type="SPAWNPOINT" x="139" y="331" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -3787,18 +3773,55 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="8" type="CREATURE" x="416" y="320" width="96" height="96">
+    <object id="8" name="gangthronsaalzukerker" type="PROP" x="128" y="322" width="6" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="true"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" type="float" value="38.400000000000006"/>
-      <property name="collisionboxWidth" type="float" value="38.400000000000006"/>
+      <property name="collisionboxHeight" value="16.8"/>
+      <property name="collisionboxWidth" value="2.4000000000000004"/>
       <property name="indestructible" type="bool" value="false"/>
-      <property name="spawnDirection" value="UNDEFINED"/>
-      <property name="spritesheetName" value="Dragon"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="doorside"/>
+      <property name="tags" value="door,o"/>
+     </properties>
+    </object>
+    <object id="9" name="EnemySpawn" type="SPAWNPOINT" x="428" y="369" width="32" height="31">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+      <property name="tags" value="s"/>
+     </properties>
+    </object>
+    <object id="10" name="alchemielabor" type="PROP" x="352" y="288" width="32" height="32">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="12.8"/>
+      <property name="collisionboxWidth" value="12.8"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="falltür"/>
+      <property name="tags" value="door,s"/>
+     </properties>
+    </object>
+    <object id="11" name="s" type="SPAWNPOINT" x="351" y="320" width="32" height="32">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
    </objectgroup>
@@ -3934,7 +3957,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="8" name="summon" type="SPAWNPOINT" x="319" y="319" width="32" height="32">
+    <object id="8" name="s" type="SPAWNPOINT" x="319" y="319" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -4114,7 +4137,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="normalBreak"/>
-      <property name="tags" value="door,n"/>
+      <property name="tags" value="n,breakablewall"/>
      </properties>
     </object>
     <object id="8" name="n" type="SPAWNPOINT" x="224" y="320" width="32" height="32">
@@ -4750,15 +4773,16 @@
       <property name="tags" value="door,n,target"/>
      </properties>
     </object>
-    <object id="9" name="thronsaal" type="PROP" x="161" y="374" width="33" height="42">
+    <object id="9" name="thronsaal" type="PROP" x="441" y="374" width="33" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
-      <property name="collisionboxHeight" value="16.8"/>
-      <property name="collisionboxWidth" value="13.200000000000001"/>
+      <property name="collisionboxHeight" value="13.0"/>
+      <property name="collisionboxWidth" value="32.0"/>
+      <property name="flipHorizontally" type="bool" value="true"/>
       <property name="indestructible" type="bool" value="false"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
@@ -4766,13 +4790,57 @@
       <property name="tags" value="door,s"/>
      </properties>
     </object>
-    <object id="10" name="s" type="SPAWNPOINT" x="187" y="376" width="32" height="32">
+    <object id="10" name="s" type="SPAWNPOINT" x="441" y="368" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
       <property name="spawnDirection" value="DOWN"/>
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="11" name="w" type="SPAWNPOINT" x="192" y="293" width="32" height="32">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="12" name="gemeinschaftssaal2" type="PROP" x="162" y="278" width="6" height="42">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" value="16.8"/>
+      <property name="collisionboxWidth" value="2.4000000000000004"/>
+      <property name="indestructible" type="bool" value="true"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="doorside"/>
+     </properties>
+    </object>
+    <object id="13" name="EnemySpawn" type="SPAWNPOINT" x="263" y="357" width="32" height="31">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+      <property name="tags" value="s"/>
+     </properties>
+    </object>
+    <object id="14" name="EnemySpawn" type="SPAWNPOINT" x="359" y="311" width="32" height="31">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+      <property name="tags" value="s"/>
      </properties>
     </object>
    </objectgroup>
@@ -4948,7 +5016,7 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="7" name="s" type="SPAWNPOINT" x="289" y="439" width="32" height="32">
+    <object id="7" name="s" type="SPAWNPOINT" x="290" y="434" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -4957,7 +5025,7 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
-    <object id="8" name="atrium" type="PROP" x="290" y="448" width="33" height="42">
+    <object id="8" name="atrium" type="PROP" x="274" y="448" width="62" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -4969,6 +5037,7 @@
       <property name="indestructible" type="bool" value="true"/>
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
       <property name="spritesheetName" value="door3"/>
       <property name="tags" value="door,s,target"/>
      </properties>
@@ -5069,7 +5138,7 @@
       <property name="tags" value="s"/>
      </properties>
     </object>
-    <object id="18" name="EnemySpawn" type="SPAWNPOINT" x="412" y="293" width="32" height="31">
+    <object id="18" name="EnemySpawn" type="SPAWNPOINT" x="358" y="308" width="32" height="31">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
@@ -5208,7 +5277,7 @@
       <property name="spritesheetName" value="leuchtergold"/>
      </properties>
     </object>
-    <object id="29" name="speisesaal" type="PROP" x="162" y="247" width="33" height="42">
+    <object id="29" name="speisesaal" type="PROP" x="448" y="246" width="33" height="42">
      <properties>
       <property name="addShadow" type="bool" value="true"/>
       <property name="collision" type="bool" value="false"/>
@@ -5224,13 +5293,30 @@
       <property name="tags" value="door,n"/>
      </properties>
     </object>
-    <object id="30" name="n" type="SPAWNPOINT" x="162" y="288" width="32" height="32">
+    <object id="30" name="n" type="SPAWNPOINT" x="448" y="288" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
       <property name="spawnDirection" value="DOWN"/>
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="31" type="PROP" x="275" y="447" width="62" height="42">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxWidth" type="float" value="13.200000000000001"/>
+      <property name="flipHorizontally" type="bool" value="true"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="scaling" type="bool" value="true"/>
+      <property name="spritesheetName" value="door3"/>
      </properties>
     </object>
    </objectgroup>
@@ -5461,6 +5547,16 @@
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
      </properties>
     </object>
+    <object id="7" name="EnemySpawn" type="SPAWNPOINT" x="372" y="284" width="32" height="31">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+      <property name="tags" value="s"/>
+     </properties>
+    </object>
    </objectgroup>
   </map>
   <map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1" name="vorraum">
@@ -5522,13 +5618,39 @@
       <property name="tags" value="target"/>
      </properties>
     </object>
-    <object id="5" name="summon" type="SPAWNPOINT" x="351" y="352" width="32" height="32">
+    <object id="5" name="w" type="SPAWNPOINT" x="271" y="321" width="32" height="32">
      <properties>
       <property name="collisionAlign" value="CENTER"/>
       <property name="collisionType" value="DYNAMIC"/>
       <property name="collisionValign" value="DOWN"/>
       <property name="spawnDirection" value="DOWN"/>
       <property name="spawnPivot" value="DIMENSION_CENTER"/>
+     </properties>
+    </object>
+    <object id="6" name="atrium" type="PROP" x="256" y="310" width="6" height="42">
+     <properties>
+      <property name="addShadow" type="bool" value="true"/>
+      <property name="collision" type="bool" value="false"/>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="collisionboxHeight" type="float" value="16.8"/>
+      <property name="collisionboxWidth" value="16.0"/>
+      <property name="indestructible" type="bool" value="false"/>
+      <property name="material" value="UNDEFINED"/>
+      <property name="rotationSprite" value="NONE"/>
+      <property name="spritesheetName" value="doorside"/>
+      <property name="tags" value="door,w"/>
+     </properties>
+    </object>
+    <object id="7" name="EnemySpawn" type="SPAWNPOINT" x="341" y="311" width="32" height="31">
+     <properties>
+      <property name="collisionAlign" value="CENTER"/>
+      <property name="collisionType" value="DYNAMIC"/>
+      <property name="collisionValign" value="DOWN"/>
+      <property name="spawnDirection" value="DOWN"/>
+      <property name="spawnPivot" value="DIMENSION_CENTER"/>
+      <property name="tags" value="s"/>
      </properties>
     </object>
    </objectgroup>
