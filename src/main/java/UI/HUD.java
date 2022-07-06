@@ -8,7 +8,9 @@ import de.gurkenlabs.litiengine.gui.GuiComponent;
 import de.gurkenlabs.litiengine.resources.Resources;
 import de.gurkenlabs.litiengine.util.Imaging;
 import logic.BossSpawner;
+import org.example.SpellManager;
 
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
@@ -20,9 +22,14 @@ public class HUD extends GuiComponent {
     private static final BufferedImage ARMOR = Imaging.scale(Resources.images().get("src/main/resources/hud/Ruestung.png"), 5.0);
     private static final BufferedImage ARMOREMPTY = Imaging.scale(Resources.images().get("src/main/resources/hud/RuestungLeer.png"), 5.0);
 
-    private static final BufferedImage HOTBAR = Imaging.scale(Resources.images().get("src/main/resources/hud/Taskbar.png"), 5.0);
+    private static final BufferedImage HOTBAR = Imaging.scale(Resources.images().get("src/main/resources/hud/tb.png"), 5.0);
+
+    private  static final BufferedImage Feuerball = Imaging.scale(Resources.images().get("src/main/resources/hud/Feuerball3.png"), 5.0);
 
     private static final int PADDING = 30;
+
+    private static Color BorderRed = new Color(154, 1, 1, 205);
+    private static Color CooldownRed = new Color(154, 1, 1, 37);
 
 
     public HUD() {
@@ -82,11 +89,29 @@ public class HUD extends GuiComponent {
         Game.graphics().renderShape(g, DragonHealtEmpty);
         g.setColor(Color.RED);
         Game.graphics().renderShape(g, DragonHealt);
+
     }
     private void renderHotbar(Graphics2D g){
         double y = Game.window().getResolution().getHeight()/3;
         double x = Game.window().getResolution().getWidth()/25;
         ImageRenderer.render(g,HOTBAR,x,y);
+       g.setColor(BorderRed);
+       g.setStroke(new BasicStroke(5));
+       if(SpellManager.spellType == 1) {
+           g.drawRect((int) x + 30, (int) y + 30, 100, 75);
+       }
+       if(SpellManager.spellType == 2){
+           g.drawRect((int) x + 30, (int) y + 142, 100, 75);
+       }
+        if(SpellManager.spellType == 3){
+            g.drawRect((int) x + 30, (int) y + 257, 100, 75);
+        }
+        if(SpellManager.spellType == 4){
+            g.drawRect((int) x + 30, (int) y + 372, 100, 75);
+        }
+       g.fillRect((int)x + 30,(int)y +30,100, SpellManager.FireballCooldown);
+       ImageRenderer.render(g,Feuerball,x+35,y+40);
+
     }
 }
 

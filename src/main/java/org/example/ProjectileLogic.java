@@ -18,7 +18,7 @@ public class ProjectileLogic {
                 case 1:
                     if (SpellManager.FireballCooldown == 0) {
                         SpellManager.state = 1;
-                        SpellManager.FireballCooldown = 50;
+                        SpellManager.FireballCooldown = 75;
 
 
                         Game.world().environment().add(Fireball.instance());

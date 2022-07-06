@@ -25,6 +25,7 @@ public class UserInput {
         Input.keyboard().onKeyPressed(KeyEvent.VK_1, e -> SpellManager.setSpellType(1));
         Input.keyboard().onKeyPressed(KeyEvent.VK_2, e -> SpellManager.setSpellType(2));
         Input.keyboard().onKeyPressed(KeyEvent.VK_3, e -> SpellManager.setSpellType(3));
+        Input.keyboard().onKeyPressed(KeyEvent.VK_4, e -> SpellManager.setSpellType(4));
 
 
     }

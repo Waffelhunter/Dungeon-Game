@@ -32,8 +32,10 @@ public class SpellManager {
                 }
                 break;
             case 3:
+                spellType = 3;
                 break;
             case 4:
+                spellType = 4;
                 break;
             default:
                 break;
