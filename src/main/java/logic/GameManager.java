@@ -128,8 +128,10 @@ public final class GameManager {
 
     public static void respawn() {
         //spawnPlayer(Game.world().environment());
+        anzahlMonster = 0;
         if (Player.instance().isDead()) {
             Player.instance().resurrect();
+            Game.world().loadEnvironment("atrium");
             Player.instance().setLocation(Game.world().environment().getSpawnpoint("s").getLocation());
         }
     }

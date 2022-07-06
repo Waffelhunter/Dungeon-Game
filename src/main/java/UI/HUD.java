@@ -21,10 +21,9 @@ public class HUD extends GuiComponent {
     private static final BufferedImage HEARTEMPTY = Imaging.scale(Resources.images().get("src/main/resources/hud/herzleer.png"), 5.0);
     private static final BufferedImage ARMOR = Imaging.scale(Resources.images().get("src/main/resources/hud/Ruestung.png"), 5.0);
     private static final BufferedImage ARMOREMPTY = Imaging.scale(Resources.images().get("src/main/resources/hud/RuestungLeer.png"), 5.0);
-
     private static final BufferedImage HOTBAR = Imaging.scale(Resources.images().get("src/main/resources/hud/tb.png"), 5.0);
-
     private  static final BufferedImage Feuerball = Imaging.scale(Resources.images().get("src/main/resources/hud/Feuerball3.png"), 5.0);
+    private  static final BufferedImage Splitball = Imaging.scale(Resources.images().get("src/main/resources/hud/Bs.png"), 5.0);
 
     private static final int PADDING = 30;
 
@@ -48,7 +47,7 @@ public class HUD extends GuiComponent {
         this.renderHP(g);
         this.renderArmor(g);
         this.renderHotbar(g);
-        if (BossSpawner.triggered) {
+        if (BossSpawner.triggered && Game.world().environment() == Game.world().loadEnvironment("BossRoom")){
             this.renderDragonHealt(g);
         }
 
@@ -111,6 +110,8 @@ public class HUD extends GuiComponent {
         }
        g.fillRect((int)x + 30,(int)y +30,100, SpellManager.FireballCooldown);
        ImageRenderer.render(g,Feuerball,x+35,y+40);
+        g.fillRect((int)x + 30,(int)y +145,100, (int) ((SpellManager.ShatterShotCooldown)*0.75));
+       ImageRenderer.render(g,Splitball,x+35,y+155);
 
     }
 }

@@ -8,7 +8,7 @@ import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
 
 @MovementInfo(velocity = 10)
-@CollisionInfo(collision = false)
+@CollisionInfo(collision = false,collisionBoxHeight = 76,collisionBoxWidth = 19)
 public class FireWallAttack extends Creature implements IUpdateable {
 private int moves = 0;
 private boolean hitPlayer;
