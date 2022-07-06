@@ -211,7 +211,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="ExplosiveBarrel"/>
-      <property name="tags" value="target"/>
+      <property name="tags" value="target,explosive"/>
      </properties>
     </object>
    </objectgroup>
@@ -1834,7 +1834,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="ExplosiveBarrel"/>
-      <property name="tags" value="target"/>
+      <property name="tags" value="target,explosive"/>
      </properties>
     </object>
     <object id="8" name="o" type="SPAWNPOINT" x="448" y="320" width="32" height="32">
@@ -4167,7 +4167,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="ExplosiveBarrel"/>
-      <property name="tags" value="target"/>
+      <property name="tags" value="target,explosive"/>
      </properties>
     </object>
     <object id="17" type="PROP" x="295" y="313" width="20" height="15">
