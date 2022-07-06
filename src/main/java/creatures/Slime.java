@@ -1,6 +1,5 @@
 package creatures;
 
-import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;
@@ -8,7 +7,6 @@ import de.gurkenlabs.litiengine.entities.CombatInfo;
 import de.gurkenlabs.litiengine.entities.Creature;
 import de.gurkenlabs.litiengine.entities.MovementInfo;
 import de.gurkenlabs.litiengine.entities.Prop;
-import de.gurkenlabs.litiengine.graphics.emitters.EntityEmitter;
 import logic.GameManager;
 import props.Armor;
 import props.life;

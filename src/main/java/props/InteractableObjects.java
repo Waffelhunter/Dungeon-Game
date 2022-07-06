@@ -1,15 +1,13 @@
 package props;
 
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.Entity;
 import de.gurkenlabs.litiengine.entities.Prop;
-import creatures.Player;
 import logic.GameManager;
 
 import java.util.Collection;
-
-import static logic.GameManager.anzahlMonster;
 
 public class InteractableObjects extends Entity {
 

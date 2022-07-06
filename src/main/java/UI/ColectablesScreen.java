@@ -6,7 +6,6 @@ import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.graphics.TextRenderer;
 import de.gurkenlabs.litiengine.gui.screens.Screen;
 
-
 import java.awt.*;
 
 public class ColectablesScreen extends Screen implements IUpdateable {

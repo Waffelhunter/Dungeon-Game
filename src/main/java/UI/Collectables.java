@@ -1,11 +1,10 @@
 package UI;
 
 import de.gurkenlabs.litiengine.Align;
-import de.gurkenlabs.litiengine.resources.Resources;
 import de.gurkenlabs.litiengine.util.Imaging;
 import logic.CollectablesManager;
 
-import java.awt.Color;
+import java.awt.*;
 
 public class Collectables extends CollectablesMenu {
 

@@ -15,6 +15,7 @@ public class BossSpawner {
     private static final Spawnpoint bossSpawn = Bossroom.getSpawnpoint("Bossspawn");
 
     private static TriggerListener activationListener;
+    public static boolean triggered;
 
     public static void init(){
         bossTrigger.addActivatingCondition(event -> {
@@ -27,8 +28,9 @@ public class BossSpawner {
 
             @Override
             public void activated(TriggerEvent event) {
-                bossSpawn.spawn(new Dragon());
+                bossSpawn.spawn(Dragon.instance());
                 Game.world().camera().shake(8,0,600);
+                triggered = true;
             }
 
             @Override

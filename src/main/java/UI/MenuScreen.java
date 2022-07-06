@@ -8,8 +8,7 @@ import de.gurkenlabs.litiengine.resources.Resources;
 import de.gurkenlabs.litiengine.util.Imaging;
 import logic.GameManager;
 
-import java.awt.Graphics2D;
-import java.awt.Color;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class MenuScreen extends Screen implements IUpdateable {

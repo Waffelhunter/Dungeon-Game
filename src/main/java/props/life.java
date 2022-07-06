@@ -1,11 +1,11 @@
 package props;
 
+import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.AnimationInfo;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.Prop;
-import creatures.Player;
 
 @CollisionInfo(collision = false)
 @AnimationInfo(spritePrefix = "prop-life")

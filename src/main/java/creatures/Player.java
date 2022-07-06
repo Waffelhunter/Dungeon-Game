@@ -1,7 +1,6 @@
 package creatures;
 
 import de.gurkenlabs.litiengine.IUpdateable;
-
 import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.CombatInfo;

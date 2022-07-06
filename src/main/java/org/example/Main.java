@@ -7,10 +7,11 @@ import UI.UserInput;
 import creatures.Player;
 import creatures.Rat;
 import de.gurkenlabs.litiengine.Game;
+import de.gurkenlabs.litiengine.configuration.DisplayMode;
 import de.gurkenlabs.litiengine.environment.CreatureMapObjectLoader;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
 import de.gurkenlabs.litiengine.graphics.Camera;
-import de.gurkenlabs.litiengine.resources.Images;
+import de.gurkenlabs.litiengine.gui.screens.Resolution;
 import de.gurkenlabs.litiengine.resources.Resources;
 import logic.BossSpawner;
 import logic.Colission;
@@ -18,6 +19,7 @@ import logic.CollectablesManager;
 import logic.GameManager;
 import props.BreakableWall;
 import props.ExplosiveBarrel;
+import props.Spikes;
 
 public class
 Main {
@@ -59,12 +61,15 @@ Main {
 
         PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
         PropMapObjectLoader.registerCustomPropType(BreakableWall.class);
+        PropMapObjectLoader.registerCustomPropType(Spikes.class);
         CreatureMapObjectLoader.registerCustomCreatureType(Rat.class);
+
 
 
         //loads the inserted map path
         //file must be a tmx file, and loaded in /src
         Game.world().loadEnvironment("titlescreen");
+Game.config().graphics().setDisplayMode(DisplayMode.BORDERLESS);
 
         Game.screens().display("MENU");
         Game.world().camera().setFocus(Game.world().environment().getCenter());

@@ -8,6 +8,8 @@ import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
 import de.gurkenlabs.litiengine.environment.Environment;
+import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
+import props.Spikes;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -43,6 +45,7 @@ public final class GameManager {
     private static void loaded(Environment e) {
         //spawnPlayer(e);
         spawnEnemy(e);
+        PropMapObjectLoader.registerCustomPropType(Spikes.class);
 
         Game.world().camera().setFocus(e.getCenter());
 

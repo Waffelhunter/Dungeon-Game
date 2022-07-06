@@ -12,12 +12,21 @@ import org.example.FireWallAttack;
 import org.example.HomingFireball;
 
 @CombatInfo(hitpoints = 1000)
-@CollisionInfo(collisionBoxWidth = 90,collisionBoxHeight = 90,valign = Valign.MIDDLE, collision = true)
+@CollisionInfo(collisionBoxWidth = 90,collisionBoxHeight = 70,valign = Valign.MIDDLE, collision = true)
 public class Dragon extends Creature implements IUpdateable {
 
     private int WallAttacktimer = 300;
     private int HomingAttacktimer = 700;
 
+    private static Dragon instance;
+    public static Dragon instance() {
+        if (instance == null) {
+            instance = new Dragon();
+
+        }
+        return instance;
+
+    }
 public Dragon(){
     super("Dragon");
     this.addTag("enemy");
