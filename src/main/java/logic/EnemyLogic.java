@@ -18,7 +18,7 @@ public class EnemyLogic {
             Spawnpoint EnemySpawn = e.getSpawnpoint("EnemySpawn");
 
 
-            if (EnemySpawn != null) {
+            if (EnemySpawn != null && EnemySpawn.isLoaded() == false) {
 
                 EnemySpawn.spawn(new Slime());
 

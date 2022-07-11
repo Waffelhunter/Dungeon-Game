@@ -59,7 +59,7 @@ public class MenuScreen extends Screen implements IUpdateable {
         Game.loop().attach(this);
 
         Game.window().getRenderComponent().setBackground(Color.BLACK);
-        Game.graphics().setBaseRenderScale(6f * Game.window().getResolutionScale());
+        Game.graphics().setBaseRenderScale(8f * Game.window().getResolutionScale());
         this.mainMenu.incFocus();
         Game.world().loadEnvironment("titlescreen");
 

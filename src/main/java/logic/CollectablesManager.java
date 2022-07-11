@@ -14,7 +14,7 @@ public class CollectablesManager {
     private static final BufferedImage Apex = Resources.images().get("src/main/resources/Collectables/aus_dem_cringen_spiel.png") ;
 
 // nicht hinterfrage erstes Bild das gerendert wird ist nummer 11 ka why
-    // Die Figur ist vom Doom Slayer aus doom
+    // Die Figur ist vom Halo
     public static void init(){
         for(int j =0; j< imgVisible.length;j++){
             imgVisible[j] = false;

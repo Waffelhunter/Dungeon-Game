@@ -6,6 +6,9 @@ import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.Entity;
 import de.gurkenlabs.litiengine.entities.Prop;
 import logic.GameManager;
+import org.example.Fireball;
+import org.example.ShatterShot;
+import org.example.SpellManager;
 
 import java.util.Collection;
 
@@ -54,11 +57,16 @@ public class InteractableObjects extends Entity {
                     System.out.println("nach Gateway = " + GameManager.anzahlMonster);
 
                     lastDoorInteraction = Game.loop().getTicks();
+                    Game.world().environment().remove(Fireball.instance());
+                    Game.world().environment().remove(ShatterShot.instance());
+                    SpellManager.state = 0;
+
                     Game.world().loadEnvironment(pr.getName());
 
                     currentMap = pr.getName();
                     Game.world().camera().setFocus(Game.world().environment().getCenter());
                         GameManager.spawnPlayer(Game.world().environment(), pr);
+
                       //  GameManager.spawnEnemy(Game.world().environment());
 
                     }

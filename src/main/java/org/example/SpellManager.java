@@ -1,6 +1,7 @@
 package org.example;
 
 
+import de.gurkenlabs.litiengine.Game;
 
 public class SpellManager {
     //defines the current spell type
@@ -18,33 +19,39 @@ public class SpellManager {
     public static boolean PoisonShotUnlocked;
     public static int ShatterShotCooldown;
     public static boolean ShatterShotUnlocked = true;
+    private static double lastSwitchtime = 0;
 
 
     public static void setSpellType(int spell) {
-        switch (spell) {
-            case 1:
-                spellType = 1;
-                break;
-            case 2:
-                if (ShatterShotUnlocked) {
-                    spellType = 2;
+        if (Game.loop().getTicks() > lastSwitchtime + 50) {
+            switch (spell) {
 
-                }
-                break;
-            case 3:
-                spellType = 3;
-                break;
-            case 4:
-                spellType = 4;
-                break;
-            default:
-                break;
+                case 1:
+
+                    spellType = 1;
+                    break;
+                case 2:
+                    if (ShatterShotUnlocked) {
+                        spellType = 2;
+
+                    }
+                    break;
+                case 3:
+                    spellType = 3;
+                    break;
+                case 4:
+                    spellType = 4;
+                    break;
+                default:
+                    break;
+            }
+            lastSwitchtime = Game.loop().getTicks();
+
+
         }
 
 
     }
-
-
 }
 
 
