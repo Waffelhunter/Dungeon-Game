@@ -1,15 +1,19 @@
 package props;
 
+import UI.HUD;
 import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;
 import de.gurkenlabs.litiengine.entities.Entity;
 import de.gurkenlabs.litiengine.entities.Prop;
+import de.gurkenlabs.litiengine.graphics.TextRenderer;
+import de.gurkenlabs.litiengine.resources.Resources;
 import logic.GameManager;
 import org.example.Fireball;
 import org.example.ShatterShot;
 import org.example.SpellManager;
 
+import java.awt.*;
 import java.util.Collection;
 
 public class InteractableObjects extends Entity {
@@ -34,6 +38,7 @@ public class InteractableObjects extends Entity {
 
             if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox()) && !p.isDead()) {
                 p.hit(100);
+                Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/573654__the-frisbee-of-peace__wooden-chest-open.wav"));
 
                 //spawn the Loot that's in the chest
                 life h = new life("life");
@@ -54,6 +59,12 @@ public class InteractableObjects extends Entity {
 //                }
                 pr.setCollision(false);
                 if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())&&Game.time().since(lastDoorInteraction)>300&&GameManager.anzahlMonster ==0) {
+                   if(pr.hasTag("lock")){
+                       Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/219487__jarredgibb__door-cupboard-07.wav"));
+                       HUD.renderLock = true;
+                       lastDoorInteraction = Game.loop().getTicks();
+                       return;
+                   }
                     System.out.println("nach Gateway = " + GameManager.anzahlMonster);
 
                     lastDoorInteraction = Game.loop().getTicks();
@@ -89,7 +100,11 @@ public class InteractableObjects extends Entity {
 
                 }
             }
-        }
+
     }
+
+
+
+}
 
 

@@ -8,6 +8,7 @@ import de.gurkenlabs.litiengine.entities.Trigger;
 import de.gurkenlabs.litiengine.entities.TriggerEvent;
 import de.gurkenlabs.litiengine.entities.TriggerListener;
 import de.gurkenlabs.litiengine.environment.Environment;
+import de.gurkenlabs.litiengine.resources.Resources;
 
 public class BossSpawner {
     private static final Environment Bossroom = Game.world().loadEnvironment("BossRoom");
@@ -30,6 +31,7 @@ public class BossSpawner {
             public void activated(TriggerEvent event) {
                 bossSpawn.spawn(Dragon.instance());
                 Game.world().camera().shake(8,0,600);
+                Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/85568__joelaudio__dragon-roar.wav"));
                 triggered = true;
             }
 

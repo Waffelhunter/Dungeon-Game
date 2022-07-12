@@ -2,6 +2,9 @@ package org.example;
 
 import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
+import de.gurkenlabs.litiengine.resources.Resources;
+
+import java.awt.geom.Rectangle2D;
 
 public class ProjectileLogic {
     public static String fd;
@@ -21,8 +24,9 @@ public class ProjectileLogic {
                         SpellManager.FireballCooldown = 75;
 
 
-                        Game.world().environment().add(Fireball.instance());
 
+                        Game.world().environment().add(Fireball.instance());
+                        Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/431174__highpixel__fireball-explosion.wav"));
                         Fireball.instance().setLocation(Player.instance().getLocation());
                         Fireball.instance().setFacingDirection(Player.instance().getFacingDirection());
                     }
