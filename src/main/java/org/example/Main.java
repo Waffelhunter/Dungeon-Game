@@ -18,6 +18,7 @@ import logic.CollectablesManager;
 import logic.GameManager;
 import props.BreakableWall;
 import props.ExplosiveBarrel;
+import props.InteractableObjects;
 import props.Spikes;
 
 public class
@@ -27,8 +28,6 @@ Main {
         Game.init(args);
         Game.window().setTitle("LegendofLogolas");
         Game.window().setIcon(Resources.images().get("src/main/resources/misc/icon.png"));
-
-
 
 
         UserInput.Input();
@@ -64,14 +63,12 @@ Main {
         CreatureMapObjectLoader.registerCustomCreatureType(Rat.class);
 
         float safe = Game.config().sound().getSoundVolume();
-        Game.config().sound().setSoundVolume(0);
-        Game.audio().playSound(Resources.sounds().get("mixkit-shot-light-explosion-1682"));
+        Game.config().sound().setSoundVolume(0f);
+
         Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/219487__jarredgibb__door-cupboard-07.wav"));
         Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/85568__joelaudio__dragon-roar.wav"));
         Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/431174__highpixel__fireball-explosion.wav"));
         Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/573654__the-frisbee-of-peace__wooden-chest-open.wav"));
-
-
 
 
         //loads the inserted map path
@@ -81,10 +78,11 @@ Main {
 
         Game.screens().display("MENU");
         Game.world().camera().setFocus(Game.world().environment().getCenter());
+
         Game.start();
-        Game.loop().perform(1000,() -> {
+        Game.audio().playSound(Resources.sounds().get("mixkit-shot-light-explosion-1682"));
+        Game.loop().perform(1500, () -> {
             Game.config().sound().setSoundVolume(safe);
         });
-
     }
 }

@@ -9,6 +9,7 @@ import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
 import de.gurkenlabs.litiengine.environment.Environment;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
+import props.InteractableObjects;
 import props.Spikes;
 
 import java.util.Collection;
@@ -19,12 +20,13 @@ public final class GameManager {
     public static boolean[] besucht;
     public static Environment[] maps;
     public static int anzahlMonster = 0;
+
     private GameManager() {
     }
 
     public static void init() {
 
-
+        InteractableObjects.pickedUp = false;
         besucht = new boolean[22];
         maps = new Environment[22];
 
@@ -71,21 +73,14 @@ public final class GameManager {
 //                    s.spawn(new Bookmonster());
 
 
-                }
+    }
 
 
-
-
-
-              //  besucht[i] = true;
+    //  besucht[i] = true;
 //            if (maps[i] == e && (besucht[i] == true)) {
 //                //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
 //                respawnEnemy(e, Game.random().nextInt(3));
-        //    }
-
-
-
-
+    //    }
 
 
     private static void respawnEnemy(Environment e, int max) {
@@ -127,7 +122,6 @@ public final class GameManager {
     }
 
     public static void respawn() {
-        //spawnPlayer(Game.world().environment());
         anzahlMonster = 0;
         if (Player.instance().isDead()) {
             Player.instance().resurrect();

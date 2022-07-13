@@ -9,6 +9,7 @@ import de.gurkenlabs.litiengine.entities.MovementInfo;
 import de.gurkenlabs.litiengine.entities.Prop;
 import logic.GameManager;
 import props.Armor;
+import props.Key;
 import props.life;
 
 
@@ -18,13 +19,12 @@ import props.life;
 
 
 public class Slime extends Creature implements IUpdateable {
+    private static final int STEP_DELAY = 360;
+    private final int ANGLE_CHANGE_INTERVAL = 1000;
     //public String drops;
     private int angle;
     private long lastAngleChange;
-    private final int ANGLE_CHANGE_INTERVAL = 1000;
-
     private int lastHit = 200;
-    private static final int STEP_DELAY = 360;
     private long lastWalkDust;
 
 
@@ -34,7 +34,7 @@ public class Slime extends Creature implements IUpdateable {
         this.setTeam(1);
         this.addTag("enemy");
         GameManager.anzahlMonster++;
-        System.out.println("nach Slime() = " + GameManager.anzahlMonster+ "\t erwartet: 1");
+        System.out.println("nach Slime() = " + GameManager.anzahlMonster + "\t erwartet: 1");
 
         onMoved(
                 event -> {
@@ -57,23 +57,26 @@ public class Slime extends Creature implements IUpdateable {
                     h = new Armor();
                     break;
 
+                case 2:
+                    h = new Key(0,"Turm");
+                    break;
+
                 default:
                     h = null;
                     break;
 
             }
 
-            GameManager.anzahlMonster = GameManager.anzahlMonster -1;
-            System.out.println("nach onDeath = " + GameManager.anzahlMonster+ "\t erwartet: 0");
+            GameManager.anzahlMonster = GameManager.anzahlMonster - 1;
+            System.out.println("nach onDeath = " + GameManager.anzahlMonster + "\t erwartet: 0");
 
-            if(h != null) {
+            if (h != null) {
                 Game.world().environment().add(h);
                 h.setLocation(this.getX(), this.getY());
 
-            }});
+            }
+        });
     }
-
-
 
 
     @Override

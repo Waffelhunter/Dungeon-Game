@@ -4,29 +4,30 @@ import UI.HUD;
 import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;
-import de.gurkenlabs.litiengine.entities.Entity;
+
 import de.gurkenlabs.litiengine.entities.Prop;
-import de.gurkenlabs.litiengine.graphics.TextRenderer;
 import de.gurkenlabs.litiengine.resources.Resources;
 import logic.GameManager;
 import org.example.Fireball;
 import org.example.ShatterShot;
 import org.example.SpellManager;
 
-import java.awt.*;
 import java.util.Collection;
 
-public class InteractableObjects extends Entity {
+public class InteractableObjects  {
 
     public static String currentMap = "atrium";
-    static CollisionBox collider = new CollisionBox(20, 20);
     public static long lastDoorInteraction;
-
+    public static boolean[] Keys = new boolean[4];
+    static CollisionBox collider = new CollisionBox(20, 20);
+    public static String KeyPickUpName;
+    public static Boolean pickedUp;
 
     public static void Interact() {
         Collection<Prop> Storage = Game.world().environment().getProps("interactable");
         Collection<Prop> Gateway = Game.world().environment().getProps("door");
         Collection<Prop> Spellcrates = Game.world().environment().getProps("spells");
+
         for (Prop p : Storage) {
 
             collider.setLocation(p.getCenter());
@@ -49,62 +50,75 @@ public class InteractableObjects extends Entity {
 
             }
         }
-            //Door interaction
-            for (Prop pr : Gateway) {
+        //Door interaction
+        for (Prop pr : Gateway) {
 
+            pr.setCollision(false);
+            if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox()) && Game.time().since(lastDoorInteraction) > 300 && GameManager.anzahlMonster == 0) {
+                if (pr.hasTag("lock")) {
+                    for (int i = 0; i < Keys.length; i++) {
+                        if (Keys[i] == true) {
+                            if (pr.hasTag(String.valueOf(i))) {
 
-//                if(GameManager.anzahlMonster !=0)
-//                {
-//                    return;
-//                }
-                pr.setCollision(false);
-                if (pr.getBoundingBox().intersects(Player.instance().getBoundingBox())&&Game.time().since(lastDoorInteraction)>300&&GameManager.anzahlMonster ==0) {
-                   if(pr.hasTag("lock")){
-                       Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/219487__jarredgibb__door-cupboard-07.wav"));
-                       HUD.renderLock = true;
-                       lastDoorInteraction = Game.loop().getTicks();
-                       return;
-                   }
-                    System.out.println("nach Gateway = " + GameManager.anzahlMonster);
-
-                    lastDoorInteraction = Game.loop().getTicks();
-                    Game.world().environment().remove(Fireball.instance());
-                    Game.world().environment().remove(ShatterShot.instance());
-                    SpellManager.state = 0;
-
-                    Game.world().loadEnvironment(pr.getName());
-
-                    currentMap = pr.getName();
-                    Game.world().camera().setFocus(Game.world().environment().getCenter());
-                        GameManager.spawnPlayer(Game.world().environment(), pr);
-
-                      //  GameManager.spawnEnemy(Game.world().environment());
-
+                                pr.removeTag("lock");
+                                break;
+                            }
+                        }
                     }
+                    if (pr.hasTag("lock")) {
 
+
+                        Game.audio().playSound(Resources.sounds().get("src/main/resources/misc/219487__jarredgibb__door-cupboard-07.wav"));
+                        HUD.renderLock = true;
+                        lastDoorInteraction = Game.loop().getTicks();
+                        return;
+                    }
                 }
 
-            for (Prop s : Spellcrates) {
+                System.out.println("nach Gateway = " + GameManager.anzahlMonster);
 
-                collider.setLocation(s.getCenter());
-                collider.setCollision(false);
-                collider.setName("collider");
+                lastDoorInteraction = Game.loop().getTicks();
+                Game.world().environment().remove(Fireball.instance());
+                Game.world().environment().remove(ShatterShot.instance());
+                SpellManager.state = 0;
 
-                if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())) {
-                    Spellscroll spell = new Spellscroll(s.getName());
-                    Game.world().environment().add(spell);
-                    spell.setLocation(s.getX(), s.getY());
+                Game.world().loadEnvironment(pr.getName());
 
-                    s.die();
-                    s.setCollision(true);
+                currentMap = pr.getName();
+                Game.world().camera().setFocus(Game.world().environment().getCenter());
+                GameManager.spawnPlayer(Game.world().environment(), pr);
 
-                }
             }
+        }
 
+        for (Prop s : Spellcrates) {
+
+            collider.setLocation(s.getCenter());
+            collider.setCollision(false);
+            collider.setName("collider");
+
+            if (Player.instance().getCollisionBox().intersects(collider.getCollisionBox())) {
+                Spellscroll spell = new Spellscroll(s.getName());
+                Game.world().environment().add(spell);
+                spell.setLocation(s.getX(), s.getY());
+
+                s.die();
+                s.setCollision(true);
+
+            }
+        }
     }
-
-
-
+    //called by key to render the Message
+    public static void PickUpKey(String Name){
+        KeyPickUpName = Name;
+        pickedUp = true;
+    }
 }
+
+
+
+
+
+
 
 
