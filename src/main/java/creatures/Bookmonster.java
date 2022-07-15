@@ -14,16 +14,15 @@ import props.life;
 
 @CombatInfo(hitpoints = 100)
 @MovementInfo(velocity = 30)
-@CollisionInfo(collision = true, collisionBoxWidth = 30, collisionBoxHeight = 30,align = Align.CENTER)
+@CollisionInfo(collision = true, collisionBoxWidth = 30, collisionBoxHeight = 30, align = Align.CENTER)
 
 
 public class Bookmonster extends Creature implements IUpdateable {
+    private final int ANGLE_CHANGE_INTERVAL = 1000;
     //public String drops;
     private int angle;
     private long lastAngleChange;
-    private final int ANGLE_CHANGE_INTERVAL = 1000;
-
-    private int lastFired = 200;
+    private final int lastFired = 200;
 
 
     public Bookmonster() {
@@ -46,7 +45,7 @@ public class Bookmonster extends Creature implements IUpdateable {
                     h = null;
                     break;
             }
-            if(h != null) {
+            if (h != null) {
                 Game.world().environment().add(h);
                 h.setLocation(this.getX(), this.getY());
             }
@@ -63,7 +62,6 @@ public class Bookmonster extends Creature implements IUpdateable {
         }
 
 
-
         if (this.isDead()) {
             return;
         }
@@ -75,22 +73,19 @@ public class Bookmonster extends Creature implements IUpdateable {
 //            }
 
 
-            final long currentTick = Game.loop().getTicks();
+        final long currentTick = Game.loop().getTicks();
 
-            if (angle == 0 || Game.time().since(lastAngleChange) > ANGLE_CHANGE_INTERVAL) {
-                this.angle = Game.random().nextInt(360);
-                this.lastAngleChange = currentTick;
-                this.onCollision(event -> this.angle = Game.random().nextInt(360));
-            }
-
-            Game.physics().move(this, angle, this.getTickVelocity());
-            return;
+        if (angle == 0 || Game.time().since(lastAngleChange) > ANGLE_CHANGE_INTERVAL) {
+            this.angle = Game.random().nextInt(360);
+            this.lastAngleChange = currentTick;
+            this.onCollision(event -> this.angle = Game.random().nextInt(360));
         }
 
-
-
-
-
-        //lastFired++;
+        Game.physics().move(this, angle, this.getTickVelocity());
+        return;
     }
+
+
+    //lastFired++;
+}
 

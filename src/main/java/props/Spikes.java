@@ -11,8 +11,8 @@ import de.gurkenlabs.litiengine.entities.Prop;
 
 
 public class Spikes extends Prop implements IUpdateable {
-    private  int inactiveTime ;
-    private  int activeTime;
+    private int inactiveTime;
+    private int activeTime;
     private int hitTimer;
     private Boolean active = false;
 
@@ -25,25 +25,25 @@ public class Spikes extends Prop implements IUpdateable {
     @Override
     public void update() {
 
-        if(this.getCollisionBox().intersects(Player.instance().getCollisionBox())&& hitTimer <= 0 && active == true){
+        if (this.getCollisionBox().intersects(Player.instance().getCollisionBox()) && hitTimer <= 0 && active == true) {
             Player.instance().damage(1);
             hitTimer = 70;
         }
 
 
-       if(!this.isDead()&& inactiveTime <= 0){
-           this.hit(100);
-           activeTime = 200;
-           active = true;
-       }
+        if (!this.isDead() && inactiveTime <= 0) {
+            this.hit(100);
+            activeTime = 200;
+            active = true;
+        }
 
-        if(this.isDead()&& activeTime <= 0){
+        if (this.isDead() && activeTime <= 0) {
             this.resurrect();
             inactiveTime = 300;
             active = false;
         }
         activeTime--;
-        inactiveTime --;
-        hitTimer --;
+        inactiveTime--;
+        hitTimer--;
     }
 }

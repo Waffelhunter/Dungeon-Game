@@ -1559,7 +1559,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,target,w"/>
+      <property name="tags" value="target,door,w,lock,0"/>
      </properties>
     </object>
     <object id="10" name="vorraum" type="PROP" x="506" y="310" width="6" height="42">
@@ -1577,7 +1577,7 @@
       <property name="material" value="UNDEFINED"/>
       <property name="rotationSprite" value="NONE"/>
       <property name="spritesheetName" value="doorside"/>
-      <property name="tags" value="door,target,o"/>
+      <property name="tags" value="target,door,o,1,lock"/>
      </properties>
     </object>
     <object id="11" name="thronsaal" type="PROP" x="301.75" y="221" width="64" height="67">
@@ -6761,6 +6761,9 @@
   </sprite>
   <sprite width="10" height="15" imageformat="PNG" name="prop-FackelAus-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAAAoAAAAPCAYAAADd/14OAAAAhUlEQVR4XmNgwAPOpBmzoosx/F8VyowuNhgBEwPTGSB+AGSasDMwPUWXB4Nie/7/nhpc/4EKvzMzMP+tdRH8DxJDVwdWCMJBOjz/fTS5/5c5CvyPM8WiEAQK7SCKYTgel0KQCcgK0eXhAFkhTmtBACQJU4xXIQjAFCea8RGnEF0cA+BSCABElUFJgUcMwwAAAABJRU5ErkJggg==</image>
+  </sprite>
+  <sprite width="32" height="32" imageformat="PNG" name="prop-Key">
+   <image>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAX0lEQVR4Xu3QMQrAIAyFYTtLC07e/wierpOxDRgooR1TEP4PAhKH90hKAACspBx52Pi/cBoqrUpvdeg8y/xSSgMs2Er4CS3xcQG5d2fZcw8voN7Obe/w8GnzCwAAlncB3pNC+cl7bTwAAAAASUVORK5CYII=</image>
   </sprite>
   <sprite width="26" height="22" imageformat="PNG" name="prop-Ladder-intact">
    <image>iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAYAAADeiIy1AAAA00lEQVR4Xu2UMQ7CMAxFuySVygWYGcLGMbqiHIIDVAoX4UqcB4mRgSrYUqM4jUxpHJh4UpTU33peKjcNQWvt6bcE1hUCtmEFiy42KIB1sYGAzAmFJ1zbLBAwudCJ7iyoSubEQlasQOKFxwOuLgS0UQJxddMMLKr7cDT+1O+qHnDe0B3HA84a7+y+8jFjMuTnuP6wmddKeev60s+QEgK2YQWLLjYogHWxgYDMqf+77kMSrya7Til1oY0SiCvuurZV17Otv+vAOaI7jm9w1833VJ0T/C+xwtwRTYFUXAAAAABJRU5ErkJggg==</image>

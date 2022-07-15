@@ -58,6 +58,7 @@ public class KeyboardMenu extends Menu {
         }
         return Game.time().since(lastMenuInput) < MENU_DELAY;
     }
+
     @Override
     public void prepare() {
         super.prepare();
@@ -79,6 +80,7 @@ public class KeyboardMenu extends Menu {
             //comp.getAppearanceHovered().setTextAntialiasing(RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         });
     }
+
     public void onConfirm(Consumer<Integer> cons) {
         this.confirmConsumer.add(cons);
     }

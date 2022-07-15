@@ -12,10 +12,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class MenuScreen extends Screen implements IUpdateable {
-    private KeyboardMenu mainMenu;
+    public static final BufferedImage Title = Imaging.scale(Resources.images().get("resources/Menu/Title.png"), 6.0);
     public long lastPlayed;
-
-    public static final BufferedImage Title = Imaging.scale(Resources.images().get("resources/Menu/Title.png"),6.0);
+    private KeyboardMenu mainMenu;
 
     public MenuScreen() {
         super("Menu");
@@ -71,7 +70,7 @@ public class MenuScreen extends Screen implements IUpdateable {
         Game.world().environment().render(g);
         super.render(g);
         final double centerX = Game.window().getResolution().getWidth() / 2.0;
-        final double TitleX = centerX - Title.getWidth()/2;
+        final double TitleX = centerX - Title.getWidth() / 2;
         final double TitleY = 200;
         ImageRenderer.render(g, Title, TitleX, TitleY);
     }
@@ -82,6 +81,7 @@ public class MenuScreen extends Screen implements IUpdateable {
             this.lastPlayed = Game.loop().getTicks();
         }
     }
+
     private void startGame() {
         this.mainMenu.setEnabled(false);
         Game.window().getRenderComponent().fadeOut(1500);
@@ -90,23 +90,23 @@ public class MenuScreen extends Screen implements IUpdateable {
             Game.screens().display("INGAME-SCREEN");
             Game.window().getRenderComponent().fadeIn(1500);
             Game.world().loadEnvironment("atrium");
-            GameManager.spawnPlayer(Game.world().getEnvironment("atrium"), null );
+            GameManager.spawnPlayer(Game.world().getEnvironment("atrium"), null);
 
             //beim ersten mal kommt er nicht aus einer Tür
             Game.world().camera().setFocus(Game.world().environment().getCenter());
             Game.graphics().setBaseRenderScale(3);
 
 
-
         });
     }
-    public void loadCollects(){
+
+    public void loadCollects() {
         this.mainMenu.setEnabled(false);
         Game.window().getRenderComponent().fadeOut(2500);
         Game.loop().perform(3500, () -> {
-            Game.screens().display("collectables");
+                    Game.screens().display("collectables");
                     Game.window().getRenderComponent().fadeIn(2500);
-        }
+                }
         );
     }
 

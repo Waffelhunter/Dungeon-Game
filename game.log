@@ -1,246 +1,344 @@
-Juli 06, 2022 11:33:33 AM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.awt.geom.Rectangle2D$Double cannot be cast to class de.gurkenlabs.litiengine.entities.ICollisionEntity (java.awt.geom.Rectangle2D$Double is in module java.desktop of loader 'bootstrap'; de.gurkenlabs.litiengine.entities.ICollisionEntity is in unnamed module of loader 'app')
-java.lang.ClassCastException: class java.awt.geom.Rectangle2D$Double cannot be cast to class de.gurkenlabs.litiengine.entities.ICollisionEntity (java.awt.geom.Rectangle2D$Double is in module java.desktop of loader 'bootstrap'; de.gurkenlabs.litiengine.entities.ICollisionEntity is in unnamed module of loader 'app')
-	at props.Spikes.lambda$new$0(Spikes.java:44)
-	at de.gurkenlabs.litiengine.entities.CollisionEntity.fireCollisionEvent(CollisionEntity.java:284)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.fireCollisionEvents(PhysicsEngine.java:967)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.resolveCollision(PhysicsEngine.java:892)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.resolveCollisionForNewPosition(PhysicsEngine.java:922)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.move(PhysicsEngine.java:697)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.move(PhysicsEngine.java:618)
-	at de.gurkenlabs.litiengine.physics.MovementController.moveEntity(MovementController.java:155)
-	at de.gurkenlabs.litiengine.physics.MovementController.handleMovement(MovementController.java:122)
-	at de.gurkenlabs.litiengine.physics.MovementController.update(MovementController.java:85)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:00:33 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:01:24 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:30 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:12:36 AM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "java.lang.Boolean.booleanValue()" because "props.InteractableObjects.pickedUp" is null
+	at UI.HUD.render(HUD.java:70)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.render(GuiComponent.java:804)
+	at de.gurkenlabs.litiengine.gui.screens.GameScreen.render(GameScreen.java:27)
+	at UI.InGameScreen.render(InGameScreen.java:26)
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:130)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:93)
 	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
 
-Juli 06, 2022 11:33:33 AM de.gurkenlabs.litiengine.UpdateLoop update
-SCHWERWIEGEND: class java.awt.geom.Rectangle2D$Double cannot be cast to class de.gurkenlabs.litiengine.entities.ICollisionEntity (java.awt.geom.Rectangle2D$Double is in module java.desktop of loader 'bootstrap'; de.gurkenlabs.litiengine.entities.ICollisionEntity is in unnamed module of loader 'app')
-java.lang.ClassCastException: class java.awt.geom.Rectangle2D$Double cannot be cast to class de.gurkenlabs.litiengine.entities.ICollisionEntity (java.awt.geom.Rectangle2D$Double is in module java.desktop of loader 'bootstrap'; de.gurkenlabs.litiengine.entities.ICollisionEntity is in unnamed module of loader 'app')
-	at props.Spikes.lambda$new$0(Spikes.java:44)
-	at de.gurkenlabs.litiengine.entities.CollisionEntity.fireCollisionEvent(CollisionEntity.java:284)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.fireCollisionEvents(PhysicsEngine.java:967)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.resolveCollision(PhysicsEngine.java:892)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.resolveCollisionForNewPosition(PhysicsEngine.java:922)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.move(PhysicsEngine.java:697)
-	at de.gurkenlabs.litiengine.physics.PhysicsEngine.move(PhysicsEngine.java:618)
-	at de.gurkenlabs.litiengine.physics.MovementController.moveEntity(MovementController.java:155)
-	at de.gurkenlabs.litiengine.physics.MovementController.handleMovement(MovementController.java:122)
-	at de.gurkenlabs.litiengine.physics.MovementController.update(MovementController.java:85)
-	at de.gurkenlabs.litiengine.UpdateLoop.update(UpdateLoop.java:154)
-	at de.gurkenlabs.litiengine.UpdateLoop.process(UpdateLoop.java:138)
-	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:87)
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
+Juli 14, 2022 12:14:16 AM de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SCHWERWIEGEND: Game crashed! :(
+java.lang.NullPointerException: Cannot invoke "java.lang.Boolean.booleanValue()" because "props.InteractableObjects.pickedUp" is null
+	at UI.HUD.render(HUD.java:70)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.render(GuiComponent.java:804)
+	at de.gurkenlabs.litiengine.gui.screens.GameScreen.render(GameScreen.java:27)
+	at UI.InGameScreen.render(InGameScreen.java:26)
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:130)
+	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:93)
 	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
 
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:36:21 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:15:44 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:37:20 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 14, 2022 12:17:19 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:23 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:41:04 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:38:39 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "Badezimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "BossRoom" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "Toilette" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "alchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "arbeitszimmer" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "atrium" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "bibliothek" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "gangklozuküche" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzualchemielabor" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "gangthronsaalzukerker" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "gemeinschaftssaal2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "kampfraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "kerker2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "küche3" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:08 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "schlafzimmer2" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "speisesaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "thronsaal" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "titlescreen" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.9.0 of map "turm" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
-WARNUNG: Tiled version 1.8.4 of map "vorraum" is greater than the supported version 1.2.x. Some features may not work.
-Juli 06, 2022 11:40:09 AM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+Juli 15, 2022 6:43:18 PM de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
 WARNUNG: Tiled version 1.9.0 of map "waffenk" is greater than the supported version 1.2.x. Some features may not work.

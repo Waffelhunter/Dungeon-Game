@@ -10,7 +10,7 @@ import de.gurkenlabs.litiengine.resources.Resources;
 
 import java.util.Collection;
 
-@AnimationInfo(spritePrefix = {"prop-ExplosiveBarrel"},deathAnimations = "ExplosiveBarrel_explode")
+@AnimationInfo(spritePrefix = {"prop-ExplosiveBarrel"}, deathAnimations = "ExplosiveBarrel_explode")
 
 public class ExplosiveBarrel extends Prop implements IUpdateable {
     private static final String explodeAnimationName = "ExplosiveBarrel_explode";
@@ -30,11 +30,9 @@ public class ExplosiveBarrel extends Prop implements IUpdateable {
     }
 
 
-
     @Override
     public void die() {
         //this.init();
-
 
 
         this.explosion.setLooping(true);
@@ -50,8 +48,8 @@ public class ExplosiveBarrel extends Prop implements IUpdateable {
         this.setCollisionBoxHeight(20);
         this.setCollisionBoxWidth(20);
         this.setCollision(false);
-animations().update();
-animations().play(explodeAnimationName);
+        animations().update();
+        animations().play(explodeAnimationName);
 
         //Damages Player
         if (this.getCollisionBox().intersects(Player.instance().getBoundingBox())) {

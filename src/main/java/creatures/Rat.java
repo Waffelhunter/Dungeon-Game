@@ -18,19 +18,20 @@ public class Rat extends Creature implements IUpdateable {
         super("ratte1");
 
     }
+
     @Override
     public void update() {
-            final long currentTick = Game.loop().getTicks();
+        final long currentTick = Game.loop().getTicks();
 
-            if (angle == 0 || Game.time().since(lastAngleChange) > ANGLE_CHANGE_INTERVAL) {
-                this.angle = Game.random().nextInt(360);
-                this.lastAngleChange = currentTick;
-                this.ANGLE_CHANGE_INTERVAL = Game.random().nextInt(2500,3000);
-                this.onCollision(event -> this.angle = Game.random().nextInt(360));
-            }
-
-            Game.physics().move(this, angle, this.getTickVelocity());
-            return;
+        if (angle == 0 || Game.time().since(lastAngleChange) > ANGLE_CHANGE_INTERVAL) {
+            this.angle = Game.random().nextInt(360);
+            this.lastAngleChange = currentTick;
+            this.ANGLE_CHANGE_INTERVAL = Game.random().nextInt(2500, 3000);
+            this.onCollision(event -> this.angle = Game.random().nextInt(360));
         }
+
+        Game.physics().move(this, angle, this.getTickVelocity());
+        return;
     }
+}
 

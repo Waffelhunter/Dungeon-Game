@@ -115,7 +115,7 @@ public class Fireball extends Creature implements IUpdateable {
                                     h = null;
                                     break;
                             }
-                            if(h != null) {
+                            if (h != null) {
                                 Game.world().environment().add(h);
                                 h.setLocation(p.getX(), p.getY());
                             }

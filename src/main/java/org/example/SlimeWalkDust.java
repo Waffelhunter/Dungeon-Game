@@ -12,14 +12,14 @@ import java.awt.geom.Point2D;
 public class SlimeWalkDust implements IMobileEntity.EntityMovedListener {
     @Override
     public void moved(EntityMovedEvent event) {
-        if(Game.world().environment() == null){
+        if (Game.world().environment() == null) {
             return;
         }
 
         String walkSprite = "SlimeWalk.png";
-        Spritesheet walkDustSprite= Resources.spritesheets().get("SlimeWalk.png");
+        Spritesheet walkDustSprite = Resources.spritesheets().get("SlimeWalk.png");
         Point2D walkLocation = new Point2D.Double(event.getEntity().getCollisionBoxCenter().getX() - walkDustSprite.getSpriteWidth() / 2.0, event.getEntity().getCollisionBoxCenter().getY() - walkDustSprite.getSpriteHeight() / 2.0);
-        Emitter walkDust = new Emitter(walkLocation,walkSprite);
+        Emitter walkDust = new Emitter(walkLocation, walkSprite);
         walkDust.setSize(walkDustSprite.getSpriteWidth(), walkDustSprite.getSpriteHeight());
         Game.world().environment().add(walkDust);
     }

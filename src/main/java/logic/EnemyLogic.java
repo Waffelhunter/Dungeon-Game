@@ -27,6 +27,7 @@ public class EnemyLogic {
 
         });
     }
+
     public static void BookLogic() {
 
         Game.world().onLoaded(e -> {

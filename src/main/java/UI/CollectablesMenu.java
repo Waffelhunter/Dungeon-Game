@@ -8,14 +8,17 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.IntConsumer;
 
-/** The Class Menu. */
+/**
+ * The Class Menu.
+ */
 public class CollectablesMenu extends ImageComponentList {
 
-    private int currentSelection;
-    /** The menu buttons. */
+    /**
+     * The menu buttons.
+     */
     private final String[] items;
-
     private final List<IntConsumer> selectionChangeConsumers;
+    private int currentSelection;
 
     public CollectablesMenu(
             final double x,
@@ -42,6 +45,16 @@ public class CollectablesMenu extends ImageComponentList {
         return this.currentSelection;
     }
 
+    public void setCurrentSelection(final int currentSelection) {
+        this.currentSelection = currentSelection;
+
+        for (int i = 0; i < this.getCellComponents().size(); i++) {
+            this.getCellComponents().get(this.currentSelection).setSelected(i == this.currentSelection);
+        }
+
+        this.selectionChangeConsumers.forEach(c -> c.accept(this.getCurrentSelection()));
+    }
+
     public void onChange(final IntConsumer cons) {
         this.selectionChangeConsumers.add(cons);
     }
@@ -56,15 +69,5 @@ public class CollectablesMenu extends ImageComponentList {
             menuButton.onClicked(
                     c -> this.setCurrentSelection(this.getCellComponents().indexOf(menuButton)));
         }
-    }
-
-    public void setCurrentSelection(final int currentSelection) {
-        this.currentSelection = currentSelection;
-
-        for (int i = 0; i < this.getCellComponents().size(); i++) {
-            this.getCellComponents().get(this.currentSelection).setSelected(i == this.currentSelection);
-        }
-
-        this.selectionChangeConsumers.forEach(c -> c.accept(this.getCurrentSelection()));
     }
 }

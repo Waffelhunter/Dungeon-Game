@@ -4,8 +4,6 @@ import creatures.Player;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.resources.Resources;
 
-import java.awt.geom.Rectangle2D;
-
 public class ProjectileLogic {
     public static String fd;
 
@@ -22,7 +20,6 @@ public class ProjectileLogic {
                     if (SpellManager.FireballCooldown == 0) {
                         SpellManager.state = 1;
                         SpellManager.FireballCooldown = 75;
-
 
 
                         Game.world().environment().add(Fireball.instance());

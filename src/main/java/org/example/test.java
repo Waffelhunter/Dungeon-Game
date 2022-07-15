@@ -1,15 +1,15 @@
 package org.example;
 
 public class test {
-   //. 　　　。　　　　•　 　ﾟ　　。 　　.
+    //. 　　　。　　　　•　 　ﾟ　　。 　　.
 //
-  //          　　　.　　　 　　.　　　　　。　　 。　. 　
+    //          　　　.　　　 　　.　　　　　。　　 。　. 　
 //
-  //          .　　 。　　　　　 ඞ 。 . 　　 • 　　　　•
+    //          .　　 。　　　　　 ඞ 。 . 　　 • 　　　　•
 //
-  //          　　ﾟ　　 Red was not An Impostor.　 。　.
+    //          　　ﾟ　　 Red was not An Impostor.　 。　.
 //
-  //          　　'　　　 1 Impostor remains 　 　　。
+    //          　　'　　　 1 Impostor remains 　 　　。
 //
-  //          　　ﾟ　　　.　　　. ,　　　　.　 .
+    //          　　ﾟ　　　.　　　. ,　　　　.　 .
 }

@@ -14,23 +14,23 @@ public class HomingFireball extends Creature implements IUpdateable {
     private int moves = 0;
 
 
-    public HomingFireball(double x, double y){
+    public HomingFireball(double x, double y) {
         super("DragonFire");
-        this.setLocation(x,y);
+        this.setLocation(x, y);
 
     }
+
     @Override
     public void update() {
 
-        if(moves< 400){
-            Game.physics().move(this, Player.instance().getCenter(),this.getTickVelocity());
-            moves ++;
-        }
-        else{
+        if (moves < 400) {
+            Game.physics().move(this, Player.instance().getCenter(), this.getTickVelocity());
+            moves++;
+        } else {
             Game.world().environment().remove(this);
             moves = 0;
         }
-        if(this.getBoundingBox().intersects(Player.instance().getCollisionBox())){
+        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox())) {
             Player.instance().damage(1);
             Game.world().environment().remove(this);
             moves = 0;

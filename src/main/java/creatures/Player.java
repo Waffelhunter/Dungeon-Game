@@ -18,14 +18,15 @@ import org.example.SpellManager;
 
 
 public class Player extends Creature implements IUpdateable {
-    static CollisionBox c = new CollisionBox(10, 10);
     public static int armor = 10;
     public static int maxArmor = 10;
+    static CollisionBox c = new CollisionBox(10, 10);
     private static Player instance;
 
 
     private Player() {
         super("Hero");
+
     }
 
     public static Player instance() {

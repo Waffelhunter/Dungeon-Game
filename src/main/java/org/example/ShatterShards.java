@@ -90,13 +90,12 @@ public class ShatterShards extends Creature implements IUpdateable {
             }
             Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
             for (Creature c : Enemys) {
-                if (c.getCollisionBox().intersects(this.getCollisionBox())&& hit == false) {
+                if (c.getCollisionBox().intersects(this.getCollisionBox()) && hit == false) {
                     c.hit(20);
                     hit = true;
                     Game.world().environment().remove(this);
                     moves = 0;
                 }
-
 
 
             }

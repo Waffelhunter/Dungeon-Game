@@ -63,9 +63,9 @@ public class Collectables extends CollectablesMenu {
 
                         System.out.println("hi");
                     }
-                 }
-              );
-            }
+                }
+        );
+    }
 
 
 }
