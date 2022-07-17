@@ -4,11 +4,13 @@ package logic;
 import creatures.Bookmonster;
 import creatures.Player;
 import creatures.Slime;
+import creatures.StoryChar;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.Prop;
 import de.gurkenlabs.litiengine.entities.Spawnpoint;
 import de.gurkenlabs.litiengine.environment.Environment;
 import de.gurkenlabs.litiengine.environment.PropMapObjectLoader;
+import de.gurkenlabs.litiengine.gui.SpeechBubble;
 import props.InteractableObjects;
 import props.Spikes;
 
@@ -20,6 +22,8 @@ public final class GameManager {
     public static boolean[] besucht;
     public static Environment[] maps;
     public static int anzahlMonster = 0;
+
+
 
     private GameManager() {
     }
@@ -37,6 +41,7 @@ public final class GameManager {
             maps[i] = e;
             besucht[i] = false;
             i++;
+
 
         }
         Game.world().onLoaded(environment -> loaded(environment));
@@ -127,6 +132,24 @@ public final class GameManager {
             Player.instance().resurrect();
             Game.world().loadEnvironment("atrium");
             Player.instance().setLocation(Game.world().environment().getSpawnpoint("s").getLocation());
+        }
+    }
+    public static void spawnStoryChar(int State){
+        switch (State){
+            case 0: return;
+            case 1:
+                Optional<Spawnpoint> summon = Optional.ofNullable(Game.world().environment().getSpawnpoint("n"));
+                summon.ifPresent(s -> s.spawn(StoryChar.instance()));
+                Prop p = new Prop("Exclamation Mark");
+                p.setCollision(false);
+                Game.world().environment().add(p);
+                p.setName("marker");
+                p.setLocation(StoryChar.instance().getCenter().getX()-17,StoryChar.instance().getCenter().getY()-50);
+
+
+                return;
+
+
         }
     }
 }

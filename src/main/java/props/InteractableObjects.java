@@ -2,16 +2,20 @@ package props;
 
 import UI.HUD;
 import creatures.Player;
+import creatures.StoryChar;
+import de.gurkenlabs.litiengine.Align;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.entities.CollisionBox;
 
 import de.gurkenlabs.litiengine.entities.Prop;
+import de.gurkenlabs.litiengine.gui.SpeechBubble;
 import de.gurkenlabs.litiengine.resources.Resources;
 import logic.GameManager;
 import org.example.Fireball;
 import org.example.ShatterShot;
 import org.example.SpellManager;
 
+import java.awt.*;
 import java.util.Collection;
 
 public class InteractableObjects  {
@@ -107,12 +111,24 @@ public class InteractableObjects  {
 
             }
         }
+        //Tutorial char interaction
+        if(Player.instance().getBoundingBox().intersects(StoryChar.instance().getCollisionBox())){
+            Game.world().environment().remove(Game.world().environment().getProp("marker"));
+            SpeechBubble bubble1 = new SpeechBubble(StoryChar.instance(),"Hey over there, i see you are new to the Castle");
+            Game.screens().get("INGAME-SCREEN").getComponents().add(bubble1);
+            bubble1.setBoxAlign(Align.CENTER);
+            bubble1.setDisplayTime(100000);
+            bubble1.setVisible(true);
+            bubble1.getAppearance().setBorderStyle(new BasicStroke(3f));
+            bubble1.start();
+        }
     }
     //called by key to render the Message
     public static void PickUpKey(String Name){
         KeyPickUpName = Name;
         pickedUp = true;
     }
+
 }
 
 

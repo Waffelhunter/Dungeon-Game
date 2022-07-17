@@ -23,6 +23,9 @@ public class InGameScreen extends GameScreen {
 
     @Override
     public void render(Graphics2D g) {
+
+        g.setFont(new Font("Mistlock Typeface", Font.PLAIN, 20));
+
         super.render(g);
 
         if (Game.world().environment() != null) {

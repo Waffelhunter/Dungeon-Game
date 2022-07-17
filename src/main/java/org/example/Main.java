@@ -6,6 +6,7 @@ import UI.MenuScreen;
 import UI.UserInput;
 import creatures.Player;
 import creatures.Rat;
+import creatures.StoryChar;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.configuration.DisplayMode;
 import de.gurkenlabs.litiengine.environment.CreatureMapObjectLoader;
@@ -61,6 +62,7 @@ Main {
         PropMapObjectLoader.registerCustomPropType(BreakableWall.class);
         PropMapObjectLoader.registerCustomPropType(Spikes.class);
         CreatureMapObjectLoader.registerCustomCreatureType(Rat.class);
+        CreatureMapObjectLoader.registerCustomCreatureType(StoryChar.class);
 
         float safe = Game.config().sound().getSoundVolume();
         Game.config().sound().setSoundVolume(0f);

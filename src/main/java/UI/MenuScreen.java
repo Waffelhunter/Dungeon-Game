@@ -91,6 +91,7 @@ public class MenuScreen extends Screen implements IUpdateable {
             Game.window().getRenderComponent().fadeIn(1500);
             Game.world().loadEnvironment("atrium");
             GameManager.spawnPlayer(Game.world().getEnvironment("atrium"), null);
+            GameManager.spawnStoryChar(1);
 
             //beim ersten mal kommt er nicht aus einer Tür
             Game.world().camera().setFocus(Game.world().environment().getCenter());
