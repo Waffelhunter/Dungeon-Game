@@ -73,7 +73,6 @@ public class ShatterShards extends Creature implements IUpdateable {
 
                     } else {
                         p.hit(20);
-                        //burn(p);
                         if (p.getState() == PropState.DESTROYED && !p.hasTag("looted")) {
                             life h = new life("life");
                             Game.world().environment().add(h);
@@ -90,7 +89,7 @@ public class ShatterShards extends Creature implements IUpdateable {
             }
             Collection<Creature> Enemys = Game.world().environment().getCreatures("enemy");
             for (Creature c : Enemys) {
-                if (c.getCollisionBox().intersects(this.getCollisionBox()) && hit == false) {
+                if (c.getCollisionBox().intersects(this.getCollisionBox()) && !hit) {
                     c.hit(20);
                     hit = true;
                     Game.world().environment().remove(this);

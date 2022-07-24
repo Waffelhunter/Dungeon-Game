@@ -39,11 +39,13 @@ public class ProjectileLogic {
 
                         ShatterShot.instance().setLocation(Player.instance().getLocation());
                         ShatterShot.instance().setFacingDirection(Player.instance().getFacingDirection());
-                        break;
+
                     }
+                    break;
                 case 3:
                     break;
-
+                default:
+                    break;
             }
 
         }

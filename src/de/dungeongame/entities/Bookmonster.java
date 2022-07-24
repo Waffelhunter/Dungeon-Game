@@ -18,11 +18,11 @@ import de.dungeongame.entities.props.life;
 
 
 public class Bookmonster extends Creature implements IUpdateable {
-    private final int ANGLE_CHANGE_INTERVAL = 1000;
-    //public String drops;
+    private static final int ANGLE_CHANGE_INTERVAL = 1000;
+
     private int angle;
     private long lastAngleChange;
-    private final int lastFired = 200;
+    private static final int lastFired = 200;
 
 
     public Bookmonster() {
@@ -82,7 +82,7 @@ public class Bookmonster extends Creature implements IUpdateable {
         }
 
         Game.physics().move(this, angle, this.getTickVelocity());
-        return;
+
     }
 
 

@@ -9,7 +9,6 @@ import de.gurkenlabs.litiengine.entities.MovementInfo;
 @MovementInfo(velocity = 50)
 @AnimationInfo(spritePrefix = {"ratte1"})
 public class Rat extends Creature implements IUpdateable {
-    //public String drops;
     private int angle;
     private long lastAngleChange;
     private int ANGLE_CHANGE_INTERVAL = 1000;
@@ -31,7 +30,7 @@ public class Rat extends Creature implements IUpdateable {
         }
 
         Game.physics().move(this, angle, this.getTickVelocity());
-        return;
+
     }
 }
 

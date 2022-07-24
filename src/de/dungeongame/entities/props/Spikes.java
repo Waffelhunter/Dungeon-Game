@@ -25,7 +25,7 @@ public class Spikes extends Prop implements IUpdateable {
     @Override
     public void update() {
 
-        if (this.getCollisionBox().intersects(Player.instance().getCollisionBox()) && hitTimer <= 0 && active == true) {
+        if (this.getCollisionBox().intersects(Player.instance().getCollisionBox()) && hitTimer <= 0 && active) {
             Player.instance().damage(1);
             hitTimer = 70;
         }

@@ -12,7 +12,7 @@ import java.util.Collection;
 
 @AnimationInfo(spritePrefix = {"prop-ExplosiveBarrel"}, deathAnimations = "ExplosiveBarrel_explode")
 
-public class ExplosiveBarrel extends Prop implements IUpdateable {
+public class ExplosiveBarrel extends Prop{
     private static final String explodeAnimationName = "ExplosiveBarrel_explode";
     Animation explosion = new Animation(explodeAnimationName, false, true, 200);
 
@@ -32,7 +32,6 @@ public class ExplosiveBarrel extends Prop implements IUpdateable {
 
     @Override
     public void die() {
-        //this.init();
 
 
         this.explosion.setLooping(true);
@@ -85,15 +84,6 @@ public class ExplosiveBarrel extends Prop implements IUpdateable {
         super.die();
     }
 
-
-    @Override
-    public void update() {
-
-        if (!animations().isPlaying(explodeAnimationName)) {
-
-            //super.die();
-
-        }
-    }
 }
+
 

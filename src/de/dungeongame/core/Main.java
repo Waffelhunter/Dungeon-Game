@@ -7,7 +7,6 @@ import de.dungeongame.entities.props.BreakableWall;
 import de.dungeongame.entities.props.ExplosiveBarrel;
 import de.dungeongame.entities.props.Spikes;
 import de.dungeongame.logic.BossSpawner;
-import de.dungeongame.logic.Colission;
 import de.dungeongame.logic.CollectablesManager;
 import de.dungeongame.logic.GameManager;
 import de.dungeongame.ui.ColectablesScreen;
@@ -34,7 +33,7 @@ public class Main {
     UserInput.Input();
 
     CollectablesManager.init();
-    Colission colission = new Colission();
+
 
     // load the Liti Library
     Resources.load("game_v4.litidata");
@@ -56,7 +55,7 @@ public class Main {
 
     c1.getViewport();
 
-    Game.audio().setListenerLocationCallback((e) -> Player.instance().getCenter());
+    Game.audio().setListenerLocationCallback(e -> Player.instance().getCenter());
     Game.audio().setMaxDistance(1000);
 
     PropMapObjectLoader.registerCustomPropType(ExplosiveBarrel.class);
@@ -89,8 +88,8 @@ public class Main {
     Game.loop()
         .perform(
             1500,
-            () -> {
-              Game.config().sound().setSoundVolume(safe);
-            });
+            () ->
+              Game.config().sound().setSoundVolume(safe)
+            );
   }
 }

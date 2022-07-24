@@ -49,7 +49,6 @@ public final class GameManager {
     }
 
     private static void loaded(Environment e) {
-        //spawnPlayer(e);
         spawnEnemy(e);
         PropMapObjectLoader.registerCustomPropType(Spikes.class);
 
@@ -58,40 +57,24 @@ public final class GameManager {
     }
 
     public static void spawnEnemy(Environment e) {
-        //prüft, ob geladene map schonmal besucht wurde
-//        for (int i = 0; i < 22; i++) {
-//
-//            if (maps[i] == e && (besucht[i] == false)) {
+
 
         //das passiert, bei erstem Besuch der map
-        Collection<Spawnpoint> es = Game.world().environment().getSpawnpoints("s");
-//        for(Spawnpoint s : es){
-//            s.spawn(new Bookmonster());
-//        }
+
+
         Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
         enemySpawn.ifPresent(s -> s.spawn(new Slime()));
-//        anzahlMonster++;
-//        System.out.println("nach enemySpawn =  "+ GameManager.anzahlMonster+ "\t erwartet: 1");
-//        enemySpawn.ifPresent(s -> {
-//
-//                    s.spawn(new Bookmonster());
 
 
     }
 
-
-    //  besucht[i] = true;
-//            if (maps[i] == e && (besucht[i] == true)) {
-//                //ruft respawn Enemy auf, wenn map schonmal besucht wurde.
-//                respawnEnemy(e, Game.random().nextInt(3));
-    //    }
 
 
     private static void respawnEnemy(Environment e, int max) {
 
 
         Optional<Spawnpoint> enemySpawn = Optional.ofNullable(e.getSpawnpoint("EnemySpawn"));
-        // enemySpawn.ifPresent(s -> s.spawn(new Slime()));
+
         if (Game.random().nextInt(2) == 2) {
             for (int i = 0; i < max; i++) {
                 enemySpawn.ifPresent(s -> s.spawn(new Bookmonster()));

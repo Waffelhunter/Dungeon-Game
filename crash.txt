@@ -1,5 +1,26 @@
-Sun Jul 17 23:32:45 CEST 2022 Main Update Loop threw an exception:
-java.lang.NullPointerException: Cannot invoke "de.gurkenlabs.litiengine.gui.screens.ScreenManager.current()" because the return value of "de.gurkenlabs.litiengine.Game.screens()" is null
-	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:127)
+Thu Jul 14 00:14:16 CEST 2022 Main Update Loop threw an exception:
+java.lang.NullPointerException: Cannot invoke "java.lang.Boolean.booleanValue()" because "props.InteractableObjects.pickedUp" is null
+	at UI.HUD.render(HUD.java:70)
+	at de.gurkenlabs.litiengine.gui.GuiComponent.render(GuiComponent.java:804)
+	at de.gurkenlabs.litiengine.gui.screens.GameScreen.render(GameScreen.java:27)
+	at UI.InGameScreen.render(InGameScreen.java:26)
+	at de.gurkenlabs.litiengine.graphics.RenderComponent.render(RenderComponent.java:130)
 	at de.gurkenlabs.litiengine.GameLoop.process(GameLoop.java:93)
 	at de.gurkenlabs.litiengine.UpdateLoop.run(UpdateLoop.java:57)
+
+====Runtime Information====
+Operating System: Windows 10
+	Architecture: amd64
+	Version: 10.0
+Memory:
+	Max heap size: 4,0 GiB
+	Current heap size: 256,0 MiB
+	Heap used: 59,4 MiB
+	Free heap: 196,6 MiB
+Java Version: Java(TM) SE Runtime Environment 17.0.3.1+2-LTS-6 
+	Vendor: Oracle Corporation
+Uptime: PT8.125S
+Screens: 2
+	Screen 0: 1920x1080@60hz
+	Screen 1: 1920x1080@59hz
+

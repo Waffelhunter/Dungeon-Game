@@ -62,12 +62,12 @@ public class HUD extends GuiComponent {
             fader = 150;
         }
 
-        if (renderLock == true) {
+        if (renderLock) {
             this.renderLockedText(g);
             fader -= 1;
 
         }
-        if(InteractableObjects.pickedUp == true){
+        if(InteractableObjects.pickedUp){
             this.renderKeyPickUpMessage(g);
             fader -=1;
         }
@@ -75,7 +75,7 @@ public class HUD extends GuiComponent {
 
     private void renderHP(Graphics2D g) {
         double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING;
-        double x = Game.window().getResolution().getWidth() - ((Player.instance().getHitPoints().getMax() * (HEART.getWidth() + Game.window().getResolution().getWidth() / 15)));
+        double x = Game.window().getResolution().getWidth() - (Player.instance().getHitPoints().getMax() * (HEART.getWidth() + Game.window().getResolution().getWidth() / 15));
         for (int i = 0; i < Player.instance().getHitPoints().getMax(); i++) {
             BufferedImage img = i < Player.instance().getHitPoints().get() ? HEART : HEARTEMPTY;
             ImageRenderer.render(g, img, x + i * img.getWidth() + PADDING, y);
@@ -85,7 +85,7 @@ public class HUD extends GuiComponent {
 
     private void renderArmor(Graphics2D g) {
         double y = Game.window().getResolution().getHeight() - Game.window().getResolution().getHeight() + PADDING;
-        double x = Game.window().getResolution().getWidth() - ((Player.maxArmor * (ARMOR.getWidth() + PADDING * 0.2)));
+        double x = Game.window().getResolution().getWidth() - (Player.maxArmor * (ARMOR.getWidth() + PADDING * 0.2));
         for (int i = 0; i < Player.maxArmor; i++) {
             BufferedImage img = i < Player.armor ? ARMOR : ARMOREMPTY;
             ImageRenderer.render(g, img, x + i * img.getWidth() + PADDING, y);

@@ -20,8 +20,8 @@ import de.dungeongame.entities.props.life;
 
 public class Slime extends Creature implements IUpdateable {
     private static final int STEP_DELAY = 360;
-    private final int ANGLE_CHANGE_INTERVAL = 1000;
-    //public String drops;
+    private static final int ANGLE_CHANGE_INTERVAL = 1000;
+
     private int angle;
     private long lastAngleChange;
     private int lastHit = 200;
@@ -42,8 +42,7 @@ public class Slime extends Creature implements IUpdateable {
                         return;
                     }
                     this.lastWalkDust = Game.loop().getTicks();
-//                    EntityEmitter walkDust = new EntityEmitter(this, "slimeWalkEmitter", false);
-//                    Game.world().environment().add(walkDust);
+
                 });
         onDeath(entity -> {
             int i = Game.random().nextInt(3);
@@ -90,11 +89,11 @@ public class Slime extends Creature implements IUpdateable {
         if (this.isDead()) {
             return;
         }
-        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox())) {
-            if (lastHit > 100) {
+        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox())&&lastHit > 100) {
+
                 Player.instance().damage(1);
                 lastHit = 0;
-            }
+
         }
         if (Player.instance().isDead()) {
             final long currentTick = Game.loop().getTicks();
@@ -114,15 +113,7 @@ public class Slime extends Creature implements IUpdateable {
     }
 
 
-//            if (this.getCollisionBox().intersects(Fireball.instance().getCollisionBox())){
-//                this.hit(50);
-//                Game.world().environment().remove(Fireball.instance());
-
-
 }
-//    @Override
-//    public void die(){
-//
 
 
 

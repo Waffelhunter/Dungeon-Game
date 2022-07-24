@@ -24,10 +24,7 @@ import java.util.Collection;
 public class Fireball extends Creature implements IUpdateable {
     private static Fireball instance;
 
-
-    private static int moves = 0;
-    private int angle;
-
+    private static int moves;
 
     private Fireball() {
         super("Feuerball");

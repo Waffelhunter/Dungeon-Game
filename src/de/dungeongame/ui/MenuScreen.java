@@ -39,6 +39,8 @@ public class MenuScreen extends Screen implements IUpdateable {
             switch (c.intValue()) {
                 case 0:
                     this.startGame();
+
+                    break;
                 case 2:
                     this.loadCollects();
                     break;
@@ -62,7 +64,7 @@ public class MenuScreen extends Screen implements IUpdateable {
         this.mainMenu.incFocus();
         Game.world().loadEnvironment("titlescreen");
 
-        //Game.world().camera().setFocus(Game.world().environment().getCenter());
+
     }
 
     @Override
@@ -85,7 +87,7 @@ public class MenuScreen extends Screen implements IUpdateable {
     private void startGame() {
         this.mainMenu.setEnabled(false);
         Game.window().getRenderComponent().fadeOut(1500);
-
+        Game.audio().playMusic(Resources.sounds().get("85568__joelaudio__dragon-roar.wav"));
         Game.loop().perform(3500, () -> {
             Game.screens().display("INGAME-SCREEN");
             Game.window().getRenderComponent().fadeIn(1500);

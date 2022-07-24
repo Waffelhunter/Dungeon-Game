@@ -31,7 +31,7 @@ public class FireWallAttack extends Creature implements IUpdateable {
             moves = 0;
 
         }
-        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox()) && hitPlayer == false) {
+        if (this.getBoundingBox().intersects(Player.instance().getCollisionBox()) && hitPlayer) {
             Player.instance().damage(2);
             hitPlayer = true;
         }

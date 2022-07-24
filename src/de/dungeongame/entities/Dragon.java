@@ -23,9 +23,9 @@ public class Dragon extends Creature implements IUpdateable {
         super("Dragon");
         this.addTag("enemy");
         this.animations().add(new Animation(Resources.spritesheets().get("DragonAttackAnimation"), false));
-        onHit(event -> {
-            animations().play("DragonAttackAnimation");
-        });
+        onHit(event ->
+            animations().play("DragonAttackAnimation")
+        );
 
 
     }

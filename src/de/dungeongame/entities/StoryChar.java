@@ -1,6 +1,5 @@
 package de.dungeongame.entities;
 
-import de.gurkenlabs.litiengine.IUpdateable;
 import de.gurkenlabs.litiengine.entities.AnimationInfo;
 import de.gurkenlabs.litiengine.entities.CollisionInfo;
 import de.gurkenlabs.litiengine.entities.Creature;
@@ -9,8 +8,8 @@ import de.gurkenlabs.litiengine.resources.Resources;
 
 @AnimationInfo(spritePrefix = {"Story_char-idle"})
 @CollisionInfo(collision = true, collisionBoxWidth = 20, collisionBoxHeight = 10)
-public class StoryChar extends Creature implements IUpdateable {
-
+public class StoryChar extends Creature {
+private boolean isTalking;
   private static StoryChar instance;
 
   private SpeechBubble speechBubble;
@@ -34,9 +33,16 @@ public class StoryChar extends Creature implements IUpdateable {
     if (getSpeechBubble() != null) getSpeechBubble().stop();
     this.speechBubble = new SpeechBubble(StoryChar.instance(), text);
     getSpeechBubble().setTypeSound(Resources.sounds().get("ui_click.ogg"));
+    getSpeechBubble().setRenderTriangle(false);
+    getSpeechBubble().setTypeDelay(40);
+    getSpeechBubble().setDisplayTime(8000);
     getSpeechBubble().start();
   }
-
-  @Override
-  public void update() {}
+  public boolean getTalking(){
+    return isTalking;
+  }
+  public void setTalking(boolean b){
+    isTalking = b;
+  }
 }
+

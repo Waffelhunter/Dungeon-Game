@@ -139,7 +139,6 @@ public class ShatterShot extends Creature implements IUpdateable {
 
                     } else {
                         p.hit(50);
-                        //burn(p);
                         if (p.getState() == PropState.DESTROYED && !p.hasTag("looted")) {
                             life h = new life("life");
                             Game.world().environment().add(h);
